@@ -1,0 +1,36 @@
+{
+  "repo": "openai/gpt-oss-120b",
+  "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+  "fetchedAt": "2026-10-14T18:13:51.952Z",
+  "createdAt": "2025-08-04T22:33:06.000Z",
+  "lastModified": "2025-08-26T17:25:03.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 116829156672,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [
+    "original/model--00001-of-00007.safetensors",
+    "original/model--00002-of-00007.safetensors",
+    "original/model--00003-of-00007.safetensors",
+    "original/model--00004-of-00007.safetensors",
+    "original/model--00005-of-00007.safetensors",
+    "original/model--00006-of-00007.safetensors",
+    "original/model--00007-of-00007.safetensors"
+  ],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

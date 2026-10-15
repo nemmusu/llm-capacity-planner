@@ -1,0 +1,44 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "fetchedAt": "2026-10-14T18:30:53.476Z",
+  "repos": [
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "3fe6dab75665a93884214ad4b1b95cf02717d081",
+      "createdAt": "2026-03-12T16:58:39.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "fp8",
+      "safetensorsTotal": 3973556900,
+      "safetensorsDtypes": {
+        "F32": 68,
+        "BF16": 1293455968,
+        "F8_E4M3": 2680100864
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": "FP8"
+    },
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "ba223d14e45525f7fae81db77ea8cabeb2fc6c25",
+      "createdAt": "2026-03-07T02:10:52.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

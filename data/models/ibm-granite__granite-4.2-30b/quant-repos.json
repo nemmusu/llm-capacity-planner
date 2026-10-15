@@ -1,0 +1,164 @@
+{
+  "repo": "ibm-granite/granite-4.2-30b",
+  "fetchedAt": "2026-10-14T18:30:56.100Z",
+  "repos": [
+    {
+      "repo": "ibm-granite/granite-4.2-30b-bf16-mlx",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": true,
+      "revision": "7ba4be9bcc6f11e2abd232992d2c879a8774f7de",
+      "createdAt": "2026-09-01T20:59:34.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mlx",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-30b-fp8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "bee6d7463fd7064455f59ac480a3fcdcae5cb801",
+      "createdAt": "2026-08-13T21:02:02.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 29276770304,
+      "safetensorsDtypes": {
+        "BF16": 822611968,
+        "F8_E4M3": 28454158336
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-30b-GGUF",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "27b350a791e81d9a4d1ddca1c49282e9ec533768",
+      "createdAt": "2026-08-12T15:58:46.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-30b-mxfp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "8d0c2fb8cf713cae830f1f315925104b0f375b72",
+      "createdAt": "2026-08-13T21:02:51.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mxfp4",
+      "safetensorsTotal": 15938883584,
+      "safetensorsDtypes": {
+        "BF16": 822611968,
+        "U8": 28454158336
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mxfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-30b-nvfp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "bddf34bc6db17e5c4f586e49c1668c8e97610446",
+      "createdAt": "2026-08-13T21:03:19.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 16828076928,
+      "safetensorsDtypes": {
+        "BF16": 822611968,
+        "U8": 28454158336
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-30b-q4-mlx",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": true,
+      "revision": "d3f143b440062060eb05f7b8677ced5b4d9a8946",
+      "createdAt": "2026-09-01T20:40:40.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mlx",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-30b-q8-mlx",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": true,
+      "revision": "5fa24cd75b3aaaf5a59ef9e343f7bd4ebbf74860",
+      "createdAt": "2026-09-01T20:47:48.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mlx",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

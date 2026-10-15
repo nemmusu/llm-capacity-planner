@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
+  "revision": "74eb734297318ecf7c48016a4ac8ce1b47cc74a9",
+  "fetchedAt": "2026-10-14T19:09:16.005Z",
+  "createdAt": "2026-08-25T18:55:42.000Z",
+  "lastModified": "2026-09-04T21:32:58.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-open-model-license",
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 1260771751808,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

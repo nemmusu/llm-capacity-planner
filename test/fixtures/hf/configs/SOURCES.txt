@@ -1,0 +1,9 @@
+REAL config.json files, downloaded unchanged from huggingface.co on 2026-10-14
+(https://huggingface.co/<repo>/resolve/main/config.json). They feed the VRAM estimator tests of vLLM / SGLang.
+
+llama-3.3-70b-instruct.json         unsloth/Llama-3.3-70B-Instruct (ungated mirror of meta-llama): dense GQA, 80 layers, 8 KV heads × 128
+gemma-3-27b-it.json                 unsloth/gemma-3-27b-it: sliding window 1024 on 5 of 6 layers (sliding_window_pattern 6), SigLIP vision encoder
+gemma-4-31b-it.json                 google/gemma-4-31b-it: layer_types, SWA layers 16 KV heads × 256, global layers 4 × 512 (global_head_dim)
+deepseek-v3.json                    deepseek-ai/DeepSeek-V3: MLA (kv_lora_rank 512 + qk_rope_head_dim 64), MoE 256 experts top-8, FP8 weights
+qwen3-next-80b-a3b-instruct.json    Qwen/Qwen3-Next-80B-A3B-Instruct: hybrid, 1 full-attention layer in 4, the rest gated DeltaNet (linear attention)
+qwen3-30b-a3b.json                  Qwen/Qwen3-30B-A3B: MoE 128 experts top-8, moe_intermediate_size 768

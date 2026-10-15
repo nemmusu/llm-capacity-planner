@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+  "revision": "02462641f13d3af838b904f48195b9bb8a1e4ebc",
+  "fetchedAt": "2026-10-14T19:15:15.184Z",
+  "createdAt": "2026-06-03T14:54:33.000Z",
+  "lastModified": "2026-08-24T23:46:57.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "openmdw-1.1",
+  "licenseLink": "https://openmdw.ai/license/1-1/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 302826566168,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json.gz",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

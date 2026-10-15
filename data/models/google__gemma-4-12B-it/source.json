@@ -1,0 +1,27 @@
+{
+  "repo": "google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "fetchedAt": "2026-10-14T18:13:48.516Z",
+  "createdAt": "2026-05-23T01:17:15.000Z",
+  "lastModified": "2026-07-20T16:42:08.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": "https://ai.google.dev/gemma/docs/gemma_4_license",
+  "pipelineTag": "any-to-any",
+  "hfSafetensorsTotal": 11959730224,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

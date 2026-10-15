@@ -1,0 +1,103 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "fetchedAt": "2026-10-14T18:55:43.287Z",
+  "repos": [
+    {
+      "repo": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "949138637e8e8fe190335be2396af62187dc8a83",
+      "createdAt": "2026-08-27T10:39:25.000Z",
+      "gated": false,
+      "architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 1650497936906,
+      "safetensorsDtypes": {
+        "BF16": 2954820352,
+        "I64": 2327040,
+        "F32": 90530058,
+        "F8_E4M3": 23952621568,
+        "U8": 1547396186112,
+        "I8": 76101451776
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d9a7219b8f65802e80359a931711989b288981f3",
+      "createdAt": "2026-09-09T17:47:04.000Z",
+      "gated": false,
+      "architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 1650497936906,
+      "safetensorsDtypes": {
+        "BF16": 2954820352,
+        "I64": 2327040,
+        "F32": 90530058,
+        "F8_E4M3": 23952621568,
+        "U8": 1623497637888
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/DeepSeek-V4-Pro-0813",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "7c65f84424e0421ffaa946541c8df1721a007174",
+      "createdAt": "2026-09-11T13:54:05.000Z",
+      "gated": false,
+      "architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 1650497936906,
+      "safetensorsDtypes": {
+        "BF16": 2954820352,
+        "I64": 2327040,
+        "F32": 90530058,
+        "F8_E4M3": 23952621568,
+        "I8": 1623497637888
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "repo": "zai-org/GLM-5.3-Flash",
+  "revision": "91b69215804f2d2036a8867f6ce44848e278dcda",
+  "fetchedAt": "2026-10-14T18:12:25.333Z",
+  "createdAt": "2026-08-25T06:43:14.000Z",
+  "lastModified": "2026-10-12T12:59:41.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 321323031390,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

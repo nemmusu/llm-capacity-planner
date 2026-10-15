@@ -1,0 +1,162 @@
+{
+  "repo": "moonshotai/Kimi-K3",
+  "fetchedAt": "2026-10-14T18:30:00.284Z",
+  "repos": [
+    {
+      "repo": "nvidia/Kimi-K3-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b2428a0b83a8b712ff2e1a8448a103d4175341f1",
+      "createdAt": "2026-08-13T19:06:29.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK3ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 1418561422080,
+      "safetensorsDtypes": {
+        "F32": 11122432,
+        "BF16": 21000178688,
+        "F8_E4M3": 36179705856,
+        "U8": 1361370415104
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt_mixed",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/Kimi-K3",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "00fdc028505a29427c40b15080e079280b8c8691",
+      "createdAt": "2026-08-07T18:40:44.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK3ForConditionalGeneration"
+      ],
+      "precision": "mxfp4",
+      "safetensorsTotal": 2779931837184,
+      "safetensorsDtypes": {
+        "F32": 11122432,
+        "BF16": 57179884544,
+        "U8": 2722740830208
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mxfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Kimi-K3-FP8-BLOCK",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6409c37cf440abeb76f0b44ab4fb7db8c8bccb4b",
+      "createdAt": "2026-07-27T23:42:03.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK3ForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 2779931837184,
+      "safetensorsDtypes": {
+        "BF16": 39571147776,
+        "F32": 11122432,
+        "F8_E4M3": 2740349566976
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Kimi-K3-INT4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d5048a3ba6d23dd68749ea4b84abcb66d59a07e3",
+      "createdAt": "2026-09-28T14:37:11.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK3ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 2779931837184,
+      "safetensorsDtypes": {
+        "F32": 856704,
+        "I32": 2722740830208,
+        "BF16": 57190150272
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Kimi-K3-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "13fd4e58db6abe84bd75aecd055b7e18057cf607",
+      "createdAt": "2026-07-30T13:31:14.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK3ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 1588733216352,
+      "safetensorsDtypes": {
+        "BF16": 57190150272,
+        "U8": 2722740830208,
+        "F32": 856704
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Kimi-K3-speculator.dspark",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "38a88101e0d46bb22134b9da340f381b954d40d4",
+      "createdAt": "2026-08-09T15:50:43.000Z",
+      "gated": false,
+      "architectures": [
+        "DSparkDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 4744900481,
+      "safetensorsDtypes": {
+        "BF16": 4744900481
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

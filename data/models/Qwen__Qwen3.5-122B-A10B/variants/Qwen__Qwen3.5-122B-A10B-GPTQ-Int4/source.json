@@ -1,0 +1,27 @@
+{
+  "repo": "Qwen/Qwen3.5-122B-A10B-GPTQ-Int4",
+  "revision": "30cd92cba9707a9aba09d1e490ed4b66b78e9606",
+  "fetchedAt": "2026-10-14T19:11:53.922Z",
+  "createdAt": "2026-03-03T06:08:00.000Z",
+  "lastModified": "2026-04-24T05:56:30.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/main/LICENSE",
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 125086497008,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "revision": "2dc98e2afe4face0e4ce40972a915c45368bd34a",
+  "fetchedAt": "2026-10-14T18:16:49.739Z",
+  "createdAt": "2026-03-10T18:32:14.000Z",
+  "lastModified": "2026-08-25T15:48:50.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-nemotron-open-model-license",
+  "licenseLink": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 123611012096,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

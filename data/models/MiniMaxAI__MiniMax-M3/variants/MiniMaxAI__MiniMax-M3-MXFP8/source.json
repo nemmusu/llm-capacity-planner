@@ -1,0 +1,27 @@
+{
+  "repo": "MiniMaxAI/MiniMax-M3-MXFP8",
+  "revision": "c5454eb03678d8710e54a4e0fc681b9f3b4a3dba",
+  "fetchedAt": "2026-10-14T19:14:14.655Z",
+  "createdAt": "2026-06-02T07:50:45.000Z",
+  "lastModified": "2026-07-11T09:09:23.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "minimax-community",
+  "licenseLink": "LICENSE",
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 440279845760,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/GLM-5.3-NVFP4",
+  "revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+  "fetchedAt": "2026-10-14T19:12:33.972Z",
+  "createdAt": "2026-09-14T17:58:21.000Z",
+  "lastModified": "2026-09-18T21:10:28.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-open-model-license",
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 390942074880,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

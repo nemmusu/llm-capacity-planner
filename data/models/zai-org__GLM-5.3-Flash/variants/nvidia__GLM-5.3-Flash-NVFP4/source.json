@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/GLM-5.3-Flash-NVFP4",
+  "revision": "da920bb0b9f4a06727223a349e55468e38352348",
+  "fetchedAt": "2026-10-14T19:13:07.511Z",
+  "createdAt": "2026-09-02T20:37:17.000Z",
+  "lastModified": "2026-09-29T21:30:12.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 168893635422,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

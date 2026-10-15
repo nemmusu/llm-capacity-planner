@@ -1,0 +1,190 @@
+{
+  "repo": "ibm-granite/granite-4.2-3b",
+  "fetchedAt": "2026-10-14T18:31:01.712Z",
+  "repos": [
+    {
+      "repo": "ibm-granite/granite-4.2-3b-bf16-mlx",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": true,
+      "revision": "89f624e97ba0002396854f544ece991477893907",
+      "createdAt": "2026-09-01T20:41:36.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mlx",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-3b-fp8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "579eab44700093cf415d70534060b653dc4d6b45",
+      "createdAt": "2026-08-13T21:03:50.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 3659737600,
+      "safetensorsDtypes": {
+        "BF16": 514009600,
+        "F8_E4M3": 3145728000
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-3b-GGUF",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "c40945d71cd90f249a56985e8155551a9188dc30",
+      "createdAt": "2026-08-12T15:58:45.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-3b-mxfp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "40caf0f3c49b05128358355ff01faf2df10f62f9",
+      "createdAt": "2026-08-13T21:04:23.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mxfp4",
+      "safetensorsTotal": 3659737600,
+      "safetensorsDtypes": {
+        "BF16": 514009600,
+        "U8": 3145728000
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mxfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-3b-nvfp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "c30d480be0e8440e84835497f00218628fc2ab1c",
+      "createdAt": "2026-08-13T21:04:44.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 3659737600,
+      "safetensorsDtypes": {
+        "BF16": 514009600,
+        "U8": 3145728000
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-3b-q4-mlx",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": true,
+      "revision": "0c6f39b1827afd5eb2c1c3b13751929857434953",
+      "createdAt": "2026-09-01T20:38:57.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mlx",
+      "safetensorsTotal": 3659737600,
+      "safetensorsDtypes": {
+        "U32": 3659530240,
+        "BF16": 207360
+      },
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "ibm-granite/granite-4.2-3b-q8-mlx",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": true,
+      "revision": "8e19ac6574124635eb8fbd06a15d05ebbfff82dd",
+      "createdAt": "2026-09-01T20:39:59.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "mlx",
+      "safetensorsTotal": 3659737600,
+      "safetensorsDtypes": {
+        "U32": 3659530240,
+        "BF16": 207360
+      },
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/granite-4.2-3b",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "29bac86812ba53d0ea4d144ec3933bb624dcf359",
+      "createdAt": "2026-09-14T18:32:11.000Z",
+      "gated": false,
+      "architectures": [
+        "GraniteForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 3659737600,
+      "safetensorsDtypes": {
+        "BF16": 3659737600
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

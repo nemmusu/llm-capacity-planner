@@ -1,0 +1,28 @@
+{
+  "repo": "tencent/Hy3",
+  "revision": "a960ebc3da325ba167f069f76c41eb62c9280d22",
+  "fetchedAt": "2026-10-14T18:17:40.844Z",
+  "createdAt": "2026-07-02T13:23:54.000Z",
+  "lastModified": "2026-07-20T07:01:39.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 298786155776,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

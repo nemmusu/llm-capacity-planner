@@ -1,0 +1,166 @@
+{
+  "repo": "google/gemma-4-E4B-it",
+  "fetchedAt": "2026-10-14T18:30:36.657Z",
+  "repos": [
+    {
+      "repo": "google/gemma-4-E4B-it-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "8d0031ea8c2109e2b1e86bb9368a4539b537f80a",
+      "createdAt": "2026-04-23T18:44:33.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4AssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 78779908,
+      "safetensorsDtypes": {
+        "I64": 262144,
+        "BF16": 78517764
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-E4B-it-qat-mobile-ct",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "3624117cf04528e099519f93839f0f0b7a18913d",
+      "createdAt": "2026-06-01T23:41:22.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "mixed:w4a8-int4+int8",
+      "safetensorsTotal": 8680352300,
+      "safetensorsDtypes": {
+        "I64": 738,
+        "F32": 21315872,
+        "I32": 8257011712,
+        "BF16": 195978794,
+        "I8": 206045184
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-E4B-it-qat-mobile-transformers",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "8e3ac78f1a4a97c19f5f194ab362a2206f71d961",
+      "createdAt": "2026-06-02T23:55:15.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gemma",
+      "safetensorsTotal": 3376527178,
+      "safetensorsDtypes": {
+        "F32": 34562848,
+        "BF16": 44454954,
+        "I8": 206045184,
+        "U8": 3091464192
+      },
+      "quantizationConfig": {
+        "quant_method": "gemma",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-E4B-it-qat-q4_0-gguf",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "4b4a2c1d584be7264f87aac328a1bc739ce81b6c",
+      "createdAt": "2026-05-01T04:25:27.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "476025a01dbf99361c062bbeca3d6a76bb4c4566",
+      "createdAt": "2026-04-30T03:39:04.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 7941100874,
+      "safetensorsDtypes": {
+        "BF16": 7941100874
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "27f8d204f09f2be353d6ff0bf0d012792b13c79f",
+      "createdAt": "2026-05-29T19:19:00.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4AssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 78779908,
+      "safetensorsDtypes": {
+        "I64": 262144,
+        "BF16": 78517764
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-E4B-it-qat-w4a16-ct",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6cd26aaa2357fb2bad8c51699a7558a4d1a965bb",
+      "createdAt": "2026-06-04T22:28:22.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 8736339960,
+      "safetensorsDtypes": {
+        "I64": 686,
+        "I32": 3972792320,
+        "BF16": 4763546954
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

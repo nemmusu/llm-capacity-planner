@@ -1,0 +1,162 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "fetchedAt": "2026-10-14T18:30:52.549Z",
+  "repos": [
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "bee7596271d1495f6992ae224aefde4410e816b8",
+      "createdAt": "2026-08-04T19:10:45.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 17820210764,
+      "safetensorsDtypes": {
+        "BF16": 1828973120,
+        "F8_E4M3": 890265600,
+        "F32": 7916556,
+        "U8": 15093055488
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "8abcc4db8f34a5080c31eef05d4467afc06c6b9e",
+      "createdAt": "2026-08-05T19:12:27.000Z",
+      "gated": false,
+      "architectures": [
+        "DFlashDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 663050496,
+      "safetensorsDtypes": {
+        "BF16": 492738816,
+        "U8": 170311680
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "W4A16_NVFP4"
+      },
+      "hfQuantAlgo": "W4A16_NVFP4"
+    },
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6d127b50ecd98562cea85d0087680b7d86091fb0",
+      "createdAt": "2026-08-05T19:16:50.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3DSparkModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 763713984,
+      "safetensorsDtypes": {
+        "BF16": 559847872,
+        "U8": 203866112
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "W4A16_NVFP4"
+      },
+      "hfQuantAlgo": "W4A16_NVFP4"
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "bc8c26f12560968508246c02bc413c21dc3a74d6",
+      "createdAt": "2026-08-11T20:17:44.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 31577937344,
+      "safetensorsDtypes": {
+        "F32": 3072,
+        "BF16": 32913263168
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "bff279eb543e15f7c0e3f922661e66a1b78ac2e0",
+      "createdAt": "2026-08-13T17:18:39.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "fp8-tensor",
+      "safetensorsTotal": 31577940288,
+      "safetensorsDtypes": {
+        "F32": 2944,
+        "BF16": 713504192,
+        "F8_E4M3": 30864433152
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9cd1ac9c6e36a0c6ca3592300c6c43de4340d283",
+      "createdAt": "2026-08-18T13:35:06.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 17820210764,
+      "safetensorsDtypes": {
+        "BF16": 1828973120,
+        "F8_E4M3": 890265600,
+        "F32": 7916556,
+        "U8": 15093055488
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    }
+  ]
+}

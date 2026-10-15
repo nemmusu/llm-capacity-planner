@@ -1,0 +1,28 @@
+{
+  "repo": "Qwen/Qwen3-Coder-Next",
+  "revision": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+  "fetchedAt": "2026-10-14T18:11:46.941Z",
+  "createdAt": "2026-01-30T15:08:18.000Z",
+  "lastModified": "2026-02-03T16:16:38.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": "https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/main/LICENSE",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 79674391296,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

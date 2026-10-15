@@ -1,0 +1,26 @@
+{
+  "repo": "stepfun-ai/Step-3.5-Flash-FP8",
+  "revision": "6eebda59dd87ca5729648ec7cfed0becfceb273e",
+  "fetchedAt": "2026-10-14T19:16:36.715Z",
+  "createdAt": "2026-02-01T08:03:52.000Z",
+  "lastModified": "2026-03-09T03:49:20.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 199395913536,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

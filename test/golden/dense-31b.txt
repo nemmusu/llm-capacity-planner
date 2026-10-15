@@ -1,0 +1,86 @@
+$ llm-capacity-planner google/gemma-4-31B-it --tokens 32k
+
+Summary
+  Recommendation: 1 server with 1× NVIDIA H100 NVL 94GB serves 20 users guaranteed, 20 likely, with requests of up to
+      32k tokens (≈ 25,000 words ≈ 49 pages; 16k on average).
+  Alternative: 1 server with 1× NVIDIA GH200 96GB (fits; 20 users guaranteed, 20 likely).
+  Not enough: RTX 3090 and RTX 5080, even with 4 GPUs in one server.
+  Speed for each user: writing about 30 words per second (23 to 36; 40 tokens/s); with everyone busy the first words
+      appear after about 1.9 s, and a full 32k-token request alone is read in about 3.6 s (1 token ≈ 0.75 words).
+  Confidence: memory high (±4.3%); writing speed medium (±23%); reading time medium (±37%); user count high (±15%). Plan
+      on the guaranteed figures.
+
+Technical detail
+gemma-4-31B-it at 32k tokens, fp8 KV cache: serves users from 1× H100 NVL 94GB, or 1× GH200 96GB. With 1× H100 NVL 94GB:
+20 users guaranteed, 20 likely, at 40 tok/s (31 to 49, ±23%, estimated) each; reading 32k tokens: 3.6 s (2.3 to 5.0 s,
+±37%).
+Scenario "documents": each request brings 16k new tokens to read and generates 500; at least 20 tok/s per user. For a
+chat (the conversation stays in the cache) use --prompt-cache 80.
+google/gemma-4-31B-it · BF16 · multimodal · vLLM 0.31.0 · fp8 KV cache · context 32k tokens (model maximum 256k)
+Model description from built-in data (YYYY-MM-DD) — weights not downloaded; --refresh reads it again from Hugging Face.
+
+Per card: the fewest GPUs that serve someone at the minimum writing speed (else the fewest the model fits on), and what
+that layout serves.
+  Card                 Verdict           GPUs     Memory per GPU               Users     Users  Accuracy
+                                                  (GiB)                 (guaranteed)  (likely)  (users, tok/s)
+  RTX 3090             too slow (1,2,3)  8 (2×4)  21.2 of 23.6                     0        20  n/a
+  RTX 4090             fits (2,3)        4 (1×4)  21.2 of 23.5                    10        20  estimated ±27%
+  RTX 5080             does not fit      -        with 4: 21.2 of 15.4
+  RTX 5090             fits (2,3)        4 (1×4)  21.2 of 31.3                    30        40  calibrated ±25%
+  RTX A6000            fits (4,5,3)      4 (1×4)  21.2 of 47.4                    10        20  estimated ±24%
+  RTX 6000 Ada         fits (4,6,3)      4 (1×4)  21.2 of 47.4                    20        40  estimated ±26%
+  RTX PRO 6000 WS      fits (7,3)        2 (1×2)  44.2 of 95.6                    30        50  estimated ±26%
+  RTX PRO 6000 Max-Q   fits (7,3)        2 (1×2)  44.2 of 94.9                    30        50  estimated ±26%
+  RTX PRO 6000 Server  fits (7,3)        2 (1×2)  44.2 of 94.9                    20        50  estimated ±24%
+  L4                   fits (8,3)        8 (1×8)  13.7 of 22                      10        20  estimated ±23%
+  L40S                 fits (4,6,3)      4 (1×4)  21.2 of 44.5                    20        40  estimated ±25%
+  A100 40GB PCIe       fits (5,3)        4 (1×4)  21.2 of 39.4                    30        50  estimated ±29%
+  A100 40GB SXM4       fits (3)          4 (1×4)  21.2 of 39.4                    80       120  estimated ±29%
+  A100 80GB PCIe       fits (3)          2 (1×2)  44.2 of 79.1                    30        50  estimated ±26%
+  A100 80GB SXM4       fits (3)          2 (1×2)  44.2 of 79.3                    30        50  estimated ±26%
+  H100 PCIe 80GB       fits              2 (1×2)  44.2 of 79.1                    70       110  estimated ±26%
+  H100 SXM5 80GB       fits              2 (1×2)  44.2 of 79.1                   110       110  estimated ±28%
+  H100 NVL 94GB        fits              1        75.8 of 93.1                    20        20  estimated ±23%
+  GH200 96GB           fits              1        75.8 of 95                      20        20  estimated ±22%
+  GH200 144GB          fits              1        75.8 of 142.5                   70       100  estimated ±28%
+  H200 SXM 141GB       fits              1        75.8 of 139.7                   70       100  estimated ±28%
+  H200 NVL 141GB       fits              1        75.8 of 139.4                   60        80  estimated ±28%
+  B200 SXM             fits              1        87.7 of 178.3                   90        90  estimated ±27%
+  B300 SXM             fits              1        87.7 of 267.7                  170       190  estimated ±29%
+  guaranteed = holds even if the real speed is at the low end of the estimate; likely = at the central estimate.
+  GPUs: "4 (1 model on 4)" or "4 (1×4)" = one copy of the model split across 4 GPUs that work together on every token
+  (tensor parallel, TP); "8 (2 copies × 4)" or "8 (2×4)" = 2 independent copies, each on 4 GPUs and serving its own
+  users; "split in 2 stages" = each GPU holds part of the layers (pipeline parallel, PP); "2 stages of 4" = each stage
+  on 4 GPUs in tensor parallel; "2 copies × 2 stages of 2" or "2×2 stages of 2" = 2 independent copies, each split in 2
+  stages of 2 GPUs. One server holds up to 8 GPUs (RTX 3090, RTX 4090, RTX 5080, RTX 5090, RTX A6000, RTX 6000 Ada, RTX
+  PRO 6000 WS, RTX PRO 6000 Max-Q: 4; GH200 96GB, GH200 144GB: 2).
+
+(1) nobody is guaranteed 20 tok/s of writing, even with 4 GPUs in one server
+(2) TP 4 on cards without NVLink or P2P: every all-reduce goes through CPU memory over PCIe (slower; needs x16 slots and
+    an adequate power supply)
+(3) partly supported: FA2 does not support fp8 KV, so vLLM selects another attention backend (FLASHINFER for most
+    models, with Q in bf16). There are open bugs on this path: with pip and no nvcc, FlashInfer is selected but does not
+    compile (crash 'Could not find nvcc'), and with checkpoints that have q_scale the output is wrong. Workaround:
+    --attention-backend TRITON_ATTN (source: https://github.com/vllm-project/vllm/issues/60262)
+(4) with 2 GPUs the model fits, but nobody is guaranteed 20 tok/s of writing: 4 GPUs serve someone
+(5) 4 GPUs in one group, but NVLink connects only 2 of these cards: the group talks over PCIe (slower)
+(6) TP 4 over PCIe (no NVLink): all-reduces slower than over NVLink
+(7) with 1 GPU the model fits, but nobody is guaranteed 20 tok/s of writing: 2 GPUs serve someone
+(8) TP 8 over PCIe (no NVLink): all-reduces slower than over NVLink
+
+Memory per GPU with one request of 32k tokens (≈ 25,000 words ≈ 49 pages): the model's weights and its conversation
+memory (KV cache) are computed exactly, the engine's fixed costs are estimated. Margin = room left for more
+conversations after that request. Card memory = what CUDA reports (the engine's usable memory; nvidia-smi shows a little
+more).
+Users: total = concurrent requests ÷ 10% active at once (--active); each gets ≥20 tok/s and the first token within 10 s
+(or, if longer, twice the wait for the first words of one typical request alone: half the context, less what the prefix
+cache holds).
+Accuracy: exact = computed; measured = this model on this card; calibrated = fitted on measurements of this card or of
+the same model type (N points); estimated = calibrated on other cards, not verified, or extrapolated; not precise enough
+to decide = ±50% or more, or a case not covered.
+Speed basis (vLLM 0.31.0) of the cards shown: fitted on 43 public vLLM benchmarks (dense models, MoE in MXFP4 on H100 /
+H200 / B200), vLLM 0.31.0 (43 points); measured on RTX 5090 with vLLM 0.31.0: Qwen3-8B BF16 (whole, and cut to 2 layers
+from 64K to 1M); 18 points, on Windows / WSL 2 (18 points).
+Weights: exact as the sum of the tensors; for BF16 × multimodal vLLM measured up to +1.8% more, counted in the fixed
+costs.
+Multimodal model: with --text-only (vLLM --language-model-only) the vision encoder is not loaded.

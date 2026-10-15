@@ -1,0 +1,80 @@
+{
+  "name": "llm-capacity-planner",
+  "version": "0.1.0",
+  "description": "LLM inference capacity planner: for a Hugging Face model on vLLM or SGLang, the NVIDIA GPUs it needs (weights and KV cache), the concurrent users they serve and the tokens per second each user gets.",
+  "keywords": [
+    "llm",
+    "vllm",
+    "sglang",
+    "gpu",
+    "vram",
+    "kv-cache",
+    "inference",
+    "capacity-planning",
+    "nvidia",
+    "huggingface",
+    "tokens-per-second",
+    "cli"
+  ],
+  "homepage": "https://github.com/nemmusu/llm-capacity-planner#readme",
+  "bugs": {
+    "url": "https://github.com/nemmusu/llm-capacity-planner/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemmusu/llm-capacity-planner.git"
+  },
+  "license": "MIT",
+  "author": "nemmusu",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "llm-capacity-planner": "dist/llm-capacity-planner.mjs",
+    "capacity-plan": "dist/llm-capacity-planner.mjs"
+  },
+  "files": [
+    "dist/llm-capacity-planner.mjs",
+    "dist/llm-capacity-planner-models.pack"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "plan": "node scripts/build.mjs --run --",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "validate": "npm run lint && npm run typecheck && npm run test:coverage",
+    "dist": "node scripts/dist.mjs",
+    "ci:docker": "node scripts/ci-docker.mjs",
+    "dev:update-models": "node scripts/dev/update-models.mjs",
+    "dev:speed": "node scripts/dev/speed.mjs",
+    "dev:measure": "node scripts/dev/measure.mjs",
+    "dev:calibrate": "node scripts/dev/calibrate.mjs",
+    "dev:report": "node scripts/dev/report.mjs",
+    "dev:docs": "node scripts/dev/docs.mjs",
+    "dev:update-compat": "node scripts/dev/update-compat.mjs",
+    "dev:screenshots": "node scripts/dev/screenshots.mjs"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^24.19.1",
+    "@vitest/coverage-v8": "^5.0.3",
+    "esbuild": "^0.28.2",
+    "eslint": "^9.39.5",
+    "fast-check": "^4.10.2",
+    "globals": "^17.13.0",
+    "postject": "^1.0.0-alpha.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.1",
+    "vitest": "^5.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

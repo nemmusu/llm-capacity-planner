@@ -1,0 +1,159 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "fetchedAt": "2026-10-14T18:30:49.007Z",
+  "repos": [
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "744b1880a37996c5d56bf454ae164dfd74d77c4e",
+      "createdAt": "2026-03-10T18:32:42.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "fp8",
+      "safetensorsTotal": 123611012096,
+      "safetensorsDtypes": {
+        "F32": 20992,
+        "BF16": 4723465216,
+        "F8_E4M3": 118887546880
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "FP8"
+      },
+      "hfQuantAlgo": "FP8"
+    },
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "ff433f5493e25d631c9f12b5d55c674229923d02",
+      "createdAt": "2026-03-10T18:33:04.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 67228556288,
+      "safetensorsDtypes": {
+        "F32": 20992,
+        "BF16": 6020553728,
+        "F8_E4M3": 4825546752,
+        "U8": 56382455808
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "cc50ed02b041f1864ec2afb74f518a4f5675dffd",
+      "createdAt": "2026-03-26T23:42:23.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 123611012096,
+      "safetensorsDtypes": {
+        "F32": 20992,
+        "BF16": 123611012096
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d80c3520e38a98ab8c9ffea39d2e42f6baf6117f",
+      "createdAt": "2026-03-26T22:04:11.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "fp8",
+      "safetensorsTotal": 123611012096,
+      "safetensorsDtypes": {
+        "F32": 20992,
+        "BF16": 4723465216,
+        "F8_E4M3": 118887546880
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "FP8"
+      },
+      "hfQuantAlgo": "FP8"
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "68fc8f70e67301d64fc1706753f811377056cf98",
+      "createdAt": "2026-03-27T18:27:39.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 67228556288,
+      "safetensorsDtypes": {
+        "F32": 20992,
+        "BF16": 6020553728,
+        "F8_E4M3": 11873353728,
+        "U8": 56382455808
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Super-120B-A12B-speculator.dflash",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "a680fc57221a4e9e357a7461af2f3959dd24dad4",
+      "createdAt": "2026-06-01T21:15:27.000Z",
+      "gated": false,
+      "architectures": [
+        "DFlashDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 1095451136,
+      "safetensorsDtypes": {
+        "I64": 32000,
+        "BF16": 1095288064,
+        "BOOL": 131072
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

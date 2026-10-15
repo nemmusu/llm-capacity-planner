@@ -1,0 +1,27 @@
+{
+  "repo": "Qwen/Qwen3.8-Flash-Next-FP8",
+  "revision": "236dfdf285828023ca3bcd3f37366c58a3469b13",
+  "fetchedAt": "2026-10-14T19:10:19.036Z",
+  "createdAt": "2026-08-24T08:25:23.000Z",
+  "lastModified": "2026-08-31T08:19:15.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "qwen-community-1.0",
+  "licenseLink": "LICENSE",
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 179999981459,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "repo": "Qwen/Qwen3.8-2.4T-A95B",
+  "revision": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+  "fetchedAt": "2026-10-14T18:10:50.942Z",
+  "createdAt": "2026-08-08T01:50:52.000Z",
+  "lastModified": "2026-08-12T10:24:04.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "qwen3.8-max",
+  "licenseLink": "LICENSE",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 2446182725504,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

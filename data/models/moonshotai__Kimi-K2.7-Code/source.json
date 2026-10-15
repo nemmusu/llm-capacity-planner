@@ -1,0 +1,28 @@
+{
+  "repo": "moonshotai/Kimi-K2.7-Code",
+  "revision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+  "fetchedAt": "2026-10-14T18:12:48.840Z",
+  "createdAt": "2026-06-11T07:51:47.000Z",
+  "lastModified": "2026-06-15T07:49:29.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "modified-mit",
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 1026879376368,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,12 @@
+# LF everywhere in the repository, whatever the OS of the checkout.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.gz binary
+*.exe binary
+*.pack binary
+# The built program, if present: never diffed or counted as source.
+dist/** -diff linguist-generated
+*.png binary
+# Saved Hugging Face files and engine logs keep their exact bytes (some captures have CRLF).
+test/fixtures/** -text

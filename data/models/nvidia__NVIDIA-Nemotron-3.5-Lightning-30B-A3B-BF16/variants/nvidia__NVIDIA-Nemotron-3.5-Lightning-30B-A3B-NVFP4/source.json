@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "revision": "bee7596271d1495f6992ae224aefde4410e816b8",
+  "fetchedAt": "2026-10-14T19:15:48.228Z",
+  "createdAt": "2026-08-04T19:10:45.000Z",
+  "lastModified": "2026-09-10T14:41:52.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "openmdw-1.1",
+  "licenseLink": "https://openmdw.ai/license/1-1/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 17820210764,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json.gz",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "repo": "tencent/Hy3",
+  "fetchedAt": "2026-10-14T18:31:03.608Z",
+  "repos": [
+    {
+      "repo": "RedHatAI/Hy3-NVFP4-FP8",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "f2d0ca3f3ccc0203a5c8c3864c5e910c88e079b0",
+      "createdAt": "2026-07-15T15:53:08.000Z",
+      "gated": false,
+      "architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8-block",
+      "safetensorsTotal": 298786155776,
+      "safetensorsDtypes": {
+        "BF16": 4805291072,
+        "F8_E4M3": 6039797760,
+        "U8": 287941066752,
+        "F32": 192
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mixed-precision",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "tencent/Hy3-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "ecc1d8e194e093f33177f2f0ef7ce8f397b2d68b",
+      "createdAt": "2026-07-04T13:39:00.000Z",
+      "gated": false,
+      "architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "precision": "fp8",
+      "safetensorsTotal": 298786202423,
+      "safetensorsDtypes": {
+        "F8_E4M3": 297699115008,
+        "BF16": 1087025408,
+        "F32": 62007
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "tencent/Hy3-preview",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a",
+      "createdAt": "2026-04-13T06:07:57.000Z",
+      "gated": false,
+      "architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 298786155776,
+      "safetensorsDtypes": {
+        "BF16": 298786140416,
+        "F32": 15360
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

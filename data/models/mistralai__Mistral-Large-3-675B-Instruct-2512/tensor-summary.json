@@ -1,0 +1,593 @@
+{
+  "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+  "revision": "383ffea2c7d60dfd44ca960e8e691709d4fdb9cd",
+  "weightFormat": "mistral",
+  "shards": 272,
+  "tensors": 46141,
+  "tensorBytes": 681499857920,
+  "fileBytes": 681504807752,
+  "headerBytes": 4947656,
+  "entries": [
+    {
+      "pattern": "layers.{n}.attention.kv_a_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        512
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 62464,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.q_a_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 187392,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wkv_a_with_mqa.weight",
+      "dtype": "BF16",
+      "shape": [
+        576,
+        7168
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 503709696,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wkv_b.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        32768,
+        512
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 1023410176,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wkv_b.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        256,
+        4
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 124928,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wo.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        7168,
+        16384
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 7163871232,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wo.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        56,
+        128
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 874496,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wq_a.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        7168
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 1343225856,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wq_b.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        24576,
+        1536
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 2302672896,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention.wq_b.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        192,
+        12
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 281088,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.attention_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        7168
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 874496,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.experts.{n}.w1.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        7168
+      ],
+      "group": "lm",
+      "count": 7424,
+      "bytes": 217969590272,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.experts.{n}.w1.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        32,
+        56
+      ],
+      "group": "lm",
+      "count": 7424,
+      "bytes": 26607616,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.experts.{n}.w2.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        7168,
+        4096
+      ],
+      "group": "lm",
+      "count": 7424,
+      "bytes": 217969590272,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.experts.{n}.w2.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        56,
+        32
+      ],
+      "group": "lm",
+      "count": 7424,
+      "bytes": 26607616,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.experts.{n}.w3.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        7168
+      ],
+      "group": "lm",
+      "count": 7424,
+      "bytes": 217969590272,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.experts.{n}.w3.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        32,
+        56
+      ],
+      "group": "lm",
+      "count": 7424,
+      "bytes": 26607616,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.feed_forward.w1.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        16384,
+        7168
+      ],
+      "group": "lm",
+      "count": 3,
+      "bytes": 352321536,
+      "layers": "0-2"
+    },
+    {
+      "pattern": "layers.{n}.feed_forward.w1.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        128,
+        56
+      ],
+      "group": "lm",
+      "count": 3,
+      "bytes": 43008,
+      "layers": "0-2"
+    },
+    {
+      "pattern": "layers.{n}.feed_forward.w2.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        7168,
+        16384
+      ],
+      "group": "lm",
+      "count": 3,
+      "bytes": 352321536,
+      "layers": "0-2"
+    },
+    {
+      "pattern": "layers.{n}.feed_forward.w2.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        56,
+        128
+      ],
+      "group": "lm",
+      "count": 3,
+      "bytes": 43008,
+      "layers": "0-2"
+    },
+    {
+      "pattern": "layers.{n}.feed_forward.w3.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        16384,
+        7168
+      ],
+      "group": "lm",
+      "count": 3,
+      "bytes": 352321536,
+      "layers": "0-2"
+    },
+    {
+      "pattern": "layers.{n}.feed_forward.w3.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        128,
+        56
+      ],
+      "group": "lm",
+      "count": 3,
+      "bytes": 43008,
+      "layers": "0-2"
+    },
+    {
+      "pattern": "layers.{n}.ffn_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        7168
+      ],
+      "group": "lm",
+      "count": 61,
+      "bytes": 874496,
+      "layers": "0-60"
+    },
+    {
+      "pattern": "layers.{n}.gate.weight",
+      "dtype": "BF16",
+      "shape": [
+        128,
+        7168
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 106430464,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.shared_experts.w1.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        7168
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 1702887424,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.shared_experts.w1.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        32,
+        56
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 207872,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.shared_experts.w2.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        7168,
+        4096
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 1702887424,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.shared_experts.w2.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        56,
+        32
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 207872,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.shared_experts.w3.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        7168
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 1702887424,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "layers.{n}.shared_experts.w3.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        32,
+        56
+      ],
+      "group": "lm",
+      "count": 58,
+      "bytes": 207872,
+      "layers": "3-60"
+    },
+    {
+      "pattern": "norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        7168
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 14336,
+      "layers": null
+    },
+    {
+      "pattern": "output.weight",
+      "dtype": "BF16",
+      "shape": [
+        131072,
+        7168
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 1879048192,
+      "layers": null
+    },
+    {
+      "pattern": "patch_merger.merging_layer.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        6656
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 22151168,
+      "layers": null
+    },
+    {
+      "pattern": "pre_mm_projector_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 3328,
+      "layers": null
+    },
+    {
+      "pattern": "tok_embeddings.weight",
+      "dtype": "BF16",
+      "shape": [
+        131072,
+        7168
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 1879048192,
+      "layers": null
+    },
+    {
+      "pattern": "vision_encoder.ln_pre.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 3328,
+      "layers": null
+    },
+    {
+      "pattern": "vision_encoder.patch_conv.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        3,
+        14,
+        14
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 1956864,
+      "layers": null
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.attention.wk.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 265814016,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.attention.wo.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 265814016,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.attention.wq.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 265814016,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.attention.wv.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 265814016,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.attention_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 159744,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.feed_forward.w1.weight",
+      "dtype": "BF16",
+      "shape": [
+        8192,
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 1308622848,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.feed_forward.w2.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664,
+        8192
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 1308622848,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.feed_forward.w3.weight",
+      "dtype": "BF16",
+      "shape": [
+        8192,
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 1308622848,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_encoder.transformer.layers.{n}.ffn_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1664
+      ],
+      "group": "vision",
+      "count": 48,
+      "bytes": 159744,
+      "layers": "0-47"
+    },
+    {
+      "pattern": "vision_language_adapter.w_in.weight",
+      "dtype": "BF16",
+      "shape": [
+        7168,
+        1664
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 23855104,
+      "layers": null
+    },
+    {
+      "pattern": "vision_language_adapter.w_out.weight",
+      "dtype": "BF16",
+      "shape": [
+        7168,
+        7168
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 102760448,
+      "layers": null
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+{
+  "$comment": "The licence texts of the model repositories in data/models and the models pack: repo → files in this folder. Written from the repositories' own licence files (at the revision saved) and the official texts of the licences they declare.",
+  "repos": {
+    "deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "revision": "72e1d3230f6c080a530b0a1d46f8eb4602340597",
+      "license": "mit",
+      "files": [
+        "deepseek-mit.txt"
+      ]
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash": {
+      "revision": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+      "license": "mit",
+      "files": [
+        "deepseek-mit.txt"
+      ]
+    },
+    "google/gemma-4-12B-it": {
+      "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "google/gemma-4-26B-A4B-it": {
+      "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "google/gemma-4-31B-it": {
+      "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "google/gemma-4-E4B-it": {
+      "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-30b": {
+      "revision": "9e668ce1c538387ef24d3644e9b0606647762636",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-3b": {
+      "revision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-8b": {
+      "revision": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "inclusionAI/Ling-3.0-flash": {
+      "revision": "fcc60a52b34c69c6271d0ac8a8cb0815020b6a43",
+      "license": "mit",
+      "files": [
+        "mit.txt"
+      ]
+    },
+    "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B": {
+      "revision": "fec0c8dd25fdd20ffd09869d5af5277966d5523d",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "k-exaone-apache-2.0.txt",
+        "k-exaone-notice.txt"
+      ]
+    },
+    "microsoft/Phi-4-reasoning-vision-15B": {
+      "revision": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f",
+      "license": "mit",
+      "files": [
+        "mit.txt"
+      ]
+    },
+    "MiniMaxAI/MiniMax-M3": {
+      "revision": "f0e1c1e04d40177e4673a22097036854f536e9c0",
+      "license": "minimax-community",
+      "files": [
+        "minimax-community.txt"
+      ]
+    },
+    "mistralai/Ministral-3-14B-Instruct-2512": {
+      "revision": "29439f81c2be264d8d393273f99e7db9c0961120",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "mistralai/Mistral-Large-3-675B-Instruct-2512": {
+      "revision": "383ffea2c7d60dfd44ca960e8e691709d4fdb9cd",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "mistralai/Mistral-Small-4-119B-2603": {
+      "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "moonshotai/Kimi-K2.7-Code": {
+      "revision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+      "license": "modified-mit",
+      "files": [
+        "kimi-k2.7-code-modified-mit.txt"
+      ]
+    },
+    "moonshotai/Kimi-K3": {
+      "revision": "f831ab66814297da540d832a5235f8e904f29d06",
+      "license": "kimi-k3",
+      "files": [
+        "kimi-k3.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16": {
+      "revision": "dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f",
+      "license": "nvidia-nemotron-open-model-license",
+      "files": [
+        "nvidia-nemotron-open-model-license.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16": {
+      "revision": "2dc98e2afe4face0e4ce40972a915c45368bd34a",
+      "license": "nvidia-nemotron-open-model-license",
+      "files": [
+        "nvidia-nemotron-open-model-license.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+      "revision": "77df655d5e9f8362164ed14dd8b48f8bce657498",
+      "license": "openmdw-1.1",
+      "files": [
+        "openmdw-1.1.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16": {
+      "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+      "license": "openmdw-1.1",
+      "files": [
+        "nemotron-3.5-lightning-openmdw-1.1.txt"
+      ]
+    },
+    "openai/gpt-oss-120b": {
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "license": "apache-2.0",
+      "files": [
+        "gpt-oss-apache-2.0.txt"
+      ]
+    },
+    "openai/gpt-oss-20b": {
+      "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "license": "apache-2.0",
+      "files": [
+        "gpt-oss-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3-Coder-Next": {
+      "revision": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-122B-A10B": {
+      "revision": "dc4d348443bc740c68e2d77492492c11606384d5",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-397B-A17B": {
+      "revision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-9B": {
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.6-35B-A3B": {
+      "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.8-2.4T-A95B": {
+      "revision": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+      "license": "qwen3.8-max",
+      "files": [
+        "qwen3.8-max.txt"
+      ]
+    },
+    "Qwen/Qwen3.8-27B": {
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.8-Flash-Next": {
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "license": "qwen-community-1.0",
+      "files": [
+        "qwen-community-1.0.txt"
+      ]
+    },
+    "stepfun-ai/Step-3.5-Flash": {
+      "revision": "ab446a3de5e171ea341227e24bb1f090e1b771f7",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "tencent/Hy3": {
+      "revision": "a960ebc3da325ba167f069f76c41eb62c9280d22",
+      "license": "apache-2.0",
+      "files": [
+        "tencent-hy3-apache-2.0.txt"
+      ]
+    },
+    "XiaomiMiMo/MiMo-V2.6-Pro-RL": {
+      "revision": "b61f21852680ee02a29e946e18cf8697f4844061",
+      "license": "mit",
+      "files": [
+        "mit.txt"
+      ]
+    },
+    "zai-org/GLM-5.3": {
+      "revision": "ba32f8c19c8738e2c57c71798c601d477a7bf844",
+      "license": "glm-5.3",
+      "files": [
+        "glm-5.3.txt"
+      ]
+    },
+    "zai-org/GLM-5.3-Flash": {
+      "revision": "91b69215804f2d2036a8867f6ce44848e278dcda",
+      "license": "mit",
+      "files": [
+        "glm-5.3-flash-mit.txt"
+      ]
+    },
+    "nvidia/DeepSeek-V4-Pro-0813-NVFP4": {
+      "revision": "949138637e8e8fe190335be2396af62187dc8a83",
+      "license": "mit",
+      "files": [
+        "deepseek-mit.txt"
+      ]
+    },
+    "nvidia/DeepSeek-V4.1-Flash-NVFP4": {
+      "revision": "c48dca0146b56d64c8116dbb6fcace8b7cc835f8",
+      "license": "mit",
+      "files": [
+        "deepseek-mit.txt"
+      ]
+    },
+    "google/gemma-4-12B-it-qat-w4a16-ct": {
+      "revision": "1d2c2d7f2466070e69d6fb3fd5ce9a7d75f2f6ee",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "google/gemma-4-31B-it-qat-w4a16-ct": {
+      "revision": "52f3f65bc7a02d555763bc923bd1d9094898219d",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "nvidia/Gemma-4-31B-IT-NVFP4": {
+      "revision": "4135a98a9b728a548947683219633b25682223ac",
+      "license": "apache-license-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "google/gemma-4-E4B-it-qat-w4a16-ct": {
+      "revision": "6cd26aaa2357fb2bad8c51699a7558a4d1a965bb",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-30b-fp8": {
+      "revision": "bee6d7463fd7064455f59ac480a3fcdcae5cb801",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-30b-mxfp4": {
+      "revision": "8d0c2fb8cf713cae830f1f315925104b0f375b72",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-30b-nvfp4": {
+      "revision": "bddf34bc6db17e5c4f586e49c1668c8e97610446",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-3b-fp8": {
+      "revision": "579eab44700093cf415d70534060b653dc4d6b45",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-3b-mxfp4": {
+      "revision": "40caf0f3c49b05128358355ff01faf2df10f62f9",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-3b-nvfp4": {
+      "revision": "c30d480be0e8440e84835497f00218628fc2ab1c",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-8b-fp8": {
+      "revision": "6eb3735036ce2010f4ec8319820172a1c06508d7",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-8b-mxfp4": {
+      "revision": "1e429c026f7a94ac22da2f604b7440b4e806d50c",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "ibm-granite/granite-4.2-8b-nvfp4": {
+      "revision": "fd3b6082de9225a8e866d7f80d96cdc22f1ae89e",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "inclusionAI/Ling-3.0-flash-fp4": {
+      "revision": "3bae1cf4011b48475b2cc038fff283af49053ebc",
+      "license": "mit",
+      "files": [
+        "mit.txt"
+      ]
+    },
+    "inclusionAI/Ling-3.0-flash-fp8": {
+      "revision": "88d48c5a46e1b2f609144e83d95b8ac47528b12e",
+      "license": "mit",
+      "files": [
+        "mit.txt"
+      ]
+    },
+    "inclusionAI/Ling-3.0-flash-int4": {
+      "revision": "7a27e9eb8179b2c2eb71eb214f0dab14ec6a63f2",
+      "license": "mit",
+      "files": [
+        "mit.txt"
+      ]
+    },
+    "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8": {
+      "revision": "b219707595c1330a95964abf9a06e38dae2f062c",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "k-exaone-apache-2.0.txt",
+        "k-exaone-notice.txt"
+      ]
+    },
+    "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-NVFP4": {
+      "revision": "360716a7e9cb1161906061d23fb9c68fe3767d6c",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "k-exaone-apache-2.0.txt",
+        "k-exaone-notice.txt"
+      ]
+    },
+    "MiniMaxAI/MiniMax-M3-MXFP8": {
+      "revision": "c5454eb03678d8710e54a4e0fc681b9f3b4a3dba",
+      "license": "minimax-community",
+      "files": [
+        "minimax-community.txt"
+      ]
+    },
+    "nvidia/MiniMax-M3-NVFP4": {
+      "revision": "901464083161bf8612a29ff7ad29914cd4ab4a85",
+      "license": "minimax-community-license",
+      "files": [
+        "minimax-community.txt"
+      ]
+    },
+    "mistralai/Ministral-3-14B-Instruct-2512-BF16": {
+      "revision": "3cea74c1ebaf5ce5f5a2553de470e2ceab825142",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "mistralai/Mistral-Large-3-675B-Instruct-2512-NVFP4": {
+      "revision": "6f01426c721bd365f29a108f2389782e9671aab2",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "mistralai/Mistral-Small-4-119B-2603-NVFP4": {
+      "revision": "45331841b631f4e281df8e959ea3cc9beb84298a",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "nvidia/Kimi-K2.7-Code-NVFP4": {
+      "revision": "9f28d60908c98034bb288e755566764eac77cc0d",
+      "license": "nvidia-open-model-license",
+      "files": [
+        "nvidia-open-model-license.txt",
+        "kimi-k2.7-code-modified-mit.txt"
+      ]
+    },
+    "nvidia/Kimi-K3-NVFP4": {
+      "revision": "b2428a0b83a8b712ff2e1a8448a103d4175341f1",
+      "license": "nvidia-open-model-license",
+      "files": [
+        "nvidia-open-model-license.txt",
+        "kimi-k3.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8": {
+      "revision": "3fe6dab75665a93884214ad4b1b95cf02717d081",
+      "license": "nvidia-nemotron-open-model-license",
+      "files": [
+        "nvidia-nemotron-open-model-license.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8": {
+      "revision": "744b1880a37996c5d56bf454ae164dfd74d77c4e",
+      "license": "nvidia-nemotron-open-model-license",
+      "files": [
+        "nvidia-nemotron-open-model-license.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
+      "revision": "ff433f5493e25d631c9f12b5d55c674229923d02",
+      "license": "nvidia-nemotron-open-model-license",
+      "files": [
+        "nvidia-nemotron-open-model-license.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4": {
+      "revision": "02462641f13d3af838b904f48195b9bb8a1e4ebc",
+      "license": "openmdw-1.1",
+      "files": [
+        "openmdw-1.1.txt"
+      ]
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4": {
+      "revision": "bee7596271d1495f6992ae224aefde4410e816b8",
+      "license": "openmdw-1.1",
+      "files": [
+        "nemotron-3.5-lightning-openmdw-1.1.txt"
+      ]
+    },
+    "Qwen/Qwen3-Coder-Next-FP8": {
+      "revision": "da6e2ed27304dd39abadd9c82ef50e8de67bdd4c",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "nvidia/Qwen3.5-122B-A10B-NVFP4": {
+      "revision": "98915d837c4e7c87ac8296d02e89de19b3207e6d",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-122B-A10B-FP8": {
+      "revision": "a099dee70ccfcd8d5dda56aaa0b60cb8ecadabc9",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-122B-A10B-GPTQ-Int4": {
+      "revision": "30cd92cba9707a9aba09d1e490ed4b66b78e9606",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "nvidia/Qwen3.5-397B-A17B-NVFP4": {
+      "revision": "12b28061efd8145b11226e4fab2528ee4f39ef09",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "nvidia/Qwen3.5-397B-A17B-NVFP4-V2": {
+      "revision": "8f590eae8f10bf55d9a46f79ea0280bde435c9f8",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-397B-A17B-FP8": {
+      "revision": "ea5b4f81096f3901c91dea97f81324302495781d",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.5-397B-A17B-GPTQ-Int4": {
+      "revision": "df333de344e06b492063d1ca04e2d4ee878f7595",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "nvidia/Qwen3.6-35B-A3B-NVFP4": {
+      "revision": "1355db6a052410cfd62085d94b58866fd0f2c3c5",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt",
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.6-35B-A3B-FP8": {
+      "revision": "95a723d08a9490559dae23d0cff1d9466213d989",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "nvidia/Qwen3.8-2.4T-A95B-NVFP4": {
+      "revision": "74eb734297318ecf7c48016a4ac8ce1b47cc74a9",
+      "license": "nvidia-open-model-license",
+      "files": [
+        "nvidia-open-model-license.txt",
+        "qwen3.8-max.txt"
+      ]
+    },
+    "Qwen/Qwen3.8-2.4T-A95B-FP8": {
+      "revision": "d2dc35658bcf77e66643428cb52e774cc3b5bd29",
+      "license": "qwen3.8-max",
+      "files": [
+        "qwen3.8-max.txt"
+      ]
+    },
+    "nvidia/Qwen3.8-27B-NVFP4": {
+      "revision": "482ca0f3832238542f8f5295dde86b5f22711d80",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.8-27B-FP8": {
+      "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+      "license": "apache-2.0",
+      "files": [
+        "qwen-apache-2.0.txt"
+      ]
+    },
+    "nvidia/Qwen3.8-Flash-Next-NVFP4": {
+      "revision": "fc694b54fb0174e0913e6adf86691ef85a4ead47",
+      "license": "nvidia-open-model-license",
+      "files": [
+        "nvidia-open-model-license.txt",
+        "qwen-community-1.0.txt"
+      ]
+    },
+    "Qwen/Qwen3.8-Flash-Next-FP8": {
+      "revision": "236dfdf285828023ca3bcd3f37366c58a3469b13",
+      "license": "qwen-community-1.0",
+      "files": [
+        "qwen-community-1.0.txt"
+      ]
+    },
+    "stepfun-ai/Step-3.5-Flash-FP8": {
+      "revision": "6eebda59dd87ca5729648ec7cfed0becfceb273e",
+      "license": "apache-2.0",
+      "files": [
+        "apache-2.0.txt"
+      ]
+    },
+    "tencent/Hy3-FP8": {
+      "revision": "ecc1d8e194e093f33177f2f0ef7ce8f397b2d68b",
+      "license": "apache-2.0",
+      "files": [
+        "tencent-hy3-apache-2.0.txt"
+      ]
+    },
+    "nvidia/GLM-5.3-NVFP4": {
+      "revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+      "license": "nvidia-open-model-license",
+      "files": [
+        "nvidia-open-model-license.txt",
+        "glm-5.3.txt"
+      ]
+    },
+    "zai-org/GLM-5.3-BF16": {
+      "revision": "9d2398f478cab2de883137db3a36ad2c96205e24",
+      "license": "glm-5.3",
+      "files": [
+        "glm-5.3.txt"
+      ]
+    },
+    "nvidia/GLM-5.3-Flash-NVFP4": {
+      "revision": "da920bb0b9f4a06727223a349e55468e38352348",
+      "license": "mit",
+      "files": [
+        "mit.txt",
+        "glm-5.3-flash-mit.txt"
+      ]
+    },
+    "zai-org/GLM-5.3-Flash-BF16": {
+      "revision": "a5b45eb41df6402735dedc900be14a42e8d5e538",
+      "license": "mit",
+      "files": [
+        "glm-5.3-flash-mit.txt"
+      ]
+    }
+  }
+}

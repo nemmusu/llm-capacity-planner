@@ -1,0 +1,27 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "revision": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+  "fetchedAt": "2026-10-14T18:11:53.294Z",
+  "createdAt": "2026-09-10T02:17:58.000Z",
+  "lastModified": "2026-10-12T09:45:54.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 763205315794,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

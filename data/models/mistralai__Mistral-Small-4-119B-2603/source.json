@@ -1,0 +1,37 @@
+{
+  "repo": "mistralai/Mistral-Small-4-119B-2603",
+  "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+  "fetchedAt": "2026-10-14T18:13:38.375Z",
+  "createdAt": "2026-01-23T13:14:14.000Z",
+  "lastModified": "2026-07-15T12:23:29.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": null,
+  "hfSafetensorsTotal": 119401317952,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "params.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [
+    "consolidated-00001-of-00007.safetensors",
+    "consolidated-00002-of-00007.safetensors",
+    "consolidated-00003-of-00007.safetensors",
+    "consolidated-00004-of-00007.safetensors",
+    "consolidated-00005-of-00007.safetensors",
+    "consolidated-00006-of-00007.safetensors",
+    "consolidated-00007-of-00007.safetensors"
+  ],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

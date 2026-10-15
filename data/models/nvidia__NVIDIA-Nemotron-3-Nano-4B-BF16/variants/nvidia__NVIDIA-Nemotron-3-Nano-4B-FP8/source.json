@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8",
+  "revision": "3fe6dab75665a93884214ad4b1b95cf02717d081",
+  "fetchedAt": "2026-10-14T19:15:55.811Z",
+  "createdAt": "2026-03-12T16:58:39.000Z",
+  "lastModified": "2026-03-20T20:50:46.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-nemotron-open-model-license",
+  "licenseLink": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 3973556900,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

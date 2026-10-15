@@ -1,0 +1,100 @@
+{
+  "repo": "Qwen/Qwen3-Coder-Next",
+  "fetchedAt": "2026-10-14T18:29:47.600Z",
+  "repos": [
+    {
+      "repo": "Qwen/Qwen3-Coder-Next-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "da6e2ed27304dd39abadd9c82ef50e8de67bdd4c",
+      "createdAt": "2026-02-01T12:22:41.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3NextForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 79679212800,
+      "safetensorsDtypes": {
+        "BF16": 683691264,
+        "F8_E4M3": 78995521536
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "Qwen/Qwen3-Coder-Next-GGUF",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "b82fb7382639d97b38fa7672e526c760c2fb358e",
+      "createdAt": "2026-02-02T05:40:51.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3-Coder-Next-FP8-dynamic",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "4d55dc42f51a6368c771c12ee3c08cc49430d4b8",
+      "createdAt": "2026-02-27T13:54:29.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3NextForCausalLM"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 79750171392,
+      "safetensorsDtypes": {
+        "BF16": 1962609408,
+        "F8_E4M3": 77787561984
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3-Coder-Next-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "27a8f16f463b9a13c91c332c40cf93e09717347e",
+      "createdAt": "2026-02-19T21:39:54.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3NextForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

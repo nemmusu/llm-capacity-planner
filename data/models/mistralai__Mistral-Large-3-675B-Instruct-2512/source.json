@@ -1,0 +1,27 @@
+{
+  "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+  "revision": "383ffea2c7d60dfd44ca960e8e691709d4fdb9cd",
+  "fetchedAt": "2026-10-14T18:13:08.478Z",
+  "createdAt": "2025-11-28T18:05:12.000Z",
+  "lastModified": "2026-07-15T12:22:43.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": null,
+  "hfSafetensorsTotal": null,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "params.json",
+    "consolidated.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "mistral",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

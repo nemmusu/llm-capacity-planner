@@ -1,0 +1,18 @@
+{
+  "repo": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
+  "revision": "b8c66d2098edd8c9c26bde2b2ff41b5967e111ae",
+  "fetchedAt": "2026-10-14T19:14:55.223Z",
+  "createdAt": "2026-06-30T19:32:15.000Z",
+  "lastModified": "2026-07-01T15:47:29.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-open-model-license",
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 83840179560,
+  "readable": false,
+  "unreadable": [],
+  "files": [],
+  "weightFormat": "hf",
+  "withheld": "a quantization of Mistral Medium 3.5, under its licence"
+}

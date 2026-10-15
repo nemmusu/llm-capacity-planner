@@ -1,0 +1,27 @@
+{
+  "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-NVFP4",
+  "revision": "360716a7e9cb1161906061d23fb9c68fe3767d6c",
+  "fetchedAt": "2026-10-14T19:16:51.785Z",
+  "createdAt": "2026-07-30T08:48:26.000Z",
+  "lastModified": "2026-08-07T05:50:17.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": "LICENSE",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 410600277504,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "revision": "77df655d5e9f8362164ed14dd8b48f8bce657498",
+  "fetchedAt": "2026-10-14T18:16:21.310Z",
+  "createdAt": "2026-06-03T14:50:04.000Z",
+  "lastModified": "2026-08-24T23:47:18.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "openmdw-1.1",
+  "licenseLink": "https://openmdw.ai/license/1-1/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 560524578816,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

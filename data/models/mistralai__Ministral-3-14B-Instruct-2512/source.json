@@ -1,0 +1,31 @@
+{
+  "repo": "mistralai/Ministral-3-14B-Instruct-2512",
+  "revision": "29439f81c2be264d8d393273f99e7db9c0961120",
+  "fetchedAt": "2026-10-14T18:13:40.711Z",
+  "createdAt": "2025-10-31T08:43:24.000Z",
+  "lastModified": "2026-07-15T12:20:59.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": null,
+  "hfSafetensorsTotal": 13945032240,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "params.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [
+    "consolidated.safetensors"
+  ],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

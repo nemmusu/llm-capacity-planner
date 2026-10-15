@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="828" height="314" viewBox="0 0 828 314" role="img" aria-label="$ llm-capacity-planner openai/gpt-oss-120b --tokens 32k --users 2000 --prompt-cache 80">
+<rect x="0.5" y="0.5" width="827" height="313" rx="8" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 30V8.5a8 8 0 0 1 8-8h811a8 8 0 0 1 8 8V30Z" fill="#161b22"/>
+<line x1="0.5" y1="30" x2="827.5" y2="30" stroke="#30363d"/>
+<circle cx="18" cy="15" r="6" fill="#ff5f56"/>
+<circle cx="38" cy="15" r="6" fill="#ffbd2e"/>
+<circle cx="58" cy="15" r="6" fill="#27c93f"/>
+<text x="414" y="19" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">llm-capacity-planner</text>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#c9d1d9" xml:space="preserve" style="white-space:pre">
+<text x="16.0" y="59"><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3" font-weight="bold">llm-capacity-planner openai/gpt-oss-120b --tokens 32k --users 2000 --prompt-cache 80</tspan></text>
+<text y="77"><tspan x="16.0" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-weight="bold">Summary</tspan></text>
+<text y="95"><tspan x="31.6" textLength="748.8" lengthAdjust="spacingAndGlyphs">Recommendation: 1 server with 2× NVIDIA B300 SXM serves 2,000 users chatting, with conversations</tspan></text>
+<text y="113"><tspan x="62.8" textLength="725.4" lengthAdjust="spacingAndGlyphs">of up to 32k tokens (≈ 25,000 words ≈ 49 pages; 16k on average). Caution: each server runs at</tspan></text>
+<text y="131"><tspan x="62.8" textLength="717.6" lengthAdjust="spacingAndGlyphs">98% of its guaranteed capacity, so waits grow fast with more traffic: one more server leaves</tspan></text>
+<text y="149"><tspan x="62.8" textLength="70.2" lengthAdjust="spacingAndGlyphs">headroom.</tspan></text>
+<text y="167"><tspan x="31.6" textLength="647.4" lengthAdjust="spacingAndGlyphs">Alternative: 3 servers with 1× NVIDIA H200 SXM 141GB each (≈ 800 users per server).</tspan></text>
+<text y="185"><tspan x="31.6" textLength="413.4" lengthAdjust="spacingAndGlyphs">Not enough: RTX 5080, even with 4 GPUs in one server.</tspan></text>
+<text y="203"><tspan x="31.6" textLength="764.4" lengthAdjust="spacingAndGlyphs">Speed for each user: writing about 19 words per second (15 to 23; 25 tokens/s); with everyone busy</tspan></text>
+<text y="221"><tspan x="62.8" textLength="733.2" lengthAdjust="spacingAndGlyphs">the first words appear after about 0.07 s, and a full 32k-token request alone is read in about</tspan></text>
+<text y="239"><tspan x="62.8" textLength="234.0" lengthAdjust="spacingAndGlyphs">0.18 s (1 token ≈ 0.75 words).</tspan></text>
+<text y="257"><tspan x="31.6" textLength="733.2" lengthAdjust="spacingAndGlyphs">Confidence: memory high (±8.0%); writing speed medium (±21%); reading time medium (±37%); user</tspan></text>
+<text y="275"><tspan x="62.8" textLength="405.6" lengthAdjust="spacingAndGlyphs">count medium (±21%). Plan on the guaranteed figures.</tspan></text>
+<text x="16.0" y="293" fill="#8b949e">…</text>
+</g>
+</svg>

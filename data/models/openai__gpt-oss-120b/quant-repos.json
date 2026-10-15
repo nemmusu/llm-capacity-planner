@@ -1,0 +1,135 @@
+{
+  "repo": "openai/gpt-oss-120b",
+  "fetchedAt": "2026-10-14T18:30:39.557Z",
+  "repos": [
+    {
+      "repo": "nvidia/gpt-oss-120b-Eagle3-long-context",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "633caf45f31288cbb70ee237f7c939db707ecc94",
+      "createdAt": "2025-08-18T17:50:05.000Z",
+      "gated": false,
+      "architectures": [
+        "LlamaForCausalLMEagle3"
+      ],
+      "precision": null,
+      "safetensorsTotal": 215481600,
+      "safetensorsDtypes": {
+        "BF16": 215481600
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/gpt-oss-120b-Eagle3-short-context",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9a8aea401c61817ccf474a54449fee1da66035c8",
+      "createdAt": "2025-10-06T23:47:11.000Z",
+      "gated": false,
+      "architectures": [
+        "LlamaForCausalLMEagle3"
+      ],
+      "precision": null,
+      "safetensorsTotal": 786873600,
+      "safetensorsDtypes": {
+        "F32": 207740160,
+        "BF16": 579133440
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/gpt-oss-120b-Eagle3-throughput",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "dc54e8833d8d34dcffc42e0fed9646c3b1bfc317",
+      "createdAt": "2025-12-09T21:47:10.000Z",
+      "gated": false,
+      "architectures": [
+        "LlamaForCausalLMEagle3"
+      ],
+      "precision": null,
+      "safetensorsTotal": 761990400,
+      "safetensorsDtypes": {
+        "BF16": 761990400
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/gpt-oss-120b-Eagle3-v3",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "975baaffe27cc031ba21ae370602735d8e3df052",
+      "createdAt": "2026-03-28T03:59:50.000Z",
+      "gated": false,
+      "architectures": [
+        "LlamaForCausalLMEagle3"
+      ],
+      "precision": null,
+      "safetensorsTotal": 786882240,
+      "safetensorsDtypes": {
+        "BF16": 786882240
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gpt-oss-120b",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "dee12cc103260ed48dbe9ac0a1bbc9a0c3f5cfc9",
+      "createdAt": "2025-09-04T20:42:22.000Z",
+      "gated": false,
+      "architectures": [
+        "GptOssForCausalLM"
+      ],
+      "precision": "mxfp4",
+      "safetensorsTotal": 120412337472,
+      "safetensorsDtypes": {
+        "BF16": 2167371072,
+        "U8": 118244966400
+      },
+      "quantizationConfig": {
+        "quant_method": "mxfp4",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gpt-oss-120b-speculator.eagle3",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "4ae585332058e96b53207cb956639d2a92ef5b5c",
+      "createdAt": "2026-03-06T18:17:50.000Z",
+      "gated": false,
+      "architectures": [
+        "Eagle3DraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 854792768,
+      "safetensorsDtypes": {
+        "I64": 64000,
+        "BF16": 854527680,
+        "BOOL": 201088
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

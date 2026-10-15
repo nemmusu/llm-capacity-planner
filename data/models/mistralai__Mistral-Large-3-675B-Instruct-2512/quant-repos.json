@@ -1,0 +1,106 @@
+{
+  "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+  "fetchedAt": "2026-10-14T18:30:09.069Z",
+  "repos": [
+    {
+      "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512-BF16",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d40f4a01762df1a55ad689849582b3a3d2b21a7b",
+      "createdAt": "2025-09-28T23:11:04.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "a2eec8837f6b4b2a434a5bbc27c534c9640aef89",
+      "createdAt": "2025-11-10T07:41:02.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6f01426c721bd365f29a108f2389782e9671aab2",
+      "createdAt": "2025-11-28T17:57:04.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "nvfp4",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Mistral-Large-3-675B-Instruct-2512",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6287cf0ac47696be4151b49096cd38ac222cb7a6",
+      "createdAt": "2025-12-23T00:22:55.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "fp8-block",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Mistral-Large-3-675B-Instruct-2512-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "2a0e131875b95199a09357dbcfdfdfb77b8e333e",
+      "createdAt": "2025-12-23T04:11:08.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "nvfp4",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

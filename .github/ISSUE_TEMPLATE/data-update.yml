@@ -1,0 +1,35 @@
+name: Data update
+description: A new model or GPU, a new engine release, a public benchmark or a correction to the data.
+labels: [data]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What
+      options:
+        - A model to add to the catalog
+        - A GPU to add or correct
+        - A public benchmark (throughput, memory)
+        - A new vLLM or SGLang release
+        - A compatibility verdict (does or does not start)
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: Model, GPU or release
+      placeholder: org/model, NVIDIA card, vLLM vX.Y.Z
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link for every value (NVIDIA document, Hugging Face repository, engine code at a tag, issue, benchmark page).
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: The values, the settings of the run (engine, version, GPU, TP/PP, context, concurrency), and anything else that helps.

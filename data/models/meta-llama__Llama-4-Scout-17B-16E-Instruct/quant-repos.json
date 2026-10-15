@@ -1,0 +1,202 @@
+{
+  "repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "fetchedAt": "2026-10-14T19:50:05.653Z",
+  "repos": [
+    {
+      "repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct-Original",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "7f5043965c80ac0318b2e36c37a559a6a4d6b105",
+      "createdAt": "2025-04-03T15:39:52.000Z",
+      "gated": "manual",
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/Llama-4-Scout-17B-16E-Instruct-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "3c0175a5a4a66f8e139faf93ddeb7d2741ff3560",
+      "createdAt": "2025-04-14T22:58:55.000Z",
+      "gated": "auto",
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "modelopt",
+      "safetensorsTotal": 108641793536,
+      "safetensorsDtypes": {
+        "BF16": 2945332736,
+        "F8_E4M3": 105696460800
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/Llama-4-Scout-17B-16E-Instruct-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9417590c9bc99b359f3ac66d1346ecd54249888e",
+      "createdAt": "2025-04-14T06:41:18.000Z",
+      "gated": "auto",
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "modelopt",
+      "safetensorsTotal": 55793563136,
+      "safetensorsDtypes": {
+        "BF16": 2945332736,
+        "F8_E4M3": 6606028800,
+        "U8": 52848230400
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Scout-17B-16E-Instruct",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "5996646120a69f5f182866bb56a8f1573f367604",
+      "createdAt": "2025-05-10T23:56:07.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 108641793536,
+      "safetensorsDtypes": {
+        "BF16": 108641793536
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Scout-17B-16E-Instruct-FP8-block",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "3f5ebee45f25a69e64768e0eb1d8918084daf683",
+      "createdAt": "2025-10-23T18:14:02.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 108648060416,
+      "safetensorsDtypes": {
+        "BF16": 5971498496,
+        "F8_E4M3": 102676561920
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Scout-17B-16E-Instruct-FP8-dynamic",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "fc1b4f4cea92cfc13570f504a209eb4d4ca81534",
+      "createdAt": "2025-04-10T10:45:57.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 108659340800,
+      "safetensorsDtypes": {
+        "BF16": 5982778880,
+        "F8_E4M3": 102676561920
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Scout-17B-16E-Instruct-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "be2c265beafff7c269c9f0e279272eb29ccdcf6a",
+      "createdAt": "2025-07-08T20:48:02.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 63720802592,
+      "safetensorsDtypes": {
+        "F32": 4896,
+        "BF16": 5965231616,
+        "F8_E4M3": 6417285120,
+        "U8": 51338280960
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Scout-17B-16E-Instruct-quantized.w4a16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "e8b8a7ca92e62e476ae2e7d3169bf11c7caba485",
+      "createdAt": "2025-04-25T13:11:57.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 109443959072,
+      "safetensorsDtypes": {
+        "BF16": 6767392256,
+        "I64": 4896,
+        "I32": 102676561920
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

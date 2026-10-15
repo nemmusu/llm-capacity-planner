@@ -1,0 +1,255 @@
+{
+  "repo": "google/gemma-4-31B-it",
+  "fetchedAt": "2026-10-14T18:30:28.784Z",
+  "repos": [
+    {
+      "repo": "google/gemma-4-31B-it-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "627c5ec1458b9086b841a91e0512fd31fd2fbbf1",
+      "createdAt": "2026-04-23T18:55:29.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4AssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 469518596,
+      "safetensorsDtypes": {
+        "BF16": 469518596
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-31B-it-qat-q4_0-gguf",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "59dde24573e7e61570dba08b18a2e1fe246955ed",
+      "createdAt": "2026-05-01T04:27:56.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "1e4d8beecacb8b7590c1d8bedd7335f687bf311f",
+      "createdAt": "2026-04-28T20:55:54.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 32682372656,
+      "safetensorsDtypes": {
+        "BF16": 31273088876
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-31B-it-qat-q4_0-unquantized-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "96d4c8ca3cb38c107a8478587878124895d1e844",
+      "createdAt": "2026-05-29T19:19:43.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4AssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 469518596,
+      "safetensorsDtypes": {
+        "BF16": 469518596
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-31B-it-qat-w4a16-ct",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "52f3f65bc7a02d555763bc923bd1d9094898219d",
+      "createdAt": "2026-06-04T22:30:30.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 33597586080,
+      "safetensorsDtypes": {
+        "I64": 820,
+        "I32": 29286727680,
+        "BF16": 4310857580
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/Gemma-4-31B-IT-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "4135a98a9b728a548947683219633b25682223ac",
+      "createdAt": "2026-04-02T16:47:30.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 20868591152,
+      "safetensorsDtypes": {
+        "BF16": 10464098156,
+        "U8": 10404495360
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "NVFP4"
+      },
+      "hfQuantAlgo": "NVFP4"
+    },
+    {
+      "repo": "RedHatAI/gemma-4-31B-it-FP8-block",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d7242548c457ab4b45bd3adb8937f2659af4739d",
+      "createdAt": "2026-04-03T15:20:05.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 31273088876,
+      "safetensorsDtypes": {
+        "BF16": 1986361196,
+        "F8_E4M3": 29286727680
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-31B-it-FP8-dynamic",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d4ab4f579dd3516f97d8a6a4c98d0653480bad15",
+      "createdAt": "2026-04-06T16:13:18.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 31273088876,
+      "safetensorsDtypes": {
+        "BF16": 1986361196,
+        "F8_E4M3": 29286727680
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-31B-it-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "5df75ccad9b74546f5be758a2a68acc2e16bbc9b",
+      "createdAt": "2026-04-03T16:59:13.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 32682375020,
+      "safetensorsDtypes": {
+        "BF16": 3395647340,
+        "U8": 29286727680
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-31B-it-speculator.dflash",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "7692966ad426dc6134d6979e83187e36dafd440f",
+      "createdAt": "2026-04-17T22:19:42.000Z",
+      "gated": false,
+      "architectures": [
+        "DFlashDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 2539259392,
+      "safetensorsDtypes": {
+        "BF16": 2539259392
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-31B-it-speculator.eagle3",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "28a1c8b4bb64dbaee883ba35341841138bdf1fe3",
+      "createdAt": "2026-04-09T20:01:03.000Z",
+      "gated": false,
+      "architectures": [
+        "Eagle3DraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 2235355392,
+      "safetensorsDtypes": {
+        "I64": 32000,
+        "BF16": 2235061248,
+        "BOOL": 262144
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "repo": "zai-org/GLM-5.3",
+  "fetchedAt": "2026-10-14T18:29:53.841Z",
+  "repos": [
+    {
+      "repo": "nvidia/GLM-5.3-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+      "createdAt": "2026-09-14T17:58:21.000Z",
+      "gated": false,
+      "architectures": [
+        "GlmMoeDsaForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 390942074880,
+      "safetensorsDtypes": {
+        "F32": 19456,
+        "BF16": 27874712576,
+        "F8_E4M3": 679477248,
+        "U8": 362387865600
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/GLM-5.3-MXFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "881184221de44698ee1334451e3d355eee657b45",
+      "createdAt": "2026-09-10T18:50:04.000Z",
+      "gated": false,
+      "architectures": [
+        "GlmMoeDsaForCausalLM"
+      ],
+      "precision": "mxfp4",
+      "safetensorsTotal": 753329940480,
+      "safetensorsDtypes": {
+        "BF16": 2121030656,
+        "U8": 751208890368,
+        "F32": 19456
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mxfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/GLM-5.3-speculator.dspark",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b374b95663447ea0e935151be4f3d6666e36e6d7",
+      "createdAt": "2026-09-04T16:07:17.000Z",
+      "gated": false,
+      "architectures": [
+        "DSparkDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 1249565313,
+      "safetensorsDtypes": {
+        "BF16": 1249565313
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "zai-org/GLM-5.3-BF16",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9d2398f478cab2de883137db3a36ad2c96205e24",
+      "createdAt": "2026-08-25T06:43:55.000Z",
+      "gated": false,
+      "architectures": [
+        "GlmMoeDsaForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 753329940480,
+      "safetensorsDtypes": {
+        "BF16": 753329921024,
+        "F32": 19456
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

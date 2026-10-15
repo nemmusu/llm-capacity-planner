@@ -1,0 +1,26 @@
+{
+  "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512-NVFP4",
+  "revision": "6f01426c721bd365f29a108f2389782e9671aab2",
+  "fetchedAt": "2026-10-14T19:14:33.202Z",
+  "createdAt": "2025-11-28T17:57:04.000Z",
+  "lastModified": "2026-09-11T08:37:56.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": null,
+  "hfSafetensorsTotal": null,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "params.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "mistral",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

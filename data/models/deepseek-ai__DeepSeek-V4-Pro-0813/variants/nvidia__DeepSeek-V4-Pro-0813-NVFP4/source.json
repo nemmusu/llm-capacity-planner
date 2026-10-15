@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
+  "revision": "949138637e8e8fe190335be2396af62187dc8a83",
+  "fetchedAt": "2026-10-14T19:12:20.197Z",
+  "createdAt": "2026-08-27T10:39:25.000Z",
+  "lastModified": "2026-09-10T07:03:20.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 1650497936906,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

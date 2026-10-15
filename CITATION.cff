@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+type: software
+title: "LLM Capacity Planner: GPU memory and concurrency calculator for vLLM and SGLang"
+abstract: >-
+  A command-line GPU sizing tool for LLM inference. For a Hugging Face model, it computes the memory the model needs
+  on vLLM or SGLang (weights and KV cache), which NVIDIA GPUs fit it, how many concurrent users they serve and how
+  many tokens per second each user gets, from the model's metadata and a speed model calibrated on measured runs and
+  public benchmarks.
+authors:
+  - alias: nemmusu
+version: 0.1.0
+date-released: 2026-10-15
+license: MIT
+repository-code: "https://github.com/nemmusu/llm-capacity-planner"
+url: "https://github.com/nemmusu/llm-capacity-planner"
+keywords:
+  - llm
+  - inference
+  - vllm
+  - sglang
+  - gpu
+  - vram
+  - kv-cache
+  - capacity-planning
+  - nvidia
+  - huggingface

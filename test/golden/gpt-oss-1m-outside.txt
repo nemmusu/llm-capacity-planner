@@ -1,0 +1,108 @@
+$ llm-capacity-planner openai/gpt-oss-120b --tokens 1M
+
+Summary
+  Recommendation: none — 1M tokens is outside the model's limits: it is made for up to 128k tokens, and beyond that the
+      quality of its answers is not known; plan for at most 128k tokens, or choose a model made for longer requests.
+  Confidence: memory high (±7.9%); writing speed low, not precise enough to decide (±33%, but 1M tokens is beyond the
+      model's maximum of 128k); reading time low, not precise enough to decide (±37%, but 1M tokens is beyond the
+      model's maximum of 128k); user count low, not precise enough to decide (±33%, but 1M tokens is beyond the model's
+      maximum of 128k). Nothing is guaranteed here: do not rely on these figures alone.
+
+Technical detail
+gpt-oss-120b at 1M tokens, fp8 KV cache: serves users from 4× B200 SXM (1 model on 4). With 4× B200 SXM (1 model on 4):
+10 users guaranteed, 20 likely, at 44 tok/s (30 to 59, ±33%, not precise enough to decide) each; reading 1M tokens: 33.5
+s (20.9 to 46.0 s, ±37%).
+Scenario "documents": each request brings 512k new tokens to read and generates 500; at least 20 tok/s per user. For a
+chat (the conversation stays in the cache) use --prompt-cache 80.
+Note: 1M tokens is beyond the model's own maximum (128k): the engine refuses it without a RoPE override (YaRN, e.g. vLLM
+--hf-overrides), and the quality beyond the context the lab declares is not guaranteed.
+openai/gpt-oss-120b · MXFP4 · MoE · vLLM 0.31.0 · fp8 KV cache · context 1M tokens (model maximum 128k)
+Model description from built-in data (YYYY-MM-DD) — weights not downloaded; --refresh reads it again from Hugging Face.
+
+Per card: the fewest GPUs that serve someone at the minimum writing speed (else the fewest the model fits on), and what
+that layout serves.
+  Card                 Verdict                    GPUs               Memory per GPU               Users     Users
+                                                                     (GiB)                 (guaranteed)  (likely)
+  RTX 3090             does not fit               -                  with 4: 24.3 of 23.6
+  RTX 4090             does not fit               -                  with 4: 24.3 of 23.5
+  RTX 5080             does not fit               -                  with 4: 24.3 of 15.4
+  RTX 5090             too slow (1,2,3,4,5,6)     4 (2 stages of 2)  24.3 of 31.3                     0         0
+  RTX A6000            too slow (1,7,8,4,5,9)     4 (2 stages of 2)  24.3 of 47.4                     0         0
+  RTX 6000 Ada         too slow (1,8,4,5,10)      4 (2 stages of 2)  24.3 of 47.4                     0         0
+  RTX PRO 6000 WS      too slow (1,3,4,5)         4 (2 stages of 2)  29.2 of 95.6                     0         0
+  RTX PRO 6000 Max-Q   too slow (1,3,4,5,10)      4 (2 stages of 2)  29.2 of 94.9                     0         0
+  RTX PRO 6000 Server  too slow (11,12,3,4,5)     8 (2 stages of 4)  18.8 of 94.9                     0         0
+  L4                   too slow (11,12,8,4,5,13)  8 (2 stages of 4)  13.9 of 22                       0         0
+  L40S                 too slow (11,12,8,4,5)     8 (2 stages of 4)  13.9 of 44.5                     0         0
+  A100 40GB PCIe       too slow (11,14,8,4,5)     8 (4 stages of 2)  14.4 of 39.4                     0         0
+  A100 40GB SXM4       too slow (11,8,4,5,13)     8 (2 stages of 4)  13.9 of 39.4                     0         0
+  A100 80GB PCIe       too slow (11,14,8,4,5)     8 (4 stages of 2)  19.3 of 79.1                     0         0
+  A100 80GB SXM4       too slow (11,8,4,5,15)     8 (2 stages of 4)  18.8 of 79.3                     0         0
+  H100 PCIe 80GB       too slow (11,14,4,5)       8 (4 stages of 2)  19.3 of 79.1                     0        10
+  H100 SXM5 80GB       fits (16,4)                8 (1×8)            18.7 of 79.1                    10        20
+  H100 NVL 94GB        fits (16,14,4,5)           8 (4 stages of 2)  19.3 of 93.1                    10        10
+  GH200 96GB           too slow (17,4,5,15)       2 (2 stages)       49.6 of 95                       0         0
+  GH200 144GB          too slow (17,4,5,18)       2 (2 stages)       49.6 of 142.5                    0         0
+  H200 SXM 141GB       fits (19,4)                8 (1×8)            18.7 of 139.7                   10        20
+  H200 NVL 141GB       fits (19,20,4,5)           8 (2 stages of 4)  18.8 of 139.4                   10        10
+  B200 SXM             fits (21,4)                4 (1×4)            35.6 of 178.3                   10        20
+  B300 SXM             fits (21,4)                4 (1×4)            35.6 of 267.7                   10        20
+  guaranteed = holds even if the real speed is at the low end of the estimate; likely = at the central estimate.
+  GPUs: "4 (1 model on 4)" or "4 (1×4)" = one copy of the model split across 4 GPUs that work together on every token
+  (tensor parallel, TP); "8 (2 copies × 4)" or "8 (2×4)" = 2 independent copies, each on 4 GPUs and serving its own
+  users; "split in 2 stages" = each GPU holds part of the layers (pipeline parallel, PP); "2 stages of 4" = each stage
+  on 4 GPUs in tensor parallel; "2 copies × 2 stages of 2" or "2×2 stages of 2" = 2 independent copies, each split in 2
+  stages of 2 GPUs. One server holds up to 8 GPUs (RTX 3090, RTX 4090, RTX 5080, RTX 5090, RTX A6000, RTX 6000 Ada, RTX
+  PRO 6000 WS, RTX PRO 6000 Max-Q: 4; GH200 96GB, GH200 144GB: 2).
+
+(1) nobody is guaranteed 20 tok/s of writing, even with 4 GPUs in one server
+(2) TP 2 on cards without NVLink or P2P: every all-reduce goes through CPU memory over PCIe (slower; needs x16 slots and
+    an adequate power supply)
+(3) partly supported: On SM12x the gpt-oss selector keeps only BF16-activation backends: TRTLLM (SM10x), OAI Triton (CC
+    < 11.0, SM120 explicitly excluded) and FlashInfer CUTLASS BF16 (SM90 only) all fail, so MarlinExperts (weight-only
+    MXFP4) serves the experts. Workaround: --moe-backend b12x after pip install vllm[b12x] selects the native SM12x B12X
+    MXFP4 MoE kernels (code path verified; not verified at runtime). FA2 does not support fp8 KV, so vLLM selects
+    another attention backend (FLASHINFER for most models, with Q in bf16). There are open bugs on this path: with pip
+    and no nvcc, FlashInfer is selected but does not compile (crash 'Could not find nvcc'), and with checkpoints that
+    have q_scale the output is wrong. Workaround: --attention-backend TRITON_ATTN. In v0.31.0 the OAI Triton MoE
+    excludes SM120 and the FlashInfer CUTLASS MXFP4 BF16 path is SM90-only, so the gpt-oss experts run on Marlin
+    (weight-only MXFP4, BF16 compute). Attention runs on a sink-capable backend (Triton). (source:
+    https://github.com/vllm-project/vllm/blob/v0.31.0/vllm/model_executor/layers/fused_moe/oracle/mxfp4.py#L467-L483)
+(4) beyond the model's maximum context (131,072 tokens): the engine needs a RoPE / YaRN override, speed not reliable
+(5) pipeline speed not measured: no run with pipeline stages was measured, so the speed and user ranges are widened by
+    half
+(6) near saturation: reading prompts takes 92% of the GPU time, larger error
+(7) NVLink connects only 2 of these cards: each TP 2 group stays on NVLink, the 2 pipeline stages talk over PCIe
+(8) partly supported: gpt-oss MXFP4 experts: TRTLLM is SM10x-only, the OAI Triton kernel is gated to 9.0 <= CC < 11.0
+    and FlashInfer CUTLASS BF16 to SM90, so MarlinExperts (weight-only MXFP4) is used. FlashAttention rejects attention
+    sinks below CC 9.0, so attention falls back to TRITON_ATTN, which supports sinks (for gpt-oss it takes the place of
+    the FLASHINFER backend that the fp8 KV cache note names for most models). (source:
+    https://github.com/vllm-project/vllm/blob/v0.31.0/vllm/model_executor/layers/fused_moe/oracle/mxfp4.py#L342-L363)
+(9) near saturation: reading prompts takes 93% of the GPU time, larger error
+(10) near saturation: reading prompts takes 87% of the GPU time, larger error
+(11) nobody is guaranteed 20 tok/s of writing, even with 8 GPUs in one server
+(12) TP 4 over PCIe (no NVLink): all-reduces slower than over NVLink
+(13) near saturation: reading prompts takes 88% of the GPU time, larger error
+(14) NVLink connects only 2 of these cards: each TP 2 group stays on NVLink, the 4 pipeline stages talk over PCIe
+(15) near saturation: reading prompts takes 89% of the GPU time, larger error
+(16) with 2 GPUs the model fits, but nobody is guaranteed 20 tok/s of writing: 8 GPUs serve someone
+(17) nobody is guaranteed 20 tok/s of writing, even with 2 GPUs in one server
+(18) near saturation: reading prompts takes 90% of the GPU time, larger error
+(19) with 1 GPU the model fits, but nobody is guaranteed 20 tok/s of writing: 8 GPUs serve someone
+(20) NVLink connects only 4 of these cards: each TP 4 group stays on NVLink, the 2 pipeline stages talk over PCIe
+(21) with 1 GPU the model fits, but nobody is guaranteed 20 tok/s of writing: 4 GPUs serve someone
+
+Memory per GPU with one request of 1M tokens (≈ 790,000 words ≈ 1,600 pages): the model's weights and its conversation
+memory (KV cache) are computed exactly, the engine's fixed costs are estimated. Margin = room left for more
+conversations after that request. Card memory = what CUDA reports (the engine's usable memory; nvidia-smi shows a little
+more).
+Users: total = concurrent requests ÷ 10% active at once (--active); each gets ≥20 tok/s and the first token within 10 s
+(or, if longer, twice the wait for the first words of one typical request alone: half the context, less what the prefix
+cache holds).
+Accuracy: exact = computed; measured = this model on this card; calibrated = fitted on measurements of this card or of
+the same model type (N points); estimated = calibrated on other cards, not verified, or extrapolated; not precise enough
+to decide = ±50% or more, or a case not covered.
+Speed basis (vLLM 0.31.0) of the cards shown: fitted on 43 public vLLM benchmarks (dense models, MoE in MXFP4 on H100 /
+H200 / B200); pipeline speed not measured, vLLM 0.31.0 (43 points); fitted on 43 public vLLM benchmarks (dense models,
+MoE in MXFP4 on H100 / H200 / B200), vLLM 0.31.0 (43 points).
+Weights: exact as the sum of the tensors; for MXFP4 × MoE vLLM measured up to +13.0% more, counted in the fixed costs.

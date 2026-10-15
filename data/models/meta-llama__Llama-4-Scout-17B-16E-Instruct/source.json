@@ -1,0 +1,31 @@
+{
+  "repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "revision": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+  "fetchedAt": "2026-10-14T19:50:00.835Z",
+  "createdAt": "2025-04-02T13:34:17.000Z",
+  "lastModified": "2025-05-22T23:44:50.000Z",
+  "gated": "manual",
+  "license": "other",
+  "licenseName": "llama4",
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 108641793536,
+  "readable": false,
+  "unreadable": [
+    {
+      "file": "config.json",
+      "status": 403
+    },
+    {
+      "file": "generation_config.json",
+      "status": 403
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "status": 403
+    }
+  ],
+  "files": [],
+  "weightFormat": "hf",
+  "otherSafetensors": []
+}

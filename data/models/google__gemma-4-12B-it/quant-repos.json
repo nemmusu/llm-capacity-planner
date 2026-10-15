@@ -1,0 +1,108 @@
+{
+  "repo": "google/gemma-4-12B-it",
+  "fetchedAt": "2026-10-14T18:30:33.872Z",
+  "repos": [
+    {
+      "repo": "google/gemma-4-12B-it-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "46d4c6f13f0ac0ad827b915669b8df9b81c64c51",
+      "createdAt": "2026-05-23T01:17:47.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4UnifiedAssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 422856964,
+      "safetensorsDtypes": {
+        "BF16": 422856964
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-12B-it-qat-q4_0-gguf",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "29d097773436b69ff9feafd636ab4cf873786537",
+      "createdAt": "2026-06-05T00:28:47.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b6ed86275a6a5735884e208bfed95b445a684ca2",
+      "createdAt": "2026-06-04T05:20:28.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4UnifiedForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 11959730224,
+      "safetensorsDtypes": {
+        "BF16": 11959730224
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-12B-it-qat-q4_0-unquantized-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "18934064dd4c5c6cc3621f6381e7d377fc8cb7bd",
+      "createdAt": "2026-06-04T22:58:12.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4UnifiedAssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 422856964,
+      "safetensorsDtypes": {
+        "BF16": 422856964
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-12B-it-qat-w4a16-ct",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "1d2c2d7f2466070e69d6fb3fd5ce9a7d75f2f6ee",
+      "createdAt": "2026-06-05T02:50:55.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4UnifiedForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 12966363184,
+      "safetensorsDtypes": {
+        "I32": 10899947520,
+        "BF16": 2066415664
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

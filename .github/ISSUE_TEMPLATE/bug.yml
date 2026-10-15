@@ -1,0 +1,32 @@
+name: Bug
+description: A wrong figure, a crash or an unclear message.
+labels: [bug]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran.
+      placeholder: llm-capacity-planner zai-org/GLM-5.3 --tokens 128k --users 200
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The output of `llm-capacity-planner --version`.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+      description: For a figure, say where the expected value comes from (a measurement, an engine log line, a benchmark).
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The relevant part of the output (no tokens or personal paths).
+      render: text

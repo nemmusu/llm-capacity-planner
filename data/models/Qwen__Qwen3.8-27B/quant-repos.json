@@ -1,0 +1,115 @@
+{
+  "repo": "Qwen/Qwen3.8-27B",
+  "fetchedAt": "2026-10-14T18:29:37.181Z",
+  "repos": [
+    {
+      "repo": "nvidia/Qwen3.8-27B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "482ca0f3832238542f8f5295dde86b5f22711d80",
+      "createdAt": "2026-09-04T21:43:04.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5ForConditionalGeneration"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 18164649200,
+      "safetensorsDtypes": {
+        "BF16": 2183066352,
+        "F8_E4M3": 7214202880,
+        "U8": 9192079360
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "Qwen/Qwen3.8-27B-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+      "createdAt": "2026-08-13T08:01:58.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5ForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 27781427952,
+      "safetensorsDtypes": {
+        "BF16": 3082220272,
+        "F8_E4M3": 24699207680
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-27B-INT4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "91bd022d5b49442a868bc35008f6c21e1860edfa",
+      "createdAt": "2026-08-17T20:44:53.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 27356728592,
+      "safetensorsDtypes": {
+        "I32": 24326963200,
+        "BF16": 3029765392
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-27B-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "2889ddeeda282f17fc9e159a42125e535159a5e5",
+      "createdAt": "2026-09-18T19:40:33.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5ForConditionalGeneration"
+      ],
+      "precision": "mixed:nvfp4+fp8-channel",
+      "safetensorsTotal": 20294595344,
+      "safetensorsDtypes": {
+        "BF16": 3454464784,
+        "F8_E4M3": 9353297920,
+        "U8": 7486832640
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mixed-precision",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

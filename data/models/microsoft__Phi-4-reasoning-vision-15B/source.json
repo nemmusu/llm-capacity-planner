@@ -1,0 +1,28 @@
+{
+  "repo": "microsoft/Phi-4-reasoning-vision-15B",
+  "revision": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f",
+  "fetchedAt": "2026-10-14T18:17:34.656Z",
+  "createdAt": "2026-01-23T18:37:34.000Z",
+  "lastModified": "2026-08-31T19:03:18.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 15119518144,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

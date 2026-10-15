@@ -1,0 +1,31 @@
+{
+  "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "revision": "b61f21852680ee02a29e946e18cf8697f4844061",
+  "fetchedAt": "2026-10-14T18:17:58.538Z",
+  "createdAt": "2026-09-21T15:39:33.000Z",
+  "lastModified": "2026-10-09T06:30:24.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 1024216603392,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [
+    "audio_tokenizer/model.safetensors",
+    "dflash/dflash_draft_model.safetensors"
+  ],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

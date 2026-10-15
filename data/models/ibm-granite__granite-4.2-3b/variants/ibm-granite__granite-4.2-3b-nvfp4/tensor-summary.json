@@ -1,0 +1,391 @@
+{
+  "repo": "ibm-granite/granite-4.2-3b-nvfp4",
+  "revision": "c30d480be0e8440e84835497f00218628fc2ab1c",
+  "weightFormat": "hf",
+  "shards": 1,
+  "tensors": 1203,
+  "tensorBytes": 2797493440,
+  "fileBytes": 2797631352,
+  "headerBytes": 137904,
+  "entries": [
+    {
+      "pattern": "lm_head.weight",
+      "dtype": "BF16",
+      "shape": [
+        100352,
+        2560
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 513802240,
+      "layers": null
+    },
+    {
+      "pattern": "model.embed_tokens.weight",
+      "dtype": "BF16",
+      "shape": [
+        100352,
+        2560
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 513802240,
+      "layers": null
+    },
+    {
+      "pattern": "model.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2560
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 204800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        2560,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 419430400,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        2560,
+        512
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 52428800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        8192,
+        1280
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 419430400,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        8192,
+        160
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 52428800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        8192,
+        1280
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 419430400,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        8192,
+        160
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 52428800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2560
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 204800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        512,
+        1280
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 26214400,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        512,
+        160
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 3276800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        2560,
+        1280
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 131072000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        2560,
+        160
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 16384000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        2560,
+        1280
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 131072000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        2560,
+        160
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 16384000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        512,
+        1280
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 26214400,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        512,
+        160
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 3276800,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2560
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 5120,
+      "layers": null
+    }
+  ]
+}

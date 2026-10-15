@@ -1,0 +1,70 @@
+{
+  "repo": "stepfun-ai/Step-3.5-Flash",
+  "fetchedAt": "2026-10-14T18:31:05.486Z",
+  "repos": [
+    {
+      "repo": "stepfun-ai/Step-3.5-Flash-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6eebda59dd87ca5729648ec7cfed0becfceb273e",
+      "createdAt": "2026-02-01T08:03:52.000Z",
+      "gated": false,
+      "architectures": [
+        "Step3p5ForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 199395913536,
+      "safetensorsDtypes": {
+        "F32": 11624256,
+        "BF16": 9130659840,
+        "F8_E4M3": 190253629440
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "stepfun-ai/Step-3.5-Flash-GGUF-Q4_K_S",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "6930492fee9ffd6f13c2e665a94244c60d2d7d83",
+      "createdAt": "2026-02-01T08:13:41.000Z",
+      "gated": false,
+      "architectures": [
+        "Step3p5ForCausalLM"
+      ],
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "stepfun-ai/Step-3.5-Flash-GGUF-Q8_0",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "cd1b6ac3724fd6ec8b7e47091ae38c9ecb21144d",
+      "createdAt": "2026-02-07T09:03:46.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "repo": "google/gemma-4-31B-it-qat-w4a16-ct",
+  "revision": "52f3f65bc7a02d555763bc923bd1d9094898219d",
+  "fetchedAt": "2026-10-14T19:15:06.422Z",
+  "createdAt": "2026-06-04T22:30:30.000Z",
+  "lastModified": "2026-07-20T16:43:40.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": "https://ai.google.dev/gemma/docs/gemma_4_license",
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 33597586080,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

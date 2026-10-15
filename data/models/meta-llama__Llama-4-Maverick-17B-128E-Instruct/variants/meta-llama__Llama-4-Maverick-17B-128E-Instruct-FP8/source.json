@@ -1,0 +1,31 @@
+{
+  "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+  "revision": "94125d2bd83076b21eed33119525e29eaf3894f4",
+  "fetchedAt": "2026-10-14T19:51:13.763Z",
+  "createdAt": "2025-04-01T20:47:02.000Z",
+  "lastModified": "2025-05-22T23:46:03.000Z",
+  "gated": "manual",
+  "license": "other",
+  "licenseName": "llama4",
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 401649841664,
+  "readable": false,
+  "unreadable": [
+    {
+      "file": "config.json",
+      "status": 403
+    },
+    {
+      "file": "generation_config.json",
+      "status": 403
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "status": 403
+    }
+  ],
+  "files": [],
+  "weightFormat": "hf",
+  "otherSafetensors": []
+}

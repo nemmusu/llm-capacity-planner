@@ -1,0 +1,713 @@
+{
+ "$comment": "vLLM vllm/vllm-openai:v0.31.0 on an RTX 5090 (Windows 11, Docker Desktop/WSL 2), dummy weights, fp8 KV cache, random token prompts; long contexts on models cut to a few layers (generation speed: vLLM's own inter-token latency, the client windows are only 64 tokens); written by scripts/dev/speed.mjs. Runs marked \"disturbed\" (other programs using the CPU, which vLLM's scheduler needs) are kept with the reason but left out of the calibration.",
+ "engine": "vllm",
+ "engineVersion": "0.31.0",
+ "gpuId": "rtx-5090-32gb",
+ "runs": [
+  {
+   "name": "long-glm-5.3-flash-4l-202610150808",
+   "repo": "zai-org/GLM-5.3-Flash",
+   "layers": 4,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 1049600,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 3493200,
+   "startupS": 213,
+   "seconds": 320,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.08,
+     "otherCores": 0.57,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.16",
+      "claude 0.10",
+      "claude 0.06",
+      "explorer 0.06",
+      "node 0.06"
+     ]
+    },
+    "during": {
+     "seconds": 104,
+     "devToolsCores": 0.03,
+     "otherCores": 1.08,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.70",
+      "claude 0.05",
+      "explorer 0.05",
+      "claude 0.03",
+      "iCUE 0.03"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 08:04:07 [model_runner.py:407] Model loading took 10.68 GiB memory and 12.600021 seconds",
+    "INFO 10-15 08:04:49 [model_runner.py:1087] Graph capturing finished in 18 secs, took 3.89 GiB",
+    "INFO 10-15 08:04:49 [kv_cache_utils.py:2464] GPU KV cache size: 3,493,200 tokens, Maximum concurrency for 1,049,600 tokens per request: 3.33x",
+    "INFO 10-15 08:06:49 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.12 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 65536,
+     "ttftMs": 1257,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 226.54,
+       "serverItlMs": 4.5
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 239.05,
+       "serverItlMs": 5.38
+      }
+     ]
+    },
+    {
+     "promptTokens": 131072,
+     "ttftMs": 2090,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 242.35,
+       "serverItlMs": 4.29
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 164.63,
+       "serverItlMs": 5.55
+      }
+     ]
+    },
+    {
+     "promptTokens": 262144,
+     "ttftMs": 91579,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 110.3,
+       "serverItlMs": 9.98
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 41.28,
+       "serverItlMs": 23.53
+      }
+     ]
+    }
+   ],
+   "anomalous": {
+    "262144": "the same spill as the run repeated in a new process with the shared-memory check (+21.9 GB): not a valid measurement on the RTX 5090"
+   }
+  },
+  {
+   "name": "long-qwen3.8-27b-fp8-4l-202610150813",
+   "repo": "Qwen/Qwen3.8-27B-FP8",
+   "layers": 4,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 1049600,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 8862598,
+   "startupS": 87,
+   "seconds": 264,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.06,
+     "otherCores": 0.41,
+     "wslCores": 0.01,
+     "containersCores": 0,
+     "top": [
+      "claude 0.12",
+      "claude 0.06",
+      "claude 0.03",
+      "node 0.03",
+      "node 0.03"
+     ]
+    },
+    "during": {
+     "seconds": 175,
+     "devToolsCores": 0,
+     "otherCores": 0.58,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.17",
+      "claude 0.08",
+      "explorer 0.07",
+      "claude 0.04",
+      "OpenRGB 0.03"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 08:09:36 [model_runner.py:407] Model loading took 6.29 GiB memory and 10.337183 seconds",
+    "INFO 10-15 08:10:14 [model_runner.py:1087] Graph capturing finished in 12 secs, took 0.47 GiB",
+    "INFO 10-15 08:10:15 [kv_cache_utils.py:2464] GPU KV cache size: 8,862,598 tokens, Maximum concurrency for 1,049,600 tokens per request: 8.44x",
+    "INFO 10-15 08:10:20 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.07 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 65536,
+     "ttftMs": 1304,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 199.01,
+       "serverItlMs": 5.21
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 194.68,
+       "serverItlMs": 5.81
+      }
+     ]
+    },
+    {
+     "promptTokens": 131072,
+     "ttftMs": 3417,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 226.48,
+       "serverItlMs": 4.65
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 205.66,
+       "serverItlMs": 5.61
+      }
+     ]
+    },
+    {
+     "promptTokens": 262144,
+     "ttftMs": 9903,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 213.99,
+       "serverItlMs": 4.92
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 123.07,
+       "serverItlMs": 6.26
+      }
+     ]
+    },
+    {
+     "promptTokens": 524288,
+     "ttftMs": 32383,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 241.64,
+       "serverItlMs": 5.27
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 89.59,
+       "serverItlMs": 6.34
+      }
+     ]
+    },
+    {
+     "promptTokens": 1048576,
+     "ttftMs": 114725,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 361.28,
+       "serverItlMs": 6.37
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 136.53,
+       "serverItlMs": 14.76
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "long-qwen3-8b-bf16-2l-202610150819",
+   "repo": "Qwen/Qwen3-8B",
+   "layers": 2,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 1049600,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 5713024,
+   "startupS": 69,
+   "seconds": 260,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.06,
+     "otherCores": 0.47,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.13",
+      "claude 0.07",
+      "explorer 0.05",
+      "claude 0.04",
+      "node 0.03"
+     ]
+    },
+    "during": {
+     "seconds": 189,
+     "devToolsCores": 0.02,
+     "otherCores": 0.53,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.14",
+      "explorer 0.08",
+      "claude 0.07",
+      "claude 0.04",
+      "iCUE 0.03"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 08:15:22 [model_runner.py:407] Model loading took 3.29 GiB memory and 8.067191 seconds",
+    "INFO 10-15 08:15:47 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.46 GiB",
+    "INFO 10-15 08:15:47 [kv_cache_utils.py:2464] GPU KV cache size: 5,713,024 tokens, Maximum concurrency for 1,049,600 tokens per request: 5.44x",
+    "INFO 10-15 08:15:51 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.06 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 65536,
+     "ttftMs": 896,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 420.77,
+       "serverItlMs": 2.42
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 385.91,
+       "serverItlMs": 2.72
+      }
+     ]
+    },
+    {
+     "promptTokens": 131072,
+     "ttftMs": 2738,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 383.65,
+       "serverItlMs": 2.74
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 222.85,
+       "serverItlMs": 3.13
+      }
+     ]
+    },
+    {
+     "promptTokens": 262144,
+     "ttftMs": 9375,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 311.08,
+       "serverItlMs": 3.26
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 102.19,
+       "serverItlMs": 3.89
+      }
+     ]
+    },
+    {
+     "promptTokens": 524288,
+     "ttftMs": 34534,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 284.89,
+       "serverItlMs": 5.64
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 358.58,
+       "serverItlMs": 5.75
+      }
+     ]
+    },
+    {
+     "promptTokens": 1048576,
+     "ttftMs": 131527,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 465.4,
+       "serverItlMs": 5.65
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": null,
+       "serverItlMs": 7.49
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "long-qwen3-235b-a22b-fp8-2l-202610150822",
+   "repo": "Qwen/Qwen3-235B-A22B-FP8",
+   "layers": 2,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 1049600,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 9352448,
+   "startupS": 87,
+   "seconds": 172,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.03,
+     "otherCores": 0.95,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "explorer 0.39",
+      "claude 0.21",
+      "claude 0.10",
+      "claude 0.05",
+      "node 0.03"
+     ]
+    },
+    "during": {
+     "seconds": 82,
+     "devToolsCores": 0,
+     "otherCores": 0.75,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.20",
+      "explorer 0.19",
+      "claude 0.07",
+      "claude 0.05",
+      "iCUE 0.03"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 08:20:09 [model_runner.py:407] Model loading took 7.24 GiB memory and 15.936344 seconds",
+    "INFO 10-15 08:20:41 [model_runner.py:1087] Graph capturing finished in 8 secs, took 0.47 GiB",
+    "INFO 10-15 08:20:42 [kv_cache_utils.py:2464] GPU KV cache size: 9,352,448 tokens, Maximum concurrency for 1,049,600 tokens per request: 8.91x",
+    "INFO 10-15 08:20:46 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.06 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 65536,
+     "ttftMs": 1250,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 387.95,
+       "serverItlMs": 2.75
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 297.8,
+       "serverItlMs": 2.96
+      }
+     ]
+    },
+    {
+     "promptTokens": 131072,
+     "ttftMs": 4057,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 402.55,
+       "serverItlMs": 2.57
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 112.13,
+       "serverItlMs": 3.14
+      }
+     ]
+    },
+    {
+     "promptTokens": 262144,
+     "ttftMs": 14621,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 376.78,
+       "serverItlMs": 3.04
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 153.51,
+       "serverItlMs": 4.05
+      }
+     ]
+    },
+    {
+     "promptTokens": 524288,
+     "ttftMs": 55997,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 354.77,
+       "serverItlMs": 3.36
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": null,
+       "serverItlMs": 4.27
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "long-glm-5.3-flash-4l-202610150830",
+   "repo": "zai-org/GLM-5.3-Flash",
+   "layers": 4,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 1049600,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 3485000,
+   "startupS": 268,
+   "seconds": 475,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.11,
+     "otherCores": 0.7,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "explorer 0.26",
+      "claude 0.17",
+      "node 0.06",
+      "claude 0.05",
+      "claude 0.05"
+     ]
+    },
+    "during": {
+     "seconds": 80,
+     "devToolsCores": 0.28,
+     "otherCores": 1.55,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.66",
+      "explorer 0.45",
+      "node 0.27",
+      "claude 0.07",
+      "claude 0.06"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 08:23:39 [model_runner.py:407] Model loading took 10.68 GiB memory and 13.995122 seconds",
+    "INFO 10-15 08:24:30 [model_runner.py:1087] Graph capturing finished in 25 secs, took 3.90 GiB",
+    "INFO 10-15 08:24:30 [kv_cache_utils.py:2464] GPU KV cache size: 3,485,000 tokens, Maximum concurrency for 1,049,600 tokens per request: 3.32x",
+    "INFO 10-15 08:27:04 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.12 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 65536,
+     "ttftMs": 51713,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 33.64,
+       "serverItlMs": 30.15
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 31.54,
+       "serverItlMs": 116.42
+      }
+     ]
+    }
+   ],
+   "disturbed": "process degraded: after the 262K run (spill into shared memory) even 64K took 51.7 s instead of 1.5 s"
+  },
+  {
+   "name": "long-qwen3.8-27b-nvfp4-16l-202610150958",
+   "repo": "nvidia/Qwen3.8-27B-NVFP4",
+   "layers": 16,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 140000,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 2019791,
+   "startupS": 108,
+   "seconds": 157,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0,
+     "otherCores": 0.74,
+     "wslCores": 0.01,
+     "containersCores": 0,
+     "top": [
+      "claude 0.21",
+      "explorer 0.16",
+      "claude 0.08",
+      "claude 0.08",
+      "claude 0.03"
+     ]
+    },
+    "during": {
+     "seconds": 23,
+     "devToolsCores": 0.71,
+     "otherCores": 1.92,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "git 0.94",
+      "node 0.40",
+      "claude 0.32",
+      "node 0.28",
+      "explorer 0.22"
+     ]
+    }
+   },
+   "checks": {
+    "sharedGpuGrowthMiB": -11,
+    "probeTtftMs": [
+     166,
+     196
+    ]
+   },
+   "log": [
+    "INFO 10-15 09:56:16 [model_runner.py:407] Model loading took 7.13 GiB memory and 13.234776 seconds",
+    "INFO 10-15 09:56:57 [model_runner.py:1087] Graph capturing finished in 14 secs, took 0.49 GiB",
+    "INFO 10-15 09:56:58 [kv_cache_utils.py:2464] GPU KV cache size: 2,019,791 tokens, Maximum concurrency for 140,000 tokens per request: 14.43x",
+    "INFO 10-15 09:57:17 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.06 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 65536,
+     "ttftMs": 3331,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 153.32,
+       "serverItlMs": 6.71
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 107.89,
+       "serverItlMs": 10.71
+      }
+     ]
+    },
+    {
+     "promptTokens": 131072,
+     "ttftMs": 10234,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 131.44,
+       "serverItlMs": 7.85
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 109.26,
+       "serverItlMs": 11.03
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "long-glm-5.3-flash-4l-262k-202610151011",
+   "repo": "zai-org/GLM-5.3-Flash",
+   "layers": 4,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 270000,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 7982307,
+   "startupS": 232,
+   "seconds": 684,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.12,
+     "otherCores": 1.02,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.28",
+      "explorer 0.25",
+      "claude 0.17",
+      "node 0.07",
+      "iCUE 0.04"
+     ]
+    },
+    "during": {
+     "seconds": 298,
+     "devToolsCores": 0,
+     "otherCores": 1.38,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.72",
+      "claude 0.20",
+      "explorer 0.08",
+      "claude 0.04",
+      "claude 0.04"
+     ]
+    }
+   },
+   "checks": {
+    "sharedGpuGrowthMiB": 161,
+    "probeTtftMs": [
+     2636,
+     3096
+    ]
+   },
+   "log": [
+    "INFO 10-15 10:00:43 [model_runner.py:407] Model loading took 10.68 GiB memory and 13.445520 seconds",
+    "INFO 10-15 10:01:29 [model_runner.py:1087] Graph capturing finished in 21 secs, took 3.76 GiB",
+    "INFO 10-15 10:01:30 [kv_cache_utils.py:2464] GPU KV cache size: 7,982,307 tokens, Maximum concurrency for 270,000 tokens per request: 29.56x",
+    "INFO 10-15 10:03:37 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.09 GiB"
+   ],
+   "long": [
+    {
+     "promptTokens": 262144,
+     "ttftMs": 266376,
+     "decode": [
+      {
+       "batch": 1,
+       "tokSPerUser": 22.91,
+       "serverItlMs": 45.34
+      },
+      {
+       "batch": 4,
+       "tokSPerUser": 26.59,
+       "serverItlMs": 51.33
+      }
+     ]
+    }
+   ],
+   "disturbed": "spill: shared GPU memory grew by 21.9 GB during the 262K run (Windows sysmem fallback): at that length vLLM 0.31 allocates a transient buffer for GLM-5.3 beyond the RTX 5090's VRAM; not a valid measurement on the 5090, not a limit of the model"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/Gemma-4-31B-IT-NVFP4",
+  "revision": "4135a98a9b728a548947683219633b25682223ac",
+  "fetchedAt": "2026-10-14T19:15:08.137Z",
+  "createdAt": "2026-04-02T16:47:30.000Z",
+  "lastModified": "2026-07-13T22:33:54.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "apache-license-2.0",
+  "licenseLink": "https://ai.google.dev/gemma/apache_2",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 20868591152,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

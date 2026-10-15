@@ -1,0 +1,1418 @@
+{
+ "$comment": "vLLM vllm/vllm-openai:v0.31.0 on an RTX 5090 (Windows 11, Docker Desktop/WSL 2), dummy weights, fp8 KV cache, random token prompts; written by scripts/dev/speed.mjs. Runs marked \"disturbed\" (other programs using the CPU, which vLLM's scheduler needs) are kept with the reason but left out of the calibration.",
+ "engine": "vllm",
+ "engineVersion": "0.31.0",
+ "gpuId": "rtx-5090-32gb",
+ "runs": [
+  {
+   "name": "qwen3-8b-bf16-a",
+   "repo": "Qwen/Qwen3-8B",
+   "layers": null,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 167040,
+   "startupS": 114,
+   "seconds": 176,
+   "log": [
+    "INFO 10-15 04:47:35 [model_runner.py:407] Model loading took 15.27 GiB memory and 14.806182 seconds",
+    "INFO 10-15 04:48:16 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.51 GiB",
+    "INFO 10-15 04:48:17 [kv_cache_utils.py:2464] GPU KV cache size: 167,040 tokens, Maximum concurrency for 34,816 tokens per request: 4.80x",
+    "INFO 10-15 04:48:22 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.09 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      381.8,
+      373.9,
+      376.1
+     ],
+     "medianMs": 376.1
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      1880.6,
+      1830.7,
+      1882.5
+     ],
+     "medianMs": 1880.6
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      4864.1,
+      4867.6,
+      4963.7
+     ],
+     "medianMs": 4867.6
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 1,
+     "tokSPerUser": 57.43,
+     "windowMs": 2768
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 8,
+     "tokSPerUser": 52.77,
+     "windowMs": 2968
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 32,
+     "tokSPerUser": 52.3,
+     "windowMs": 2964
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 1,
+     "tokSPerUser": 54.36,
+     "windowMs": 2925
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 8,
+     "tokSPerUser": 44.01,
+     "windowMs": 3389
+    }
+   ],
+   "disturbed": "tsc --noEmit (type check) started by the measuring session was running during the measurement"
+  },
+  {
+   "name": "qwen3-235b-a22b-fp8-6l-a",
+   "repo": "Qwen/Qwen3-235B-A22B-FP8",
+   "layers": 6,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 1820912,
+   "startupS": 151,
+   "seconds": 182,
+   "log": [
+    "INFO 10-15 04:55:38 [model_runner.py:407] Model loading took 16.34 GiB memory and 19.503199 seconds",
+    "INFO 10-15 04:56:39 [model_runner.py:1087] Graph capturing finished in 23 secs, took 0.47 GiB",
+    "INFO 10-15 04:56:39 [kv_cache_utils.py:2464] GPU KV cache size: 1,820,912 tokens, Maximum concurrency for 34,816 tokens per request: 52.30x",
+    "INFO 10-15 04:56:50 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.06 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      76.9,
+      74.6,
+      78.4
+     ],
+     "medianMs": 76.9
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      377.2,
+      384.8,
+      378.7
+     ],
+     "medianMs": 378.7
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      1025.3,
+      1039.3,
+      1037
+     ],
+     "medianMs": 1037
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 1,
+     "tokSPerUser": 258.55,
+     "windowMs": 615
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 8,
+     "tokSPerUser": 123.54,
+     "windowMs": 1272
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 32,
+     "tokSPerUser": 74.32,
+     "windowMs": 2113
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 1,
+     "tokSPerUser": 223.76,
+     "windowMs": 706
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 8,
+     "tokSPerUser": 116.56,
+     "windowMs": 1279
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 32,
+     "tokSPerUser": 63.18,
+     "windowMs": 2216
+    }
+   ],
+   "disturbed": "vitest (CLI tests) started by the measuring session was running during the measurement"
+  },
+  {
+   "name": "qwen3-30b-a3b-fp8-24l-a",
+   "repo": "Qwen/Qwen3-30B-A3B-FP8",
+   "layers": 24,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 472416,
+   "startupS": 105,
+   "seconds": 142,
+   "log": [
+    "INFO 10-15 05:06:22 [model_runner.py:407] Model loading took 15.23 GiB memory and 25.407666 seconds",
+    "[rank0]:W1015 05:06:25.151000 104 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 05:06:25.151000 104 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 05:06:25.151000 104 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/VQK6SPHD3QS2STTRMZOACCKCM5B25IVHX7YDAGOTU3HWDD4NM6RQ/triton_red_fused_2.cubin')",
+    "[rank0]:W1015 05:06:25.154000 104 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 05:06:25.154000 104 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 05:06:25.154000 104 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/PON4WRXJXJTDRMZJEJVHTRQR5DXIOVD7R5RSDY2QPLCRC5HBVRWQ/triton_red_fused_1.cubin')",
+    "INFO 10-15 05:06:33 [model_runner.py:1087] Graph capturing finished in 5 secs, took 0.50 GiB",
+    "INFO 10-15 05:06:33 [kv_cache_utils.py:2464] GPU KV cache size: 472,416 tokens, Maximum concurrency for 34,816 tokens per request: 13.57x",
+    "INFO 10-15 05:06:42 [model_runner.py:1087] Graph capturing finished in 4 secs, took 0.06 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      216.9,
+      215.8,
+      229.5
+     ],
+     "medianMs": 216.9
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      958.6,
+      676.8,
+      634.6
+     ],
+     "medianMs": 676.8
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      2092.1,
+      2258.8,
+      2009.2
+     ],
+     "medianMs": 2092.1
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 1,
+     "tokSPerUser": 187.46,
+     "windowMs": 848,
+     "tries": [
+      187.5,
+      179.7
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 8,
+     "tokSPerUser": 92.57,
+     "windowMs": 1697,
+     "tries": [
+      89.3,
+      92.6
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 160,
+     "batch": 32,
+     "tokSPerUser": 60.78,
+     "windowMs": 2584,
+     "tries": [
+      59.6,
+      60.8
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 1,
+     "tokSPerUser": 184.48,
+     "windowMs": 862,
+     "tries": [
+      184.5,
+      166.5
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 160,
+     "batch": 8,
+     "tokSPerUser": 84.68,
+     "windowMs": 1773,
+     "tries": [
+      82.8,
+      84.7
+     ]
+    }
+   ],
+   "note": "no other process started by the measuring session; the load of other programs was not recorded yet"
+  },
+  {
+   "name": "qwen3-8b-bf16-b",
+   "repo": "Qwen/Qwen3-8B",
+   "layers": null,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 158032,
+   "startupS": 57,
+   "seconds": 196,
+   "log": [
+    "INFO 10-15 06:12:39 [model_runner.py:407] Model loading took 15.27 GiB memory and 9.119526 seconds",
+    "INFO 10-15 06:12:52 [model_runner.py:1087] Graph capturing finished in 3 secs, took 0.51 GiB",
+    "INFO 10-15 06:12:52 [kv_cache_utils.py:2464] GPU KV cache size: 158,032 tokens, Maximum concurrency for 34,816 tokens per request: 4.54x",
+    "INFO 10-15 06:12:56 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.07 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      357.4,
+      342.9,
+      361.8
+     ],
+     "medianMs": 357.4
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      1775.6,
+      1758.5,
+      1756.4
+     ],
+     "medianMs": 1758.5
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      4571.7,
+      4576.7,
+      4584.7
+     ],
+     "medianMs": 4576.7
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 67.34,
+     "windowMs": 7588,
+     "serverItlMs": 14.84,
+     "tries": [
+      67.3,
+      54
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 58.98,
+     "windowMs": 8632,
+     "serverItlMs": 16.93,
+     "tries": [
+      55.9,
+      59
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 55.58,
+     "windowMs": 9051,
+     "serverItlMs": 17.84,
+     "tries": [
+      55.6,
+      53.5
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 58.96,
+     "windowMs": 8666,
+     "serverItlMs": 17.02,
+     "tries": [
+      57.8,
+      59
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 47.23,
+     "windowMs": 10611,
+     "serverItlMs": 21.19,
+     "tries": [
+      41.1,
+      47.2
+     ]
+    }
+   ],
+   "disturbed": "CPU at 100 % from other test runs (vitest with coverage), measured right after the round"
+  },
+  {
+   "name": "qwen3-30b-a3b-fp8-24l-b",
+   "repo": "Qwen/Qwen3-30B-A3B-FP8",
+   "layers": 24,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 472416,
+   "startupS": 78,
+   "seconds": 148,
+   "log": [
+    "INFO 10-15 06:16:18 [model_runner.py:407] Model loading took 15.23 GiB memory and 21.900509 seconds",
+    "[rank0]:W1015 06:16:19.657000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:16:19.657000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:16:19.657000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/VQK6SPHD3QS2STTRMZOACCKCM5B25IVHX7YDAGOTU3HWDD4NM6RQ/triton_red_fused_2.cubin')",
+    "[rank0]:W1015 06:16:19.695000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:16:19.695000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:16:19.695000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/PON4WRXJXJTDRMZJEJVHTRQR5DXIOVD7R5RSDY2QPLCRC5HBVRWQ/triton_red_fused_1.cubin')",
+    "INFO 10-15 06:16:26 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.50 GiB",
+    "INFO 10-15 06:16:26 [kv_cache_utils.py:2464] GPU KV cache size: 472,416 tokens, Maximum concurrency for 34,816 tokens per request: 13.57x",
+    "INFO 10-15 06:16:32 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.06 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      101.8,
+      92.6,
+      92.4
+     ],
+     "medianMs": 92.6
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      617.5,
+      616.2,
+      623.3
+     ],
+     "medianMs": 617.5
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      1950.2,
+      1929.3,
+      1935.4
+     ],
+     "medianMs": 1935.4
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 227.69,
+     "windowMs": 2244,
+     "serverItlMs": 4.39,
+     "tries": [
+      227.7,
+      221
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 105.22,
+     "windowMs": 4839,
+     "serverItlMs": 9.48,
+     "tries": [
+      105.2,
+      104
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 62.5,
+     "windowMs": 8145,
+     "serverItlMs": 16,
+     "tries": [
+      62.5,
+      61.5
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 214.98,
+     "windowMs": 2377,
+     "serverItlMs": 4.67,
+     "tries": [
+      215,
+      181.8
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 62.49,
+     "windowMs": 7940,
+     "serverItlMs": 15.96,
+     "tries": [
+      61.8,
+      62.5
+     ]
+    }
+   ],
+   "disturbed": "CPU at 100 % from other test runs (vitest with coverage), measured right after the round"
+  },
+  {
+   "name": "qwen3-235b-a22b-fp8-6l-b",
+   "repo": "Qwen/Qwen3-235B-A22B-FP8",
+   "layers": 6,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 1651792,
+   "startupS": 130,
+   "seconds": 234,
+   "log": [
+    "INFO 10-15 06:19:32 [model_runner.py:407] Model loading took 16.34 GiB memory and 17.743328 seconds",
+    "[rank0]:W1015 06:19:34.072000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:19:34.072000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:19:34.072000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/VCYEK6AEIW55UF6UQTQ4ZATFLG6S42IBGMGSPRQETIEYAQRX5UVA/triton_red_fused_fused_add_rms_norm_1.cubin')",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/HWXZCZK57O2DPIJRZUDEUX3RDOZI2FWAUGTKFI3AN7AP5AALZXRA/triton_red_fused_fused_add_rms_norm_moe_forward_0.cubin')",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/MYS2VT7RAOCVROIMRMLHOVNSEWORJPINO4FOQEOOCU7E7Z7N5Y7A/triton_red_fused_fused_add_rms_norm_per_token_group_fp8_quant_packed_1.c",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:19:34.082000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/J33WQPBJXZZN5CN6REP3AVORTHFUSXHAVR3F7IMTYMPERTJP7USQ/triton_red_fused_2.cubin')",
+    "[rank0]:W1015 06:19:34.083000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 06:19:34.083000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 06:19:34.083000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/T2RJYZYJDCOZR7OPYTJNZAD4JVVDKPQT42H2XGVC7LMNQ5PFK5GQ/triton_red_fused_1.cubin')",
+    "INFO 10-15 06:19:48 [model_runner.py:1087] Graph capturing finished in 8 secs, took 0.47 GiB",
+    "INFO 10-15 06:19:49 [kv_cache_utils.py:2464] GPU KV cache size: 1,651,792 tokens, Maximum concurrency for 34,816 tokens per request: 47.44x",
+    "INFO 10-15 06:19:54 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.07 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      148,
+      153,
+      127.4
+     ],
+     "medianMs": 148
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      607.7,
+      495,
+      489.9
+     ],
+     "medianMs": 495
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      1247.1,
+      1191.8,
+      1201.8
+     ],
+     "medianMs": 1201.8
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 199.04,
+     "windowMs": 2567,
+     "serverItlMs": 5.03,
+     "tries": [
+      199,
+      163.1
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 88.48,
+     "windowMs": 5754,
+     "serverItlMs": 11.27,
+     "tries": [
+      88.5,
+      80.1
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 54.29,
+     "windowMs": 9193,
+     "serverItlMs": 18.16,
+     "tries": [
+      54.3,
+      47.8
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 138.33,
+     "windowMs": 3651,
+     "serverItlMs": 7.18,
+     "tries": [
+      130.6,
+      138.3
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 110.72,
+     "windowMs": 4535,
+     "serverItlMs": 9.03,
+     "tries": [
+      106.3,
+      110.7
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 51.71,
+     "windowMs": 8839,
+     "serverItlMs": 19.08,
+     "tries": [
+      50.6,
+      51.7
+     ]
+    }
+   ],
+   "disturbed": "CPU at 100 % from other test runs (vitest with coverage), measured right after the round"
+  },
+  {
+   "name": "qwen3-8b-bf16-202610150725",
+   "repo": "Qwen/Qwen3-8B",
+   "layers": null,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 158032,
+   "startupS": 60,
+   "seconds": 180,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0,
+     "otherCores": 1.44,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "git 0.95",
+      "claude 0.18",
+      "claude 0.11",
+      "claude 0.04",
+      "claude 0.02"
+     ]
+    },
+    "during": {
+     "seconds": 117,
+     "devToolsCores": 0.01,
+     "otherCores": 0.54,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.17",
+      "claude 0.10",
+      "iCUE 0.03",
+      "claude 0.03",
+      "OpenRGB 0.02"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 07:22:47 [model_runner.py:407] Model loading took 15.27 GiB memory and 9.822374 seconds",
+    "INFO 10-15 07:23:00 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.51 GiB",
+    "INFO 10-15 07:23:00 [kv_cache_utils.py:2464] GPU KV cache size: 158,032 tokens, Maximum concurrency for 34,816 tokens per request: 4.54x",
+    "INFO 10-15 07:23:05 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.07 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      355.8,
+      360.2,
+      357.5
+     ],
+     "medianMs": 357.5
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      1783.3,
+      1781.4,
+      1776.8
+     ],
+     "medianMs": 1781.4
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      4635.1,
+      4713.5,
+      4617.4
+     ],
+     "medianMs": 4635.1
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 82.48,
+     "windowMs": 6195,
+     "serverItlMs": 12.11,
+     "tries": [
+      82,
+      82.5
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 76.69,
+     "windowMs": 6629,
+     "serverItlMs": 12.99,
+     "tries": [
+      76.7,
+      76.3
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 67.53,
+     "windowMs": 7523,
+     "serverItlMs": 14.79,
+     "tries": [
+      67.3,
+      67.5
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 76.04,
+     "windowMs": 6720,
+     "serverItlMs": 13.16,
+     "tries": [
+      76,
+      75.8
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 52.4,
+     "windowMs": 9698,
+     "serverItlMs": 19.11,
+     "tries": [
+      52.3,
+      52.4
+     ]
+    }
+   ]
+  },
+  {
+   "name": "qwen3-30b-a3b-fp8-24l-202610150727",
+   "repo": "Qwen/Qwen3-30B-A3B-FP8",
+   "layers": 24,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 472512,
+   "startupS": 72,
+   "seconds": 142,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.01,
+     "otherCores": 1.27,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.42",
+      "claude 0.30",
+      "claude 0.25",
+      "claude 0.10",
+      "iCUE 0.02"
+     ]
+    },
+    "during": {
+     "seconds": 68,
+     "devToolsCores": 0.03,
+     "otherCores": 1.3,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.35",
+      "claude 0.24",
+      "firefox 0.13",
+      "firefox 0.12",
+      "firefox 0.08"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 07:26:11 [model_runner.py:407] Model loading took 15.23 GiB memory and 17.022734 seconds",
+    "[rank0]:W1015 07:26:13.108000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:26:13.108000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:26:13.108000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/VQK6SPHD3QS2STTRMZOACCKCM5B25IVHX7YDAGOTU3HWDD4NM6RQ/triton_red_fused_2.cubin')",
+    "[rank0]:W1015 07:26:13.126000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:26:13.126000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:26:13.126000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/PON4WRXJXJTDRMZJEJVHTRQR5DXIOVD7R5RSDY2QPLCRC5HBVRWQ/triton_red_fused_1.cubin')",
+    "INFO 10-15 07:26:22 [model_runner.py:1087] Graph capturing finished in 3 secs, took 0.50 GiB",
+    "INFO 10-15 07:26:23 [kv_cache_utils.py:2464] GPU KV cache size: 472,512 tokens, Maximum concurrency for 34,816 tokens per request: 13.57x",
+    "INFO 10-15 07:26:30 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.09 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      104.8,
+      125.4,
+      109.7
+     ],
+     "medianMs": 109.7
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      637.5,
+      662.8,
+      628.1
+     ],
+     "medianMs": 637.5
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      1962.3,
+      2046.8,
+      1969.1
+     ],
+     "medianMs": 1969.1
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 199.83,
+     "windowMs": 2557,
+     "serverItlMs": 5,
+     "tries": [
+      199.8,
+      197.9
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 107.59,
+     "windowMs": 4732,
+     "serverItlMs": 9.27,
+     "tries": [
+      107.6,
+      107
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 62.05,
+     "windowMs": 8203,
+     "serverItlMs": 16.1,
+     "tries": [
+      61,
+      62.1
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 201.95,
+     "windowMs": 2525,
+     "serverItlMs": 4.97,
+     "tries": [
+      202,
+      198.4
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 86.31,
+     "windowMs": 5830,
+     "serverItlMs": 11.56,
+     "tries": [
+      83.3,
+      86.3
+     ]
+    }
+   ]
+  },
+  {
+   "name": "qwen3-235b-a22b-fp8-6l-202610150730",
+   "repo": "Qwen/Qwen3-235B-A22B-FP8",
+   "layers": 6,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 1651792,
+   "startupS": 69,
+   "seconds": 149,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0,
+     "otherCores": 0.76,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.19",
+      "firefox 0.09",
+      "claude 0.07",
+      "firefox 0.07",
+      "claude 0.06"
+     ]
+    },
+    "during": {
+     "seconds": 77,
+     "devToolsCores": 0,
+     "otherCores": 1.04,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.27",
+      "claude 0.16",
+      "explorer 0.15",
+      "firefox 0.08",
+      "firefox 0.06"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 07:28:43 [model_runner.py:407] Model loading took 16.34 GiB memory and 15.562274 seconds",
+    "[rank0]:W1015 07:28:45.019000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:28:45.019000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:28:45.019000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/VCYEK6AEIW55UF6UQTQ4ZATFLG6S42IBGMGSPRQETIEYAQRX5UVA/triton_red_fused_fused_add_rms_norm_1.cubin')",
+    "[rank0]:W1015 07:28:45.030000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:28:45.030000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:28:45.030000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/HWXZCZK57O2DPIJRZUDEUX3RDOZI2FWAUGTKFI3AN7AP5AALZXRA/triton_red_fused_fused_add_rms_norm_moe_forward_0.cubin')",
+    "[rank0]:W1015 07:28:45.030000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:28:45.030000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:28:45.030000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/MYS2VT7RAOCVROIMRMLHOVNSEWORJPINO4FOQEOOCU7E7Z7N5Y7A/triton_red_fused_fused_add_rms_norm_per_token_group_fp8_quant_packed_1.c",
+    "[rank0]:W1015 07:28:45.031000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:28:45.031000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:28:45.031000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/J33WQPBJXZZN5CN6REP3AVORTHFUSXHAVR3F7IMTYMPERTJP7USQ/triton_red_fused_2.cubin')",
+    "[rank0]:W1015 07:28:45.042000 103 torch/_inductor/triton_bundler.py:242] Traceback (most recent call last):",
+    "[rank0]:W1015 07:28:45.042000 103 torch/_inductor/triton_bundler.py:242]     raise RuntimeError(",
+    "[rank0]:W1015 07:28:45.042000 103 torch/_inductor/triton_bundler.py:242] RuntimeError: ('Cubin file saved by TritonBundler not found at %s', '/tmp/torchinductor_root/triton/0/T2RJYZYJDCOZR7OPYTJNZAD4JVVDKPQT42H2XGVC7LMNQ5PFK5GQ/triton_red_fused_1.cubin')",
+    "INFO 10-15 07:29:00 [model_runner.py:1087] Graph capturing finished in 8 secs, took 0.47 GiB",
+    "INFO 10-15 07:29:00 [kv_cache_utils.py:2464] GPU KV cache size: 1,651,792 tokens, Maximum concurrency for 34,816 tokens per request: 47.44x",
+    "INFO 10-15 07:29:05 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.07 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      78.1,
+      76.9,
+      77.4
+     ],
+     "medianMs": 77.4
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      362.8,
+      362.3,
+      358.9
+     ],
+     "medianMs": 362.3
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      1057.6,
+      1025.9,
+      1047
+     ],
+     "medianMs": 1047
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 269.51,
+     "windowMs": 1896,
+     "serverItlMs": 3.71,
+     "tries": [
+      264.3,
+      269.5
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 133.08,
+     "windowMs": 3826,
+     "serverItlMs": 7.51,
+     "tries": [
+      126.2,
+      133.1
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 77.17,
+     "windowMs": 6583,
+     "serverItlMs": 12.95,
+     "tries": [
+      77.2,
+      74.8
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 292.44,
+     "windowMs": 1744,
+     "serverItlMs": 3.42,
+     "tries": [
+      290.9,
+      292.4
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 134.16,
+     "windowMs": 3758,
+     "serverItlMs": 7.46,
+     "tries": [
+      128,
+      134.2
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 61.82,
+     "windowMs": 8056,
+     "serverItlMs": 16.14,
+     "tries": [
+      61.8,
+      60.8
+     ]
+    }
+   ]
+  },
+  {
+   "name": "glm-5.3-flash-4l-202610150745",
+   "repo": "zai-org/GLM-5.3-Flash",
+   "layers": 4,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 4323514,
+   "startupS": 283,
+   "seconds": 350,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.02,
+     "otherCores": 0.37,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.13",
+      "claude 0.07",
+      "claude 0.04",
+      "iCUE 0.02",
+      "Smartlight 0.02"
+     ]
+    },
+    "during": {
+     "seconds": 65,
+     "devToolsCores": 0,
+     "otherCores": 0.67,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.21",
+      "explorer 0.17",
+      "claude 0.07",
+      "iCUE 0.03",
+      "claude 0.02"
+     ]
+    }
+   },
+   "log": [
+    "INFO 10-15 07:40:33 [model_runner.py:407] Model loading took 10.68 GiB memory and 14.501795 seconds",
+    "INFO 10-15 07:41:47 [model_runner.py:1087] Graph capturing finished in 40 secs, took 3.76 GiB",
+    "INFO 10-15 07:41:47 [kv_cache_utils.py:2464] GPU KV cache size: 4,323,514 tokens, Maximum concurrency for 34,816 tokens per request: 124.18x",
+    "INFO 10-15 07:44:04 [model_runner.py:1087] Graph capturing finished in 1 secs, took 0.09 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      1131.8,
+      78.7,
+      77.9
+     ],
+     "medianMs": 78.7
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      2847,
+      257.1,
+      252.7
+     ],
+     "medianMs": 257.1
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      510.6,
+      528.7,
+      509.3
+     ],
+     "medianMs": 510.6
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 231.24,
+     "windowMs": 2210,
+     "serverItlMs": 4.32,
+     "tries": [
+      223.7,
+      231.2
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 224,
+     "windowMs": 2264,
+     "serverItlMs": 4.53,
+     "tries": [
+      203.1,
+      224
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 177.49,
+     "windowMs": 2784,
+     "serverItlMs": 7.76,
+     "tries": [
+      177.5,
+      177.4
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 243.84,
+     "windowMs": 2096,
+     "serverItlMs": 4.12,
+     "tries": [
+      243.8,
+      238
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 235.22,
+     "windowMs": 2051,
+     "serverItlMs": 4.89,
+     "tries": [
+      235.2,
+      217.7
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 194.67,
+     "windowMs": 2014,
+     "serverItlMs": 7.82,
+     "tries": [
+      194.7,
+      165.5
+     ]
+    }
+   ]
+  },
+  {
+   "name": "qwen3.8-27b-nvfp4-16l-202610150952",
+   "repo": "nvidia/Qwen3.8-27B-NVFP4",
+   "layers": 16,
+   "kvCacheDtype": "fp8",
+   "maxModelLen": 34816,
+   "maxNumSeqs": 32,
+   "date": "2026-10-15",
+   "kvTokens": 1667566,
+   "startupS": 141,
+   "seconds": 358,
+   "cpuLoad": {
+    "before": {
+     "seconds": 11,
+     "devToolsCores": 0.1,
+     "otherCores": 0.9,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "explorer 0.31",
+      "claude 0.19",
+      "node 0.07",
+      "claude 0.06",
+      "OpenRGB 0.05"
+     ]
+    },
+    "during": {
+     "seconds": 105,
+     "devToolsCores": 0.01,
+     "otherCores": 1.07,
+     "wslCores": 0,
+     "containersCores": 0,
+     "top": [
+      "claude 0.26",
+      "claude 0.21",
+      "explorer 0.19",
+      "claude 0.07",
+      "claude 0.03"
+     ]
+    }
+   },
+   "checks": {
+    "sharedGpuGrowthMiB": -17,
+    "probeTtftMs": [
+     190,
+     134
+    ]
+   },
+   "log": [
+    "INFO 10-15 09:47:33 [model_runner.py:407] Model loading took 7.13 GiB memory and 20.006231 seconds",
+    "INFO 10-15 09:48:22 [model_runner.py:1087] Graph capturing finished in 16 secs, took 0.49 GiB",
+    "INFO 10-15 09:48:22 [kv_cache_utils.py:2464] GPU KV cache size: 1,667,566 tokens, Maximum concurrency for 34,816 tokens per request: 47.90x",
+    "INFO 10-15 09:48:44 [model_runner.py:1087] Graph capturing finished in 3 secs, took 0.06 GiB"
+   ],
+   "ttft": [
+    {
+     "promptTokens": 4096,
+     "ttftMs": [
+      208.9,
+      180.4,
+      153.8
+     ],
+     "medianMs": 180.4
+    },
+    {
+     "promptTokens": 16384,
+     "ttftMs": [
+      599,
+      567.4,
+      571.8
+     ],
+     "medianMs": 571.8
+    },
+    {
+     "promptTokens": 32768,
+     "ttftMs": [
+      1303.4,
+      1416.9,
+      1705.7
+     ],
+     "medianMs": 1416.9
+    }
+   ],
+   "decode": [
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 149.39,
+     "windowMs": 3421,
+     "serverItlMs": 6.69,
+     "tries": [
+      149.4,
+      141.9
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 136.5,
+     "windowMs": 3686,
+     "serverItlMs": 7.57,
+     "tries": [
+      128.7,
+      136.5
+     ]
+    },
+    {
+     "inputLen": 1024,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 116.89,
+     "windowMs": 4098,
+     "serverItlMs": 10.23,
+     "tries": [
+      116.9,
+      109.3
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 1,
+     "tokSPerUser": 143.12,
+     "windowMs": 3570,
+     "serverItlMs": 7,
+     "tries": [
+      143.1,
+      97.8
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 8,
+     "tokSPerUser": 127.22,
+     "windowMs": 3947,
+     "serverItlMs": 8.03,
+     "tries": [
+      127.2,
+      120.9
+     ]
+    },
+    {
+     "inputLen": 16384,
+     "outputLen": 512,
+     "batch": 32,
+     "tokSPerUser": 94.67,
+     "windowMs": 5219,
+     "serverItlMs": 11.22,
+     "tries": [
+      89.3,
+      94.7
+     ]
+    }
+   ]
+  }
+ ]
+}

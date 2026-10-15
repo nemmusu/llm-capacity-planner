@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "revision": "fc694b54fb0174e0913e6adf86691ef85a4ead47",
+  "fetchedAt": "2026-10-14T19:10:11.477Z",
+  "createdAt": "2026-09-02T04:03:35.000Z",
+  "lastModified": "2026-09-05T23:36:02.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-open-model-license",
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 119602003859,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

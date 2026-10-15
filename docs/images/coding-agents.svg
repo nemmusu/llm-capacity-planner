@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="828" height="404" viewBox="0 0 828 404" role="img" aria-label="$ llm-capacity-planner moonshotai/Kimi-K2.7-Code --tokens 128k --users 300 --active 30">
+<rect x="0.5" y="0.5" width="827" height="403" rx="8" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 30V8.5a8 8 0 0 1 8-8h811a8 8 0 0 1 8 8V30Z" fill="#161b22"/>
+<line x1="0.5" y1="30" x2="827.5" y2="30" stroke="#30363d"/>
+<circle cx="18" cy="15" r="6" fill="#ff5f56"/>
+<circle cx="38" cy="15" r="6" fill="#ffbd2e"/>
+<circle cx="58" cy="15" r="6" fill="#27c93f"/>
+<text x="414" y="19" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">llm-capacity-planner</text>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#c9d1d9" xml:space="preserve" style="white-space:pre">
+<text x="16.0" y="59"><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3" font-weight="bold">llm-capacity-planner moonshotai/Kimi-K2.7-Code --tokens 128k --users 300 --active 30</tspan></text>
+<text y="77"><tspan x="16.0" textLength="54.6" lengthAdjust="spacingAndGlyphs" font-weight="bold">Summary</tspan></text>
+<text y="95"><tspan x="31.6" textLength="733.2" lengthAdjust="spacingAndGlyphs">Recommendation: 19 servers with 4× NVIDIA B300 SXM each serve 300 users with requests of up to</tspan></text>
+<text y="113"><tspan x="62.8" textLength="717.6" lengthAdjust="spacingAndGlyphs">128k tokens (≈ 98,000 words ≈ 200 pages; 64k on average): ≈ 16 users per server. Each server</tspan></text>
+<text y="131"><tspan x="62.8" textLength="733.2" lengthAdjust="spacingAndGlyphs">runs its own copy of the model, and a load balancer (a router in front of the servers) spreads</tspan></text>
+<text y="149"><tspan x="62.8" textLength="717.6" lengthAdjust="spacingAndGlyphs">the users across them. Caution: each server runs at 95% of its guaranteed capacity, so waits</tspan></text>
+<text y="167"><tspan x="62.8" textLength="475.8" lengthAdjust="spacingAndGlyphs">grow fast with more traffic: one more server leaves headroom.</tspan></text>
+<text y="185"><tspan x="31.6" textLength="764.4" lengthAdjust="spacingAndGlyphs">Alternative: 14 servers with 8× NVIDIA B200 SXM each (≈ 23 users per server). Caution: each server</tspan></text>
+<text y="203"><tspan x="62.8" textLength="725.4" lengthAdjust="spacingAndGlyphs">runs at 92% of its guaranteed capacity, so waits grow fast with more traffic: one more server</tspan></text>
+<text y="221"><tspan x="62.8" textLength="124.8" lengthAdjust="spacingAndGlyphs">leaves headroom.</tspan></text>
+<text y="239"><tspan x="31.6" textLength="725.4" lengthAdjust="spacingAndGlyphs">Not enough: RTX PRO 6000 Server, L4, L40S, A100 and H100, even with 8 GPUs in one server; RTX</tspan></text>
+<text y="257"><tspan x="62.8" textLength="694.2" lengthAdjust="spacingAndGlyphs">A6000, RTX 6000 Ada, RTX PRO 6000 WS, RTX PRO 6000 Max-Q and consumer cards, even with 4;</tspan></text>
+<text y="275"><tspan x="62.8" textLength="148.2" lengthAdjust="spacingAndGlyphs">GH200, even with 2.</tspan></text>
+<text y="293"><tspan x="31.6" textLength="764.4" lengthAdjust="spacingAndGlyphs">Speed for each user: writing about 29 words per second (16 to 43; 39 tokens/s); with everyone busy</tspan></text>
+<text y="311"><tspan x="62.8" textLength="733.2" lengthAdjust="spacingAndGlyphs">the first words appear after about 1.9 s, and a full 128k-token request alone is read in about</tspan></text>
+<text y="329"><tspan x="62.8" textLength="226.2" lengthAdjust="spacingAndGlyphs">4.7 s (1 token ≈ 0.75 words).</tspan></text>
+<text y="347"><tspan x="31.6" textLength="764.4" lengthAdjust="spacingAndGlyphs">Confidence: memory high (±3.9%); writing speed medium (±45%); reading time low, not precise enough</tspan></text>
+<text y="365"><tspan x="62.8" textLength="663.0" lengthAdjust="spacingAndGlyphs">to decide (more than ±50%); user count medium (±45%). Plan on the guaranteed figures.</tspan></text>
+<text x="16.0" y="383" fill="#8b949e">…</text>
+</g>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "repo": "inclusionAI/Ling-3.0-flash",
+  "revision": "fcc60a52b34c69c6271d0ac8a8cb0815020b6a43",
+  "fetchedAt": "2026-10-14T18:18:33.240Z",
+  "createdAt": "2026-08-02T16:14:41.000Z",
+  "lastModified": "2026-10-12T11:46:10.000Z",
+  "gated": false,
+  "license": "mit",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 127486405600,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

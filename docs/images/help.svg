@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="828" height="818" viewBox="0 0 828 818" role="img" aria-label="$ llm-capacity-planner --help">
+<rect x="0.5" y="0.5" width="827" height="817" rx="8" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 30V8.5a8 8 0 0 1 8-8h811a8 8 0 0 1 8 8V30Z" fill="#161b22"/>
+<line x1="0.5" y1="30" x2="827.5" y2="30" stroke="#30363d"/>
+<circle cx="18" cy="15" r="6" fill="#ff5f56"/>
+<circle cx="38" cy="15" r="6" fill="#ffbd2e"/>
+<circle cx="58" cy="15" r="6" fill="#27c93f"/>
+<text x="414" y="19" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">llm-capacity-planner</text>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#c9d1d9" xml:space="preserve" style="white-space:pre">
+<text x="16.0" y="59"><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3" font-weight="bold">llm-capacity-planner --help</tspan></text>
+<text y="77"><tspan x="16.0" textLength="741.0" lengthAdjust="spacingAndGlyphs">Which NVIDIA hardware a Hugging Face model needs with vLLM or SGLang, how many users it serves,</tspan></text>
+<text y="95"><tspan x="16.0" textLength="733.2" lengthAdjust="spacingAndGlyphs">and how fast. Nothing is downloaded or run: only config.json and safetensors headers are read.</tspan></text>
+<text y="113"><tspan x="16.0" textLength="460.2" lengthAdjust="spacingAndGlyphs">No GPU and no inference engine are needed on this computer.</tspan></text>
+<text y="149"><tspan x="16.0" textLength="678.6" lengthAdjust="spacingAndGlyphs">Examples (free models, no license to accept; they work offline from the built-in data):</tspan></text>
+<text y="167"><tspan x="31.6" textLength="483.6" lengthAdjust="spacingAndGlyphs">llm-capacity-planner zai-org/GLM-5.3 --tokens 128k --users 200</tspan></text>
+<text y="185"><tspan x="62.8" textLength="397.8" lengthAdjust="spacingAndGlyphs">long documents (128k tokens ≈ 200 pages), 200 users</tspan></text>
+<text y="203"><tspan x="31.6" textLength="655.2" lengthAdjust="spacingAndGlyphs">llm-capacity-planner moonshotai/Kimi-K2.7-Code --tokens 128k --users 300 --active 30</tspan></text>
+<text y="221"><tspan x="62.8" textLength="475.8" lengthAdjust="spacingAndGlyphs">coding with agents, 300 users at 30% active (agents are busy)</tspan></text>
+<text y="239"><tspan x="31.6" textLength="374.4" lengthAdjust="spacingAndGlyphs">llm-capacity-planner zai-org/GLM-5.3 --users 200</tspan></text>
+<text y="257"><tspan x="62.8" textLength="475.8" lengthAdjust="spacingAndGlyphs">the same 200 users at the model's maximum context (1M tokens)</tspan></text>
+<text y="275"><tspan x="31.6" textLength="655.2" lengthAdjust="spacingAndGlyphs">llm-capacity-planner openai/gpt-oss-120b --tokens 32k --users 2000 --prompt-cache 80</tspan></text>
+<text y="293"><tspan x="62.8" textLength="514.8" lengthAdjust="spacingAndGlyphs">chat, 2,000 users, 80% of each request already in the prefix cache</tspan></text>
+<text y="311"><tspan x="31.6" textLength="756.6" lengthAdjust="spacingAndGlyphs">llm-capacity-planner deepseek-ai/DeepSeek-V4-Pro-0813 --tokens 64k --gpu h200 --count 8 --details</tspan></text>
+<text y="329"><tspan x="62.8" textLength="507.0" lengthAdjust="spacingAndGlyphs">one configuration in detail: 8× H200, every number and its limits</tspan></text>
+<text y="347"><tspan x="31.6" textLength="608.4" lengthAdjust="spacingAndGlyphs">llm-capacity-planner zai-org/GLM-5.3 --tokens 128k --users 200 --engine sglang</tspan></text>
+<text y="365"><tspan x="62.8" textLength="304.2" lengthAdjust="spacingAndGlyphs">the same question for the SGLang engine</tspan></text>
+<text y="383"><tspan x="31.6" textLength="351.0" lengthAdjust="spacingAndGlyphs">llm-capacity-planner report glm --csv glm.csv</tspan></text>
+<text y="401"><tspan x="62.8" textLength="616.2" lengthAdjust="spacingAndGlyphs">ready-made results for recent open models (here: the GLM ones), saved for Excel</tspan></text>
+<text y="437"><tspan x="16.0" textLength="179.4" lengthAdjust="spacingAndGlyphs">The three main options:</tspan></text>
+<text y="455"><tspan x="31.6" textLength="39.0" lengthAdjust="spacingAndGlyphs">model</tspan><tspan x="195.4" textLength="561.6" lengthAdjust="spacingAndGlyphs">the Hugging Face repo id, e.g. zai-org/GLM-5.3 (searched when not exact)</tspan></text>
+<text y="473"><tspan x="31.6" textLength="78.0" lengthAdjust="spacingAndGlyphs">--tokens N</tspan><tspan x="195.4" textLength="530.4" lengthAdjust="spacingAndGlyphs">tokens in one request: question, documents, conversation and answer;</tspan></text>
+<text y="491"><tspan x="195.4" textLength="561.6" lengthAdjust="spacingAndGlyphs">e.g. 8k, 32k, 128k, 1M (default: the model's maximum); k = 1,024 tokens,</tspan></text>
+<text y="509"><tspan x="195.4" textLength="514.8" lengthAdjust="spacingAndGlyphs">M = 1,048,576 (128k = 131,072 tokens); a token is about 0.75 words</tspan></text>
+<text y="527"><tspan x="31.6" textLength="124.8" lengthAdjust="spacingAndGlyphs">--cache fp8|auto</tspan><tspan x="195.4" textLength="553.8" lengthAdjust="spacingAndGlyphs">the KV cache is the memory the engine keeps for each open conversation;</tspan></text>
+<text y="545"><tspan x="195.4" textLength="475.8" lengthAdjust="spacingAndGlyphs">fp8 = half the memory, the usual production choice (default);</tspan></text>
+<text y="563"><tspan x="195.4" textLength="257.4" lengthAdjust="spacingAndGlyphs">auto = the model's full precision</tspan></text>
+<text y="599"><tspan x="16.0" textLength="319.8" lengthAdjust="spacingAndGlyphs">Sizing for a team (defaults in brackets):</tspan></text>
+<text y="617"><tspan x="31.6" textLength="70.2" lengthAdjust="spacingAndGlyphs">--users N</tspan><tspan x="195.4" textLength="553.8" lengthAdjust="spacingAndGlyphs">total clients to serve: people, or AI agents/subagents working for them</tspan></text>
+<text y="635"><tspan x="195.4" textLength="577.2" lengthAdjust="spacingAndGlyphs">(one person running 5 subagents counts as 5); e.g. --users 200, 2k = 2,000</tspan></text>
+<text y="653"><tspan x="31.6" textLength="78.0" lengthAdjust="spacingAndGlyphs">--active P</tspan><tspan x="195.4" textLength="546.0" lengthAdjust="spacingAndGlyphs">% of users sending a request at the same moment (10); e.g. --active 20</tspan></text>
+<text y="671"><tspan x="31.6" textLength="101.4" lengthAdjust="spacingAndGlyphs">--min-tok-s N</tspan><tspan x="195.4" textLength="592.8" lengthAdjust="spacingAndGlyphs">slowest acceptable answer speed per user, tokens/s (20); e.g. --min-tok-s 30</tspan></text>
+<text y="689"><tspan x="31.6" textLength="93.6" lengthAdjust="spacingAndGlyphs">--max-wait S</tspan><tspan x="195.4" textLength="491.4" lengthAdjust="spacingAndGlyphs">longest acceptable wait for the first token under load, seconds</tspan></text>
+<text y="707"><tspan x="195.4" textLength="475.8" lengthAdjust="spacingAndGlyphs">(10, or, if longer, twice the wait for the first words of one</tspan></text>
+<text y="725"><tspan x="195.4" textLength="319.8" lengthAdjust="spacingAndGlyphs">typical request alone); e.g. --max-wait 5</tspan></text>
+<text y="743"><tspan x="31.6" textLength="124.8" lengthAdjust="spacingAndGlyphs">--prompt-cache P</tspan><tspan x="195.4" textLength="585.0" lengthAdjust="spacingAndGlyphs">% of each request already read and reused: system prompt, shared documents,</tspan></text>
+<text y="761"><tspan x="195.4" textLength="429.0" lengthAdjust="spacingAndGlyphs">a chat's history (0); e.g. --prompt-cache 80 for a chat</tspan></text>
+<text y="779"><tspan x="31.6" textLength="148.2" lengthAdjust="spacingAndGlyphs">--typical-context N</tspan><tspan x="195.4" textLength="507.0" lengthAdjust="spacingAndGlyphs">tokens of a typical request, at most --tokens (half of --tokens);</tspan></text>
+<text x="16.0" y="797" fill="#8b949e">…</text>
+</g>
+</svg>

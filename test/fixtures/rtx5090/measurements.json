@@ -1,0 +1,166 @@
+{
+ "$comment": "vLLM vllm/vllm-openai:v0.31.0 on the reference RTX 5090 (Windows 11 + WSL2), dummy weights; written by scripts/dev/measure.mjs",
+ "runs": [
+  {
+   "name": "nvfp4-hybrid-4",
+   "repo": "nvidia/Qwen3.8-27B-NVFP4",
+   "layers": 4,
+   "eager": true,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 450,
+   "ok": true,
+   "format": "nvfp4",
+   "family": "hybrid",
+   "calculatedGiB": 4.907,
+   "lines": [
+    "INFO 10-14 21:18:05 [model_runner.py:407] Model loading took 5.03 GiB memory and 35.631213 seconds",
+    "INFO 10-14 21:19:58 [gpu_worker.py:692] Available KV cache memory: 21.46 GiB",
+    "INFO 10-14 21:19:58 [kv_cache_utils.py:2464] GPU KV cache size: 3,457,024 tokens, Maximum concurrency for 8,192 tokens per request: 422.00x",
+    "INFO 10-14 21:21:43 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 5.38 GiB for consumed memory (weights + non-torch), 1.8 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=22882957927` (21.31 GiB) to fit into requested memory, or `--kv-"
+   ]
+  },
+  {
+   "name": "nvfp4-hybrid-8-text",
+   "repo": "nvidia/Qwen3.8-27B-NVFP4",
+   "layers": 8,
+   "eager": true,
+   "textOnly": true,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 240,
+   "ok": true,
+   "format": "nvfp4",
+   "family": "hybrid",
+   "calculatedGiB": 5.032,
+   "lines": [
+    "INFO 10-14 21:32:55 [model_runner.py:407] Model loading took 5.15 GiB memory and 15.113395 seconds",
+    "INFO 10-14 21:33:09 [gpu_worker.py:692] Available KV cache memory: 22.84 GiB",
+    "INFO 10-14 21:33:09 [kv_cache_utils.py:2464] GPU KV cache size: 1,839,344 tokens, Maximum concurrency for 8,192 tokens per request: 224.53x",
+    "INFO 10-14 21:36:10 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 5.48 GiB for consumed memory (weights + non-torch), 0.32 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=24363851367` (22.69 GiB) to fit into requested memory, or `--kv"
+   ]
+  },
+  {
+   "name": "nvfp4-hybrid-4-text",
+   "repo": "nvidia/Qwen3.8-27B-NVFP4",
+   "layers": 4,
+   "eager": true,
+   "textOnly": true,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 137,
+   "ok": true,
+   "format": "nvfp4",
+   "family": "hybrid",
+   "calculatedGiB": 4.049,
+   "lines": [
+    "INFO 10-14 21:36:56 [model_runner.py:407] Model loading took 4.16 GiB memory and 14.808010 seconds",
+    "INFO 10-14 21:37:11 [gpu_worker.py:692] Available KV cache memory: 23.84 GiB",
+    "INFO 10-14 21:37:11 [kv_cache_utils.py:2464] GPU KV cache size: 3,841,084 tokens, Maximum concurrency for 8,192 tokens per request: 468.88x",
+    "INFO 10-14 21:38:27 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 4.48 GiB for consumed memory (weights + non-torch), 0.32 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=25441787495` (23.69 GiB) to fit into requested memory, or `--kv"
+   ]
+  },
+  {
+   "name": "fp8-hybrid-4-text",
+   "repo": "Qwen/Qwen3.8-27B-FP8",
+   "layers": 4,
+   "eager": true,
+   "textOnly": true,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 93,
+   "ok": true,
+   "format": "fp8",
+   "family": "hybrid",
+   "calculatedGiB": 6.187,
+   "lines": [
+    "INFO 10-14 21:39:22 [model_runner.py:407] Model loading took 6.29 GiB memory and 11.260895 seconds",
+    "INFO 10-14 21:39:42 [gpu_worker.py:692] Available KV cache memory: 21.77 GiB",
+    "INFO 10-14 21:39:42 [kv_cache_utils.py:2464] GPU KV cache size: 3,507,139 tokens, Maximum concurrency for 8,192 tokens per request: 428.12x",
+    "INFO 10-14 21:40:09 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 6.53 GiB for consumed memory (weights + non-torch), 0.34 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=23215922791` (21.62 GiB) to fit into requested memory, or `--kv"
+   ]
+  },
+  {
+   "name": "fp8-hybrid-8-text",
+   "repo": "Qwen/Qwen3.8-27B-FP8",
+   "layers": 8,
+   "eager": true,
+   "textOnly": true,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 113,
+   "ok": true,
+   "format": "fp8",
+   "family": "hybrid",
+   "calculatedGiB": 7.606,
+   "lines": [
+    "INFO 10-14 21:41:02 [model_runner.py:407] Model loading took 7.71 GiB memory and 14.477621 seconds",
+    "INFO 10-14 21:41:21 [gpu_worker.py:692] Available KV cache memory: 20.34 GiB",
+    "INFO 10-14 21:41:21 [kv_cache_utils.py:2464] GPU KV cache size: 1,638,400 tokens, Maximum concurrency for 8,192 tokens per request: 200.00x",
+    "INFO 10-14 21:42:03 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 7.95 GiB for consumed memory (weights + non-torch), 0.34 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=21685001831` (20.2 GiB) to fit into requested memory, or `--kv-"
+   ]
+  },
+  {
+   "name": "mxfp4-moe-full",
+   "repo": "openai/gpt-oss-20b",
+   "layers": null,
+   "eager": true,
+   "textOnly": false,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 113,
+   "ok": true,
+   "format": "mxfp4",
+   "family": "moe",
+   "calculatedGiB": 12.832,
+   "lines": [
+    "INFO 10-14 21:43:15 [model_runner.py:407] Model loading took 13.8 GiB memory and 17.333939 seconds",
+    "INFO 10-14 21:43:21 [gpu_worker.py:692] Available KV cache memory: 14.31 GiB",
+    "INFO 10-14 21:43:21 [kv_cache_utils.py:2464] GPU KV cache size: 411,930 tokens, Maximum concurrency for 8,192 tokens per request: 50.28x",
+    "INFO 10-14 21:43:58 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 14.22 GiB for consumed memory (weights + non-torch), 0.1 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=15206332519` (14.16 GiB) to fit into requested memory, or `--kv"
+   ]
+  },
+  {
+   "name": "bf16-dense-graphs",
+   "repo": "Qwen/Qwen3-8B",
+   "layers": null,
+   "eager": false,
+   "textOnly": false,
+   "maxModelLen": 16384,
+   "date": "2026-10-14",
+   "seconds": 192,
+   "ok": true,
+   "format": "bf16",
+   "family": "dense",
+   "calculatedGiB": 15.266,
+   "lines": [
+    "INFO 10-14 21:44:50 [model_runner.py:407] Model loading took 15.27 GiB memory and 9.352948 seconds",
+    "INFO 10-14 21:47:07 [model_runner.py:1087] Graph capturing finished in 106 secs, took 0.09 GiB",
+    "INFO 10-14 21:47:07 [gpu_worker.py:692] Available KV cache memory: 11.91 GiB",
+    "INFO 10-14 21:47:07 [kv_cache_utils.py:2464] GPU KV cache size: 86,736 tokens, Maximum concurrency for 16,384 tokens per request: 5.29x",
+    "INFO 10-14 21:47:12 [model_runner.py:1087] Graph capturing finished in 2 secs, took 0.08 GiB",
+    "INFO 10-14 21:47:12 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 15.49 GiB for consumed memory (weights + non-torch), 1.24 GiB for peak activation, and 0.08 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=12544843367` (11.68 GiB) to fit into requested memory, or `--"
+   ]
+  },
+  {
+   "name": "bf16-multimodal-text",
+   "repo": "google/gemma-4-12B-it",
+   "layers": null,
+   "eager": true,
+   "textOnly": true,
+   "maxModelLen": 8192,
+   "date": "2026-10-14",
+   "seconds": 74,
+   "ok": true,
+   "format": "bf16",
+   "family": "dense",
+   "calculatedGiB": 22.432,
+   "lines": [
+    "INFO 10-14 21:48:16 [model_runner.py:407] Model loading took 22.83 GiB memory and 11.812514 seconds",
+    "INFO 10-14 21:48:27 [gpu_worker.py:692] Available KV cache memory: 4.24 GiB",
+    "INFO 10-14 21:48:27 [kv_cache_utils.py:2464] GPU KV cache size: 20,510 tokens, Maximum concurrency for 8,192 tokens per request: 2.50x",
+    "INFO 10-14 21:48:28 [gpu_worker.py:955] Free memory on device (30.2/31.82 GiB) on startup. Desired GPU memory utilization is (0.9, 28.63 GiB). Actual usage is 24.16 GiB for consumed memory (weights + non-torch), 0.24 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=4393332839` (4.09 GiB) to fit into requested memory, or `--kv-"
+   ]
+  }
+ ]
+}

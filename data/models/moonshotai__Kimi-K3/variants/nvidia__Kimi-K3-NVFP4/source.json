@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/Kimi-K3-NVFP4",
+  "revision": "b2428a0b83a8b712ff2e1a8448a103d4175341f1",
+  "fetchedAt": "2026-10-14T19:13:27.350Z",
+  "createdAt": "2026-08-13T19:06:29.000Z",
+  "lastModified": "2026-08-29T06:53:44.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-open-model-license",
+  "licenseLink": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 1418561422080,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

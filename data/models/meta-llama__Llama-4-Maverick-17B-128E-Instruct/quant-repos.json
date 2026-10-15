@@ -1,0 +1,232 @@
+{
+  "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+  "fetchedAt": "2026-10-14T19:50:00.624Z",
+  "repos": [
+    {
+      "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "94125d2bd83076b21eed33119525e29eaf3894f4",
+      "createdAt": "2025-04-01T20:47:02.000Z",
+      "gated": "manual",
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "compressed-tensors",
+      "safetensorsTotal": 401649841664,
+      "safetensorsDtypes": {
+        "BF16": 15102785024,
+        "F8_E4M3": 386547056640
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8-Original",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "a9fb9bc25a0f8eabc6b1d523c8605bbc2dd5135b",
+      "createdAt": "2025-04-04T10:03:43.000Z",
+      "gated": "manual",
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "67c56dfc0e87cd4ade6ec403b59fa7922b762b13",
+      "createdAt": "2025-04-04T08:02:25.000Z",
+      "gated": "manual",
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "e91306aa6edc0a8b551b1815027163646638d252",
+      "createdAt": "2025-04-14T22:57:36.000Z",
+      "gated": "auto",
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 401583781376,
+      "safetensorsDtypes": {
+        "BF16": 2957129216,
+        "F8_E4M3": 398626652160
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Maverick-17B-128E-Instruct",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "dbea5fb8f0b98f77f593572b3a08c8da02e5257e",
+      "createdAt": "2025-05-11T12:56:14.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 401583781376,
+      "safetensorsDtypes": {
+        "BF16": 401583781376
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "f56c1930905103a65333cec765775dee747351d3",
+      "createdAt": "2025-05-12T21:21:01.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 401649841664,
+      "safetensorsDtypes": {
+        "BF16": 15102785024,
+        "F8_E4M3": 386547056640
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Maverick-17B-128E-Instruct-FP8-block",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6b5007fa9cf3097874abba8c4350b5bfa50cfeff",
+      "createdAt": "2025-10-27T00:24:17.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 401607927296,
+      "safetensorsDtypes": {
+        "BF16": 6001174016,
+        "F8_E4M3": 395606753280
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Maverick-17B-128E-Instruct-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "4cfc814092ee78023173bb340f10e1ad0c251578",
+      "createdAt": "2025-10-27T14:27:00.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 228505845536,
+      "safetensorsDtypes": {
+        "F32": 18720,
+        "BF16": 5977028096,
+        "F8_E4M3": 24725422080,
+        "U8": 197803376640
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Maverick-17B-128E-Instruct-quantized.w4a16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b26390e93d51850e5874bb093244f3e11dcbe158",
+      "createdAt": "2025-06-12T00:58:45.000Z",
+      "gated": false,
+      "architectures": [
+        "Llama4ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 404674477856,
+      "safetensorsDtypes": {
+        "BF16": 9067705856,
+        "I64": 18720,
+        "I32": 395606753280
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Llama-4-Maverick-17B-128E-Instruct-speculator.eagle3",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "8e994e05c4bc1021882c7de227abacb2e053ce4e",
+      "createdAt": "2025-09-08T13:59:47.000Z",
+      "gated": false,
+      "architectures": [
+        "Eagle3Speculator"
+      ],
+      "precision": null,
+      "safetensorsTotal": 1716080640,
+      "safetensorsDtypes": {
+        "BF16": 1716080640
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

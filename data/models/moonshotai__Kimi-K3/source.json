@@ -1,0 +1,28 @@
+{
+  "repo": "moonshotai/Kimi-K3",
+  "revision": "f831ab66814297da540d832a5235f8e904f29d06",
+  "fetchedAt": "2026-10-14T18:12:31.976Z",
+  "createdAt": "2026-06-13T06:42:57.000Z",
+  "lastModified": "2026-09-02T02:22:41.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "kimi-k3",
+  "licenseLink": null,
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 2779931837184,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

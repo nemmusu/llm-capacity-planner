@@ -1,0 +1,27 @@
+{
+  "repo": "ibm-granite/granite-4.2-3b-nvfp4",
+  "revision": "c30d480be0e8440e84835497f00218628fc2ab1c",
+  "fetchedAt": "2026-10-14T19:16:18.713Z",
+  "createdAt": "2026-08-13T21:04:44.000Z",
+  "lastModified": "2026-09-02T22:02:33.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 3659737600,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

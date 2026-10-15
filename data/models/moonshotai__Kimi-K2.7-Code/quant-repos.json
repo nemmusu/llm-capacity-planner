@@ -1,0 +1,76 @@
+{
+  "repo": "moonshotai/Kimi-K2.7-Code",
+  "fetchedAt": "2026-10-14T18:30:03.707Z",
+  "repos": [
+    {
+      "repo": "nvidia/Kimi-K2.7-Code-DFlash",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "2fd81453174fe03654693762828957a237395807",
+      "createdAt": "2026-07-08T21:16:29.000Z",
+      "gated": false,
+      "architectures": [
+        "DFlashDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 3479277056,
+      "safetensorsDtypes": {
+        "BF16": 3479277056
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/Kimi-K2.7-Code-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9f28d60908c98034bb288e755566764eac77cc0d",
+      "createdAt": "2026-07-06T19:47:06.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK25ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "NVFP4"
+      },
+      "hfQuantAlgo": "NVFP4"
+    },
+    {
+      "repo": "RedHatAI/Kimi-K2.7-Code",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "74d03b455fc71cfe8a53f142054a6e9e90cdd4e4",
+      "createdAt": "2026-06-18T01:05:34.000Z",
+      "gated": false,
+      "architectures": [
+        "KimiK25ForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 1058589420528,
+      "safetensorsDtypes": {
+        "BF16": 43902267888,
+        "F32": 23040,
+        "I32": 1014687129600
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

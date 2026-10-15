@@ -1,0 +1,30 @@
+{
+  "repo": "openai/gpt-oss-20b",
+  "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "fetchedAt": "2026-10-14T18:13:54.970Z",
+  "createdAt": "2025-08-04T22:33:29.000Z",
+  "lastModified": "2025-08-26T17:25:47.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 20914757184,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [
+    "original/model.safetensors"
+  ],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

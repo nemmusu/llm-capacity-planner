@@ -1,0 +1,207 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "fetchedAt": "2026-10-14T18:30:44.666Z",
+  "repos": [
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-GenRM",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "03c50a66b14ef8d2cf6e8acbd0f7703a5ffa576f",
+      "createdAt": "2026-05-26T22:42:45.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 560524578816,
+      "safetensorsDtypes": {
+        "BF16": 560524578816,
+        "F32": 25088
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "02462641f13d3af838b904f48195b9bb8a1e4ebc",
+      "createdAt": "2026-06-03T14:54:33.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 302826566168,
+      "safetensorsDtypes": {
+        "BF16": 16640790528,
+        "F8_E4M3": 28286386176,
+        "F32": 201351704,
+        "U8": 257698037760
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "4668c743e6a19f1632f524b337252b173cdecf70",
+      "createdAt": "2026-06-13T06:21:15.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 560524578816,
+      "safetensorsDtypes": {
+        "BF16": 560524578816,
+        "F32": 25088
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-block",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "75b691c14f99b51a8018e62ffff43b2c36a4582e",
+      "createdAt": "2026-06-04T22:04:43.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 560524603904,
+      "safetensorsDtypes": {
+        "BF16": 2359185408,
+        "F8_E4M3": 558165393408,
+        "F32": 25088
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-dynamic",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "0d08e59f6a3b4512f4694cb9780bdf667c2078e8",
+      "createdAt": "2026-06-04T19:09:44.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 560524603904,
+      "safetensorsDtypes": {
+        "BF16": 2359185408,
+        "F8_E4M3": 558165393408,
+        "F32": 25088
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "46c8e7b3558183088f70860ead877ae81563fcef",
+      "createdAt": "2026-06-09T20:22:12.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 302826566168,
+      "safetensorsDtypes": {
+        "BF16": 16640790528,
+        "F8_E4M3": 28286386176,
+        "F32": 201351704,
+        "U8": 257698037760
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-quantized.w4a16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "1913f70d91440081f801178a951bd40647b9a3d6",
+      "createdAt": "2026-06-04T22:17:21.000Z",
+      "gated": false,
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 560524603904,
+      "safetensorsDtypes": {
+        "I32": 558165393408,
+        "BF16": 2359185408,
+        "F32": 25088
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-speculator.dflash",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "f9e73643a2dc14d8879be5a55d8426deb12a2904",
+      "createdAt": "2026-06-05T15:46:35.000Z",
+      "gated": false,
+      "architectures": [
+        "DFlashDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 2858680832,
+      "safetensorsDtypes": {
+        "I64": 32000,
+        "BF16": 2858517760,
+        "BOOL": 131072
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

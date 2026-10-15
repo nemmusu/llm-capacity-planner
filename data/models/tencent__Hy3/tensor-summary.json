@@ -1,0 +1,502 @@
+{
+  "repo": "tencent/Hy3",
+  "revision": "a960ebc3da325ba167f069f76c41eb62c9280d22",
+  "weightFormat": "hf",
+  "shards": 99,
+  "tensors": 47138,
+  "tensorBytes": 597572342272,
+  "fileBytes": 597578239288,
+  "headerBytes": 5896224,
+  "entries": [
+    {
+      "pattern": "lm_head.weight",
+      "dtype": "BF16",
+      "shape": [
+        120832,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 989855744,
+      "layers": null
+    },
+    {
+      "pattern": "model.embed_tokens.weight",
+      "dtype": "BF16",
+      "shape": [
+        120832,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 989855744,
+      "layers": null
+    },
+    {
+      "pattern": "model.layers.{n}.eh_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        8192
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 67108864,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.enorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8192,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.final_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8192,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.hnorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8192,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 655360,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8192,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        13312
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 109051904,
+      "layers": "0"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.expert_bias",
+      "dtype": "F32",
+      "shape": [
+        192
+      ],
+      "group": "lm",
+      "count": 79,
+      "bytes": 60672,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.expert_bias",
+      "dtype": "F32",
+      "shape": [
+        192
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 768,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.experts.{n}.down_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1536
+      ],
+      "group": "lm",
+      "count": 15168,
+      "bytes": 190857609216,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.experts.{n}.down_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1536
+      ],
+      "group": "mtp",
+      "count": 192,
+      "bytes": 2415919104,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.experts.{n}.gate_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "lm",
+      "count": 15168,
+      "bytes": 190857609216,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.experts.{n}.gate_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "mtp",
+      "count": 192,
+      "bytes": 2415919104,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.experts.{n}.up_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "lm",
+      "count": 15168,
+      "bytes": 190857609216,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.experts.{n}.up_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "mtp",
+      "count": 192,
+      "bytes": 2415919104,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        13312,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 109051904,
+      "layers": "0"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.router.gate.weight",
+      "dtype": "BF16",
+      "shape": [
+        192,
+        4096
+      ],
+      "group": "lm",
+      "count": 79,
+      "bytes": 124256256,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.router.gate.weight",
+      "dtype": "BF16",
+      "shape": [
+        192,
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 1572864,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.shared_mlp.down_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1536
+      ],
+      "group": "lm",
+      "count": 79,
+      "bytes": 994050048,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.shared_mlp.down_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1536
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 12582912,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.shared_mlp.gate_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "lm",
+      "count": 79,
+      "bytes": 994050048,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.shared_mlp.gate_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 12582912,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.shared_mlp.up_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "lm",
+      "count": 79,
+      "bytes": 994050048,
+      "layers": "1-79"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.shared_mlp.up_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1536,
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 12582912,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        13312,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 109051904,
+      "layers": "0"
+    },
+    {
+      "pattern": "model.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 655360,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8192,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        128
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 20480,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        128
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 256,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        4096
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 671088640,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8388608,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        8192
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 5368709120,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        8192
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 67108864,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        128
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 20480,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        128
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 256,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        8192,
+        4096
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 5368709120,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        8192,
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 67108864,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        4096
+      ],
+      "group": "lm",
+      "count": 80,
+      "bytes": 671088640,
+      "layers": "0-79"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        4096
+      ],
+      "group": "mtp",
+      "count": 1,
+      "bytes": 8388608,
+      "layers": "80"
+    },
+    {
+      "pattern": "model.norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 8192,
+      "layers": null
+    }
+  ]
+}

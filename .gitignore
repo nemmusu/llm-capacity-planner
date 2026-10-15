@@ -1,0 +1,13 @@
+node_modules/
+out/
+# The built program (npm run dist): attached to the GitHub Releases, not committed.
+dist/
+coverage/
+.qa/
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
+# Captured engine logs are test data.
+!test/fixtures/**/*.log

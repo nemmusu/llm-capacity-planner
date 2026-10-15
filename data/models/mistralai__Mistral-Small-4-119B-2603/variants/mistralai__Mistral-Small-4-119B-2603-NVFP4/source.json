@@ -1,0 +1,26 @@
+{
+  "repo": "mistralai/Mistral-Small-4-119B-2603-NVFP4",
+  "revision": "45331841b631f4e281df8e959ea3cc9beb84298a",
+  "fetchedAt": "2026-10-14T19:14:59.020Z",
+  "createdAt": "2026-03-03T10:51:08.000Z",
+  "lastModified": "2026-09-07T07:28:06.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": null,
+  "hfSafetensorsTotal": null,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "params.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "mistral",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

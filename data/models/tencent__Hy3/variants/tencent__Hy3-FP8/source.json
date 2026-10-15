@@ -1,0 +1,27 @@
+{
+  "repo": "tencent/Hy3-FP8",
+  "revision": "ecc1d8e194e093f33177f2f0ef7ce8f397b2d68b",
+  "fetchedAt": "2026-10-14T19:16:20.567Z",
+  "createdAt": "2026-07-04T13:39:00.000Z",
+  "lastModified": "2026-07-20T07:05:00.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 298786202423,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

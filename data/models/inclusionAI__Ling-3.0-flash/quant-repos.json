@@ -1,0 +1,368 @@
+{
+  "repo": "inclusionAI/Ling-3.0-flash",
+  "fetchedAt": "2026-10-14T18:36:19.328Z",
+  "repos": [
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-dspark",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d60b0e1291dacb256194c6d48154398730cf8986",
+      "createdAt": "2026-08-09T12:32:20.000Z",
+      "gated": false,
+      "architectures": [
+        "LingDSparkModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 1363707905,
+      "safetensorsDtypes": {
+        "BF16": 1363707905
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-Fin",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "a5b4afb48f526175991724472c179e5a065604de",
+      "createdAt": "2026-09-03T06:09:53.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 127486405600,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "BF16": 127486240128
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-Fin-fp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "7748601ef3dd9032a36b1ff0e4f3db451b824964",
+      "createdAt": "2026-09-10T05:39:50.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "mixed:mxfp4+fp8-block",
+      "safetensorsTotal": 65578478560,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "BF16": 922461568,
+        "F8_E4M3": 2747924480,
+        "I8": 61907927040
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-Fin-fp8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "28bf489f3e33eeae2515f4bd006b9f6218512c6d",
+      "createdAt": "2026-09-09T07:34:01.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 127486405600,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "BF16": 922461568,
+        "F8_E4M3": 126563778560
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-Fin-int4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b52f0e6d347dd0a343c7070b368dcd94dcb9d13c",
+      "createdAt": "2026-09-09T07:34:36.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 127486405600,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "I32": 123815854080,
+        "BF16": 3670386048
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-fp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "3bae1cf4011b48475b2cc038fff283af49053ebc",
+      "createdAt": "2026-08-04T04:33:13.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "mixed:mxfp4+fp8-block",
+      "safetensorsTotal": 65578478560,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "BF16": 909354368,
+        "F8_E4M3": 2761031680,
+        "I8": 61907927040
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-fp8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "88d48c5a46e1b2f609144e83d95b8ac47528b12e",
+      "createdAt": "2026-08-04T03:59:52.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 127486405600,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "BF16": 909354368,
+        "F8_E4M3": 126576885760
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-GGUF",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "29edce5130491e638f3e5ebec91fa0a5ed4f780e",
+      "createdAt": "2026-08-31T03:18:15.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-int4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "7a27e9eb8179b2c2eb71eb214f0dab14ec6a63f2",
+      "createdAt": "2026-08-04T04:31:51.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3ForCausalLM"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 127486405600,
+      "safetensorsDtypes": {
+        "F32": 165472,
+        "I32": 123815854080,
+        "BF16": 3670386048
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-singprobe",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "872e3b3ef6800423335042ff60066f3d1bce3570",
+      "createdAt": "2026-09-01T07:12:49.000Z",
+      "gated": false,
+      "architectures": [
+        "SingProbeAttnModel"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 5182986,
+      "safetensorsDtypes": {
+        "BF16": 5182986
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-VL",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "c22bf252f15b66d18ca00a15989ac7ed46b7f09e",
+      "createdAt": "2026-09-04T15:24:37.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3VLForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 124848460496,
+      "safetensorsDtypes": {
+        "F32": 164960,
+        "BF16": 124848295536
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-VL-fp4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "8dca6a0d4dde1ddc79cfe79506173bbf375393ac",
+      "createdAt": "2026-09-08T10:22:02.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3VLForConditionalGeneration"
+      ],
+      "precision": "mixed:mxfp4+fp8-block",
+      "safetensorsTotal": 64450482896,
+      "safetensorsDtypes": {
+        "F32": 164960,
+        "BF16": 1336528496,
+        "F8_E4M3": 2715811840,
+        "I8": 60397977600
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-VL-fp8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6f040eebd79d756ab4f6ef69a86d194a569198e0",
+      "createdAt": "2026-09-08T10:21:21.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3VLForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 124848460496,
+      "safetensorsDtypes": {
+        "F32": 164960,
+        "BF16": 1296846448,
+        "F8_E4M3": 123551449088
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "inclusionAI/Ling-3.0-flash-VL-int4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "94759a4b454498d91144582e26c1341ba1acb5d4",
+      "createdAt": "2026-09-08T10:22:40.000Z",
+      "gated": false,
+      "architectures": [
+        "BailingMoeV3VLForConditionalGeneration"
+      ],
+      "precision": "w4a16-int4",
+      "safetensorsTotal": 124848460496,
+      "safetensorsDtypes": {
+        "F32": 164960,
+        "I32": 120795955200,
+        "BF16": 4052340336
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

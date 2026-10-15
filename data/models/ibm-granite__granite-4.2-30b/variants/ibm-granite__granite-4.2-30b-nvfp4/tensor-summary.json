@@ -1,0 +1,391 @@
+{
+  "repo": "ibm-granite/granite-4.2-30b-nvfp4",
+  "revision": "bddf34bc6db17e5c4f586e49c1668c8e97610446",
+  "weightFormat": "hf",
+  "shards": 4,
+  "tensors": 1923,
+  "tensorBytes": 17650691584,
+  "fileBytes": 17650910328,
+  "headerBytes": 218712,
+  "entries": [
+    {
+      "pattern": "lm_head.weight",
+      "dtype": "BF16",
+      "shape": [
+        100352,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 822083584,
+      "layers": null
+    },
+    {
+      "pattern": "model.embed_tokens.weight",
+      "dtype": "BF16",
+      "shape": [
+        100352,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 822083584,
+      "layers": null
+    },
+    {
+      "pattern": "model.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 524288,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        4096,
+        16384
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 4294967296,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 536870912,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        32768,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 4294967296,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        32768,
+        256
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 536870912,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        32768,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 4294967296,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        32768,
+        256
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 536870912,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 524288,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 134217728,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        1024,
+        256
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 16777216,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        4096,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 536870912,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        256
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 67108864,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        4096,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 536870912,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        256
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 67108864,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.input_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_global_scale",
+      "dtype": "F32",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 256,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_packed",
+      "dtype": "U8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 134217728,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_scale",
+      "dtype": "F8_E4M3",
+      "shape": [
+        1024,
+        256
+      ],
+      "group": "lm",
+      "count": 64,
+      "bytes": 16777216,
+      "layers": "0-63"
+    },
+    {
+      "pattern": "model.norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 8192,
+      "layers": null
+    }
+  ]
+}

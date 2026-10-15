@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/Kimi-K2.7-Code-NVFP4",
+  "revision": "9f28d60908c98034bb288e755566764eac77cc0d",
+  "fetchedAt": "2026-10-14T19:13:57.680Z",
+  "createdAt": "2026-07-06T19:47:06.000Z",
+  "lastModified": "2026-07-06T22:38:23.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-open-model-license",
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": null,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

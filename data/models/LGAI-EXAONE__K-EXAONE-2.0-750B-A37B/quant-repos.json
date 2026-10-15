@@ -1,0 +1,83 @@
+{
+  "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+  "fetchedAt": "2026-10-14T18:31:07.036Z",
+  "repos": [
+    {
+      "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-DSpark",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "e42409dbd652ade0bc043fd85ef0c86044f97b46",
+      "createdAt": "2026-07-30T08:48:54.000Z",
+      "gated": false,
+      "architectures": [
+        "ExaoneMoeForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 751361363969,
+      "safetensorsDtypes": {
+        "F32": 19456,
+        "BF16": 751361344513
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b219707595c1330a95964abf9a06e38dae2f062c",
+      "createdAt": "2026-07-30T08:47:52.000Z",
+      "gated": false,
+      "architectures": [
+        "ExaoneMoeForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 749357484800,
+      "safetensorsDtypes": {
+        "BF16": 2536472320,
+        "F8_E4M3": 746820993024,
+        "F32": 19456
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "360716a7e9cb1161906061d23fb9c68fe3767d6c",
+      "createdAt": "2026-07-30T08:48:26.000Z",
+      "gated": false,
+      "architectures": [
+        "ExaoneMoeForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 410600277504,
+      "safetensorsDtypes": {
+        "BF16": 72900135680,
+        "U8": 338228674560
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "NVFP4"
+      },
+      "hfQuantAlgo": "NVFP4"
+    }
+  ]
+}

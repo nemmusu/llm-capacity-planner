@@ -1,0 +1,86 @@
+{
+  "repo": "MiniMaxAI/MiniMax-M3",
+  "fetchedAt": "2026-10-14T18:36:09.825Z",
+  "repos": [
+    {
+      "repo": "MiniMaxAI/MiniMax-M3-MXFP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "c5454eb03678d8710e54a4e0fc681b9f3b4a3dba",
+      "createdAt": "2026-06-02T07:50:45.000Z",
+      "gated": false,
+      "architectures": [
+        "MiniMaxM3SparseForConditionalGeneration"
+      ],
+      "precision": "mxfp8",
+      "safetensorsTotal": 440279845760,
+      "safetensorsDtypes": {
+        "F32": 46339200,
+        "BF16": 3323221760,
+        "F8_E4M3": 423670579200,
+        "U8": 13239705600
+      },
+      "quantizationConfig": {
+        "quant_method": "mxfp8",
+        "format": null,
+        "weight_block_size": [
+          1,
+          32
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/MiniMax-M3-DSpark",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "e82db0e1895bc4e0c339ce670b2b553899a57f59",
+      "createdAt": "2026-07-15T20:47:13.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3DSparkModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 3294647808,
+      "safetensorsDtypes": {
+        "F32": 2065454592,
+        "BF16": 1229193216
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/MiniMax-M3-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "901464083161bf8612a29ff7ad29914cd4ab4a85",
+      "createdAt": "2026-06-23T20:48:47.000Z",
+      "gated": false,
+      "architectures": [
+        "MiniMaxM3SparseForConditionalGeneration"
+      ],
+      "precision": "mixed:nvfp4+mxfp8",
+      "safetensorsTotal": 220479056768,
+      "safetensorsDtypes": {
+        "U8": 206561083392,
+        "F32": 46339200,
+        "BF16": 3323221760,
+        "F8_E4M3": 10548412416
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/Qwen3.5-397B-A17B-NVFP4",
+  "revision": "12b28061efd8145b11226e4fab2528ee4f39ef09",
+  "fetchedAt": "2026-10-14T19:10:53.260Z",
+  "createdAt": "2026-02-16T19:27:14.000Z",
+  "lastModified": "2026-06-30T04:27:08.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": null,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

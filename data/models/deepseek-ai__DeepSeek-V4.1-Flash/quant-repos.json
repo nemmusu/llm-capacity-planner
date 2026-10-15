@@ -1,0 +1,69 @@
+{
+  "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fetchedAt": "2026-10-14T18:55:41.397Z",
+  "repos": [
+    {
+      "repo": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "c48dca0146b56d64c8116dbb6fcace8b7cc835f8",
+      "createdAt": "2026-09-16T20:37:42.000Z",
+      "gated": false,
+      "architectures": [
+        "DeepseekV41ForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 763205315794,
+      "safetensorsDtypes": {
+        "BF16": 1976441856,
+        "F32": 42307282,
+        "F8_E4M3": 204015223296,
+        "U8": 543581798400,
+        "I8": 13589544960
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": [
+          32,
+          32
+        ],
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/DeepSeek-V4.1-Flash",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "37119b250584feb29c7acd928bfb250a91fb8690",
+      "createdAt": "2026-09-11T14:01:17.000Z",
+      "gated": false,
+      "architectures": [
+        "DeepseekV41ForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 763205315794,
+      "safetensorsDtypes": {
+        "BF16": 1976441856,
+        "F32": 42307282,
+        "F8_E4M3": 204015223296,
+        "I8": 557171343360
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": [
+          32,
+          32
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

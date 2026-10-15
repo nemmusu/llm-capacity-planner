@@ -1,0 +1,69 @@
+# Continuous integration on Windows, Linux and macOS, on every push to main and every pull request: lint, types,
+# every test suite with the 100 % coverage gate, then the single executable of each system, checked against the
+# sources, smoke-tested and kept as a build artifact. Releases are built by release.yml.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [22, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run dist
+      - name: The built files match the sources
+        run: npx vitest run test/dist
+      - name: Smoke test of the single executable (offline, built-in model)
+        shell: bash
+        env:
+          HF_ENDPOINT: http://127.0.0.1:9
+        run: |
+          name=$(node -p "require('./package.json').name")
+          exe=$(ls dist/"$name"-*-* | head -n 1)
+          "$exe" --version
+          "$exe" Qwen/Qwen3.5-9B --tokens 32k --offline --no-color
+      - uses: actions/upload-artifact@v4
+        if: matrix.node == 22
+        with:
+          name: dist-${{ matrix.os }}
+          path: dist/
+          retention-days: 14
+
+  # Every line of engine code data/compat.json cites, re-read at the release tags it was checked on (shallow clones).
+  code-anchors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Clone vLLM and SGLang at the tags of data/compat.json
+        run: |
+          ref() { node -p "require('./data/compat.json').engines.find((e) => e.engine === '$1').ref"; }
+          git clone --depth 1 --branch "$(ref vllm)" https://github.com/vllm-project/vllm.git "$RUNNER_TEMP/vllm"
+          git clone --depth 1 --branch "$(ref sglang)" https://github.com/sgl-project/sglang.git "$RUNNER_TEMP/sglang"
+      - name: Every cited line still holds its anchor
+        env:
+          CAPACITY_PLANNER_SRC_VLLM: ${{ runner.temp }}/vllm
+          CAPACITY_PLANNER_SRC_SGLANG: ${{ runner.temp }}/sglang
+        run: npx vitest run test/contract/compat.test.ts

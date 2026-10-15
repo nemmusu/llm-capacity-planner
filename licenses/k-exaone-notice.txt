@@ -1,0 +1,23 @@
+NOTICE of the model repository
+
+Source: https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8/blob/b219707595c1330a95964abf9a06e38dae2f062c/NOTICE
+        https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-NVFP4/blob/360716a7e9cb1161906061d23fb9c68fe3767d6c/NOTICE
+        https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/NOTICE
+Applies to the files of: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B, LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8, LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-NVFP4
+(see NOTICE.md)
+
+-------------------------------------------------------------------------------
+K-EXAONE 2.0
+Copyright © 2026 LG AI Research
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

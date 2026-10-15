@@ -1,0 +1,28 @@
+{
+  "repo": "zai-org/GLM-5.3",
+  "revision": "ba32f8c19c8738e2c57c71798c601d477a7bf844",
+  "fetchedAt": "2026-10-14T18:12:09.524Z",
+  "createdAt": "2026-08-25T06:42:50.000Z",
+  "lastModified": "2026-10-14T12:22:48.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "glm-5.3",
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 753329940480,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

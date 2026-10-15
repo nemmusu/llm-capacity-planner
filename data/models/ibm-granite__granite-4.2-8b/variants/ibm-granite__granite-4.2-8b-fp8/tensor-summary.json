@@ -1,0 +1,237 @@
+{
+  "repo": "ibm-granite/granite-4.2-8b-fp8",
+  "revision": "6eb3735036ce2010f4ec8319820172a1c06508d7",
+  "weightFormat": "hf",
+  "shards": 2,
+  "tensors": 643,
+  "tensorBytes": 9617203200,
+  "fileBytes": 9617279064,
+  "headerBytes": 75848,
+  "entries": [
+    {
+      "pattern": "lm_head.weight",
+      "dtype": "BF16",
+      "shape": [
+        100352,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 822083584,
+      "layers": null
+    },
+    {
+      "pattern": "model.embed_tokens.weight",
+      "dtype": "BF16",
+      "shape": [
+        100352,
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 822083584,
+      "layers": null
+    },
+    {
+      "pattern": "model.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 327680,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        12800
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 2097152000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.down_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 327680,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        12800,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 2097152000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.gate_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        12800,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 1024000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        12800,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 2097152000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.mlp.up_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        12800,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 1024000,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 327680,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        1024,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 167772160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.k_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 81920,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 671088640,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.o_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 327680,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 671088640,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.q_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 327680,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight",
+      "dtype": "F8_E4M3",
+      "shape": [
+        1024,
+        4096
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 167772160,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.layers.{n}.self_attn.v_proj.weight_scale",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        1
+      ],
+      "group": "lm",
+      "count": 40,
+      "bytes": 81920,
+      "layers": "0-39"
+    },
+    {
+      "pattern": "model.norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 8192,
+      "layers": null
+    }
+  ]
+}

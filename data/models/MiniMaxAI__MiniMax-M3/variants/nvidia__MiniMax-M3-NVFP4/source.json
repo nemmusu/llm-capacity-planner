@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/MiniMax-M3-NVFP4",
+  "revision": "901464083161bf8612a29ff7ad29914cd4ab4a85",
+  "fetchedAt": "2026-10-14T19:14:21.169Z",
+  "createdAt": "2026-06-23T20:48:47.000Z",
+  "lastModified": "2026-06-26T17:18:03.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "minimax-community-license",
+  "licenseLink": "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 220479056768,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json.gz",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

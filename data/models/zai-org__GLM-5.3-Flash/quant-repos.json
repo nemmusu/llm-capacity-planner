@@ -1,0 +1,153 @@
+{
+  "repo": "zai-org/GLM-5.3-Flash",
+  "fetchedAt": "2026-10-14T18:29:57.074Z",
+  "repos": [
+    {
+      "repo": "nvidia/GLM-5.3-Flash-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "da920bb0b9f4a06727223a349e55468e38352348",
+      "createdAt": "2026-09-02T20:37:17.000Z",
+      "gated": false,
+      "architectures": [
+        "Glm5NextForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 168893635422,
+      "safetensorsDtypes": {
+        "BF16": 16460604030,
+        "U8": 152429395968,
+        "F32": 3635424
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "NVFP4"
+      },
+      "hfQuantAlgo": "NVFP4"
+    },
+    {
+      "repo": "RedHatAI/GLM-5.3-Flash",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "65f08d30effe279b199312bc7c1f652f85a82c20",
+      "createdAt": "2026-09-11T13:55:16.000Z",
+      "gated": false,
+      "architectures": [
+        "Glm5NextForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 321323031390,
+      "safetensorsDtypes": {
+        "BF16": 6926096640,
+        "F8_E4M3": 314396639232,
+        "F32": 295518
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": "e4m3",
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/GLM-5.3-Flash-BF16",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "91616b28b0669c3771b72729f422780c27775b84",
+      "createdAt": "2026-08-27T00:33:52.000Z",
+      "gated": false,
+      "architectures": [
+        "Glm5NextForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 321323031390,
+      "safetensorsDtypes": {
+        "BF16": 321322735872,
+        "F32": 295518
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/GLM-5.3-Flash-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "18d55bfd5a2194887738da73753975c9d3842f46",
+      "createdAt": "2026-08-27T02:13:22.000Z",
+      "gated": false,
+      "architectures": [
+        "Glm5NextForConditionalGeneration"
+      ],
+      "precision": "mixed:nvfp4+fp8-block",
+      "safetensorsTotal": 169120127838,
+      "safetensorsDtypes": {
+        "F32": 3342624,
+        "BF16": 9666124350,
+        "U8": 152202903552,
+        "F8_E4M3": 7247757312
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mixed-precision",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/GLM-5.3-Flash-speculator.dspark-preview",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "1972f1f0ebb5c1219e0a1f3344d642c857f5dfb4",
+      "createdAt": "2026-09-23T19:33:00.000Z",
+      "gated": false,
+      "architectures": [
+        "DSparkDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 2539312001,
+      "safetensorsDtypes": {
+        "BF16": 2539312001
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "zai-org/GLM-5.3-Flash-BF16",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "a5b45eb41df6402735dedc900be14a42e8d5e538",
+      "createdAt": "2026-08-25T06:45:05.000Z",
+      "gated": false,
+      "architectures": [
+        "Glm5NextForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 321323031390,
+      "safetensorsDtypes": {
+        "F32": 295518,
+        "BF16": 321322735872
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "repo": "microsoft/Phi-4-reasoning-vision-15B",
+  "fetchedAt": "2026-10-14T18:31:02.263Z",
+  "repos": [
+    {
+      "repo": "RedHatAI/Phi-4-reasoning-vision-15B",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "0b7ec2724284e7bdb063669a2507da119274df89",
+      "createdAt": "2026-03-27T16:29:23.000Z",
+      "gated": false,
+      "architectures": [
+        "Phi4ForCausalLMV"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 15119518144,
+      "safetensorsDtypes": {
+        "BF16": 15119518144
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

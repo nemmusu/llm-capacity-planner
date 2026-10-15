@@ -1,0 +1,115 @@
+{
+  "repo": "mistralai/Mistral-Small-4-119B-2603",
+  "fetchedAt": "2026-10-14T18:30:13.278Z",
+  "repos": [
+    {
+      "repo": "mistralai/Mistral-Small-4-119B-2603-eagle",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9a8ea22dca0161ff7af7879f4a0000f65314797d",
+      "createdAt": "2026-03-04T16:38:14.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "mistralai/Mistral-Small-4-119B-2603-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "45331841b631f4e281df8e959ea3cc9beb84298a",
+      "createdAt": "2026-03-03T10:51:08.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "nvfp4",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Mistral-Small-4-119B-2603",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "3311063b4ef87050ea18587a5d7a0b7f1a5af444",
+      "createdAt": "2026-03-27T16:12:03.000Z",
+      "gated": false,
+      "architectures": [
+        "Mistral3ForConditionalGeneration"
+      ],
+      "precision": "fp8",
+      "safetensorsTotal": 119401317952,
+      "safetensorsDtypes": {
+        "BF16": 1521452032,
+        "F8_E4M3": 117879865344
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Mistral-Small-4-119B-2603-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "a7b11eb3bdf01f38077f6704e96cc1d9b83a4cfc",
+      "createdAt": "2026-03-27T00:17:02.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "nvfp4",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Mistral-Small-4-119B-2603-speculator.dspark",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "1dcfc8a0c2cef296881de0b0752f383ae6d2a07f",
+      "createdAt": "2026-07-21T23:33:29.000Z",
+      "gated": false,
+      "architectures": [
+        "DSparkDraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 2281756161,
+      "safetensorsDtypes": {
+        "BF16": 2281756161
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

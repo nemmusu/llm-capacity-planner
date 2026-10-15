@@ -1,0 +1,91 @@
+{
+  "repo": "Qwen/Qwen3.8-Flash-Next",
+  "fetchedAt": "2026-10-14T18:29:35.173Z",
+  "repos": [
+    {
+      "repo": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "fc694b54fb0174e0913e6adf86691ef85a4ead47",
+      "createdAt": "2026-09-02T04:03:35.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen4ExpForConditionalGeneration"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 119602003859,
+      "safetensorsDtypes": {
+        "I64": 35,
+        "BF16": 5487198064,
+        "U8": 60397977600,
+        "F8_E4M3": 53716828160
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "Qwen/Qwen3.8-Flash-Next-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "236dfdf285828023ca3bcd3f37366c58a3469b13",
+      "createdAt": "2026-08-24T08:25:23.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen4ExpForConditionalGeneration"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 179999981459,
+      "safetensorsDtypes": {
+        "BF16": 5487198064,
+        "F8_E4M3": 174512783360,
+        "I64": 35
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-Flash-Next-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "c8f2fb1b9869f686b214782036123b10ff96d14a",
+      "createdAt": "2026-08-27T00:10:38.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen4ExpForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 179999981459,
+      "safetensorsDtypes": {
+        "BF16": 59204026224,
+        "U8": 120795955200,
+        "I64": 35
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

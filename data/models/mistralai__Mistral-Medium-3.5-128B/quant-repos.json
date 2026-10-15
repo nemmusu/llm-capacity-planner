@@ -1,0 +1,80 @@
+{
+  "repo": "mistralai/Mistral-Medium-3.5-128B",
+  "fetchedAt": "2026-10-14T18:30:10.811Z",
+  "repos": [
+    {
+      "repo": "mistralai/Mistral-Medium-3.5-128B-EAGLE",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d31694b0f55b51d4d962b5c3dbf0e03d1f019275",
+      "createdAt": "2026-04-27T13:35:34.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": null,
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": {
+        "quant_method": null,
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "nvidia/Mistral-Medium-3.5-128B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b8c66d2098edd8c9c26bde2b2ff41b5967e111ae",
+      "createdAt": "2026-06-30T19:32:15.000Z",
+      "gated": false,
+      "architectures": [
+        "Mistral3ForConditionalGeneration"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 83840179560,
+      "safetensorsDtypes": {
+        "BF16": 5901622016,
+        "F8_E4M3": 39557529600,
+        "U8": 43864031232
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "RedHatAI/Mistral-Medium-3.5-128B",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9eb2bb5424e94ff9813f80fb4603b436455d655a",
+      "createdAt": "2026-06-26T16:08:47.000Z",
+      "gated": false,
+      "architectures": [
+        "Mistral3ForConditionalGeneration"
+      ],
+      "precision": "fp8",
+      "safetensorsTotal": 127704210176,
+      "safetensorsDtypes": {
+        "BF16": 5901622016,
+        "F8_E4M3": 121802588160
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

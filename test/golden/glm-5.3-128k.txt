@@ -1,0 +1,72 @@
+$ llm-capacity-planner zai-org/GLM-5.3 --tokens 128k
+
+Summary
+  Recommendation: 1 server with 4× NVIDIA B300 SXM serves 50 users guaranteed, 90 likely, with requests of up to 128k
+      tokens (≈ 98,000 words ≈ 200 pages; 64k on average).
+  Alternative: 1 server with 8× NVIDIA H200 SXM 141GB (fits; 40 users guaranteed, 70 likely).
+  Not enough: RTX PRO 6000 Server, L4, L40S, A100 and H100, even with 8 GPUs in one server; RTX A6000, RTX 6000 Ada, RTX
+      PRO 6000 WS, RTX PRO 6000 Max-Q and consumer cards, even with 4; GH200, even with 2.
+  Speed for each user: writing about 30 words per second (15 to 44; 39 tokens/s); with everyone busy the first words
+      appear after about 1.6 s, and a full 128k-token request alone is read in about 3.0 s (1 token ≈ 0.75 words).
+  Confidence: memory high (±2.6%); writing speed medium (±48%); reading time low, not precise enough to decide (more
+      than ±50%); user count medium (±48%). Plan on the guaranteed figures.
+
+Technical detail
+GLM-5.3 at 128k tokens, fp8 KV cache: serves users from 4× B300 SXM (1 model on 4), or 8× H200 SXM 141GB (1 model on 8).
+With 4× B300 SXM (1 model on 4): 50 users guaranteed, 90 likely, at 39 tok/s (20 to 58, ±48%, estimated) each; reading
+128k tokens: 3.0 s (1.1 to 4.9 s, ±63%).
+Scenario "documents": each request brings 64k new tokens to read and generates 500; at least 20 tok/s per user. For a
+chat (the conversation stays in the cache) use --prompt-cache 80.
+zai-org/GLM-5.3 · FP8 · MLA · vLLM 0.31.0 · fp8 KV cache · context 128k tokens (model maximum 1M)
+Model description from built-in data (YYYY-MM-DD) — weights not downloaded; --refresh reads it again from Hugging Face.
+
+Per card: the fewest GPUs that serve someone at the minimum writing speed (else the fewest the model fits on), and what
+that layout serves.
+  Card                 Verdict       GPUs     Memory per GPU                 Users     Users  Accuracy
+                                              (GiB)                   (guaranteed)  (likely)  (users, tok/s)
+  RTX 3090             does not fit  -        with 4: 186.9 of 23.6
+  RTX 4090             does not fit  -        with 4: 186.9 of 23.5
+  RTX 5080             does not fit  -        with 4: 186.9 of 15.4
+  RTX 5090             does not fit  -        with 4: 186.9 of 31.3
+  RTX A6000            does not fit  -        with 4: 186.9 of 47.4
+  RTX 6000 Ada         does not fit  -        with 4: 186.9 of 47.4
+  RTX PRO 6000 WS      does not fit  -        with 4: 190.9 of 95.6
+  RTX PRO 6000 Max-Q   does not fit  -        with 4: 190.9 of 94.9
+  RTX PRO 6000 Server  does not fit  -        with 8: 102.8 of 94.9
+  L4                   does not fit  -        with 8: 98.6 of 22
+  L40S                 does not fit  -        with 8: 98.6 of 44.5
+  A100 40GB PCIe       does not fit  -        with 8: 98.6 of 39.4
+  A100 40GB SXM4       does not fit  -        with 8: 98.6 of 39.4
+  A100 80GB PCIe       does not fit  -        with 8: 102.6 of 79.1
+  A100 80GB SXM4       does not fit  -        with 8: 102.6 of 79.3
+  H100 PCIe 80GB       does not fit  -        with 8: 102.8 of 79.1
+  H100 SXM5 80GB       does not fit  -        with 8: 102.8 of 79.1
+  H100 NVL 94GB        does not fit  -        with 8: 102.8 of 93.1
+  GH200 96GB           does not fit  -        with 2: 367.3 of 95
+  GH200 144GB          does not fit  -        with 2: 367.3 of 142.5
+  H200 SXM 141GB       fits          8 (1×8)  102.8 of 139.7                    40        70  not precise ±53%
+  H200 NVL 141GB       fits (1)      8 (1×8)  102.8 of 139.4                    10        20  not precise ±55%
+  B200 SXM             fits          8 (1×8)  108.1 of 178.3                    70       130  not precise ±51%
+  B300 SXM             fits          4 (1×4)  196.3 of 267.7                    50        90  estimated ±48%
+  guaranteed = holds even if the real speed is at the low end of the estimate; likely = at the central estimate.
+  GPUs: "4 (1 model on 4)" or "4 (1×4)" = one copy of the model split across 4 GPUs that work together on every token
+  (tensor parallel, TP); "8 (2 copies × 4)" or "8 (2×4)" = 2 independent copies, each on 4 GPUs and serving its own
+  users; "split in 2 stages" = each GPU holds part of the layers (pipeline parallel, PP); "2 stages of 4" = each stage
+  on 4 GPUs in tensor parallel; "2 copies × 2 stages of 2" or "2×2 stages of 2" = 2 independent copies, each split in 2
+  stages of 2 GPUs. One server holds up to 8 GPUs (RTX 3090, RTX 4090, RTX 5080, RTX 5090, RTX A6000, RTX 6000 Ada, RTX
+  PRO 6000 WS, RTX PRO 6000 Max-Q: 4; GH200 96GB, GH200 144GB: 2).
+
+(1) 8 GPUs in one group, but NVLink connects only 4 of these cards: the group talks over PCIe (slower)
+
+Memory per GPU with one request of 128k tokens (≈ 98,000 words ≈ 200 pages): the model's weights and its conversation
+memory (KV cache) are computed exactly, the engine's fixed costs are estimated. Margin = room left for more
+conversations after that request. Card memory = what CUDA reports (the engine's usable memory; nvidia-smi shows a little
+more).
+Users: total = concurrent requests ÷ 10% active at once (--active); each gets ≥20 tok/s and the first token within 10 s
+(or, if longer, twice the wait for the first words of one typical request alone: half the context, less what the prefix
+cache holds).
+Accuracy: exact = computed; measured = this model on this card; calibrated = fitted on measurements of this card or of
+the same model type (N points); estimated = calibrated on other cards, not verified, or extrapolated; not precise enough
+to decide = ±50% or more, or a case not covered.
+Speed basis (vLLM 0.31.0) of the cards shown: estimated: mla FP8 not verified with vLLM, vLLM 0.31.0 (43 points).
+Weights: exact as the sum of the tensors; for FP8 × MLA vLLM measured up to +2.6% more, counted in the fixed costs.

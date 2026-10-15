@@ -1,0 +1,556 @@
+{
+  "repo": "google/gemma-4-26B-A4B-it",
+  "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "weightFormat": "hf",
+  "shards": 2,
+  "tensors": 1013,
+  "tensorBytes": 51611872412,
+  "fileBytes": 51612009916,
+  "headerBytes": 137488,
+  "entries": [
+    {
+      "pattern": "model.embed_vision.embedding_projection.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816,
+        1152
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 6488064,
+      "layers": null
+    },
+    {
+      "pattern": "model.language_model.embed_tokens.weight",
+      "dtype": "BF16",
+      "shape": [
+        262144,
+        2816
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 1476395008,
+      "layers": null
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.experts.down_proj",
+      "dtype": "BF16",
+      "shape": [
+        128,
+        2816,
+        704
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 15225323520,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.experts.gate_up_proj",
+      "dtype": "BF16",
+      "shape": [
+        128,
+        1408,
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 30450647040,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.layer_scalar",
+      "dtype": "BF16",
+      "shape": [
+        1
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 60,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.mlp.down_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816,
+        2112
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 356843520,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.mlp.gate_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2112,
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 356843520,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.mlp.up_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2112,
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 356843520,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.post_feedforward_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.post_feedforward_layernorm_1.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.post_feedforward_layernorm_2.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.pre_feedforward_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.pre_feedforward_layernorm_2.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.router.per_expert_scale",
+      "dtype": "BF16",
+      "shape": [
+        128
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 7680,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.router.proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        128,
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 21626880,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.router.scale",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 30,
+      "bytes": 168960,
+      "layers": "0-29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.k_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        256
+      ],
+      "group": "lm",
+      "count": 25,
+      "bytes": 12800,
+      "layers": "0-4,6-10,12-16,18-22,24-28"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.k_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        512
+      ],
+      "group": "lm",
+      "count": 5,
+      "bytes": 5120,
+      "layers": "5,11,17,23,29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.k_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1024,
+        2816
+      ],
+      "group": "lm",
+      "count": 5,
+      "bytes": 28835840,
+      "layers": "5,11,17,23,29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.k_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2048,
+        2816
+      ],
+      "group": "lm",
+      "count": 25,
+      "bytes": 288358400,
+      "layers": "0-4,6-10,12-16,18-22,24-28"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.o_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816,
+        4096
+      ],
+      "group": "lm",
+      "count": 25,
+      "bytes": 576716800,
+      "layers": "0-4,6-10,12-16,18-22,24-28"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.o_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816,
+        8192
+      ],
+      "group": "lm",
+      "count": 5,
+      "bytes": 230686720,
+      "layers": "5,11,17,23,29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.q_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        256
+      ],
+      "group": "lm",
+      "count": 25,
+      "bytes": 12800,
+      "layers": "0-4,6-10,12-16,18-22,24-28"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.q_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        512
+      ],
+      "group": "lm",
+      "count": 5,
+      "bytes": 5120,
+      "layers": "5,11,17,23,29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.q_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        4096,
+        2816
+      ],
+      "group": "lm",
+      "count": 25,
+      "bytes": 576716800,
+      "layers": "0-4,6-10,12-16,18-22,24-28"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.q_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        8192,
+        2816
+      ],
+      "group": "lm",
+      "count": 5,
+      "bytes": 230686720,
+      "layers": "5,11,17,23,29"
+    },
+    {
+      "pattern": "model.language_model.layers.{n}.self_attn.v_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        2048,
+        2816
+      ],
+      "group": "lm",
+      "count": 25,
+      "bytes": 288358400,
+      "layers": "0-4,6-10,12-16,18-22,24-28"
+    },
+    {
+      "pattern": "model.language_model.norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        2816
+      ],
+      "group": "lm",
+      "count": 1,
+      "bytes": 5632,
+      "layers": null
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.input_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 62208,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.mlp.down_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152,
+        4304
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 267743232,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.mlp.gate_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        4304,
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 267743232,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.mlp.up_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        4304,
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 267743232,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.post_attention_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 62208,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.post_feedforward_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 62208,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.pre_feedforward_layernorm.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 62208,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.self_attn.k_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        72
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 3888,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.self_attn.k_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152,
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 71663616,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.self_attn.o_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152,
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 71663616,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.self_attn.q_norm.weight",
+      "dtype": "BF16",
+      "shape": [
+        72
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 3888,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.self_attn.q_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152,
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 71663616,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.encoder.layers.{n}.self_attn.v_proj.linear.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152,
+        1152
+      ],
+      "group": "vision",
+      "count": 27,
+      "bytes": 71663616,
+      "layers": "0-26"
+    },
+    {
+      "pattern": "model.vision_tower.patch_embedder.input_proj.weight",
+      "dtype": "BF16",
+      "shape": [
+        1152,
+        768
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 1769472,
+      "layers": null
+    },
+    {
+      "pattern": "model.vision_tower.patch_embedder.position_embedding_table",
+      "dtype": "BF16",
+      "shape": [
+        2,
+        10240,
+        1152
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 47185920,
+      "layers": null
+    },
+    {
+      "pattern": "model.vision_tower.std_bias",
+      "dtype": "BF16",
+      "shape": [
+        1152
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 2304,
+      "layers": null
+    },
+    {
+      "pattern": "model.vision_tower.std_scale",
+      "dtype": "BF16",
+      "shape": [
+        1152
+      ],
+      "group": "vision",
+      "count": 1,
+      "bytes": 2304,
+      "layers": null
+    }
+  ]
+}

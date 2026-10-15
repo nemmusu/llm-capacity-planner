@@ -1,0 +1,216 @@
+{
+  "repo": "Qwen/Qwen3.8-2.4T-A95B",
+  "fetchedAt": "2026-10-14T18:29:33.440Z",
+  "repos": [
+    {
+      "repo": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "74eb734297318ecf7c48016a4ac8ce1b47cc74a9",
+      "createdAt": "2026-08-25T18:55:42.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8",
+      "safetensorsTotal": 1260771751808,
+      "safetensorsDtypes": {
+        "BF16": 35470849920,
+        "U8": 1185410973696,
+        "F8_E4M3": 39889928192
+      },
+      "quantizationConfig": {
+        "quant_method": "modelopt",
+        "format": null,
+        "weight_block_size": null,
+        "quant_algo": "MIXED_PRECISION"
+      },
+      "hfQuantAlgo": "MIXED_PRECISION"
+    },
+    {
+      "repo": "Qwen/Qwen3.8-2.4T-A95B-FP8",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d2dc35658bcf77e66643428cb52e774cc3b5bd29",
+      "createdAt": "2026-08-08T01:49:49.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 2446182725504,
+      "safetensorsDtypes": {
+        "BF16": 49590974336,
+        "F8_E4M3": 2396591751168
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-2.4T-A95B",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "0337be2263eb34ca2d64a67b1128d8d6851eb09b",
+      "createdAt": "2026-08-13T13:03:54.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 2446182725504,
+      "safetensorsDtypes": {
+        "BF16": 2446182725504
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-2.4T-A95B-FP8",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "df106d79cb2cc749b67d0be23d9b393f7fc1ec65",
+      "createdAt": "2026-08-13T13:05:32.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "fp8-block",
+      "safetensorsTotal": 2446182725504,
+      "safetensorsDtypes": {
+        "BF16": 49590974336,
+        "F8_E4M3": 2396591751168
+      },
+      "quantizationConfig": {
+        "quant_method": "fp8",
+        "format": null,
+        "weight_block_size": [
+          128,
+          128
+        ],
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "36c0f73c803cbd5eec5cc9db63a054287925ad4e",
+      "createdAt": "2026-08-12T23:17:09.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 1380546965032,
+      "safetensorsDtypes": {
+        "BF16": 44352238976,
+        "U8": 2375452459008
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mixed-precision",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-FP8",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "b94577f02dd4bcb722aad2c60f8117032411dfb5",
+      "createdAt": "2026-08-14T13:27:08.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "mixed:nvfp4+fp8-block",
+      "safetensorsTotal": 1380546965032,
+      "safetensorsDtypes": {
+        "BF16": 4462310784,
+        "U8": 2375452459008,
+        "F8_E4M3": 39889928192
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "mixed-precision",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-REAP-25",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "ffd43216ec90d80997c23671d303f3c5991947eb",
+      "createdAt": "2026-08-19T14:49:21.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 1853380769664,
+      "safetensorsDtypes": {
+        "BF16": 70633797504,
+        "U8": 1782746972160
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-REAP-50",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "d5c9869563888de03a194e685a4585fb93a97bd5",
+      "createdAt": "2026-08-22T21:37:55.000Z",
+      "gated": false,
+      "architectures": [
+        "Qwen3_5MoeForCausalLM"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 1260578813824,
+      "safetensorsDtypes": {
+        "BF16": 70537328512,
+        "U8": 1190041485312
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    }
+  ]
+}

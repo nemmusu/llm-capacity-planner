@@ -1,0 +1,28 @@
+{
+  "repo": "Qwen/Qwen3.5-397B-A17B",
+  "revision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+  "fetchedAt": "2026-10-14T18:11:31.540Z",
+  "createdAt": "2026-02-16T04:55:12.000Z",
+  "lastModified": "2026-04-24T05:51:23.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/main/LICENSE",
+  "pipelineTag": "image-text-to-text",
+  "hfSafetensorsTotal": 403397928944,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

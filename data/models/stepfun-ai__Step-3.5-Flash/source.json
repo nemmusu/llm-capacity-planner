@@ -1,0 +1,27 @@
+{
+  "repo": "stepfun-ai/Step-3.5-Flash",
+  "revision": "ab446a3de5e171ea341227e24bb1f090e1b771f7",
+  "fetchedAt": "2026-10-14T18:18:17.140Z",
+  "createdAt": "2026-02-01T08:03:45.000Z",
+  "lastModified": "2026-03-17T05:54:33.000Z",
+  "gated": false,
+  "license": "apache-2.0",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 199384301376,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "model.safetensors.index.json.gz",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

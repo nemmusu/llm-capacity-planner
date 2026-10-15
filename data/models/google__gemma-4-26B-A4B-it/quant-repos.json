@@ -1,0 +1,156 @@
+{
+  "repo": "google/gemma-4-26B-A4B-it",
+  "fetchedAt": "2026-10-14T18:30:31.656Z",
+  "repos": [
+    {
+      "repo": "google/gemma-4-26B-A4B-it-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "6e5aaaf4c42b98394530b8fda2e95cadd65c151c",
+      "createdAt": "2026-04-23T20:16:46.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4AssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 419711236,
+      "safetensorsDtypes": {
+        "BF16": 419711236
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+      "kind": "official",
+      "draft": false,
+      "gguf": true,
+      "mlx": false,
+      "revision": "d1c082be9cf3c8a514acf63b8761f4b41935842e",
+      "createdAt": "2026-05-01T04:26:14.000Z",
+      "gated": false,
+      "architectures": null,
+      "precision": "gguf",
+      "safetensorsTotal": null,
+      "safetensorsDtypes": null,
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+      "kind": "official",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "f1e06dc520982d9b9edd76859fdb7ab209449949",
+      "createdAt": "2026-04-29T21:55:52.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "bf16",
+      "safetensorsTotal": 26544131376,
+      "safetensorsDtypes": {
+        "BF16": 25805936206
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized-assistant",
+      "kind": "official",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "9537141506fe8875b3ed45b264af13580cb29166",
+      "createdAt": "2026-05-29T19:19:16.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4AssistantForCausalLM"
+      ],
+      "precision": null,
+      "safetensorsTotal": 419711236,
+      "safetensorsDtypes": {
+        "BF16": 419711236
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "ed35d7abe5d940da41b4ff06eb482feb0be8cb44",
+      "createdAt": "2026-04-06T14:04:31.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "fp8-channel",
+      "safetensorsTotal": 26544133710,
+      "safetensorsDtypes": {
+        "BF16": 2060703310,
+        "F8_E4M3": 24483430400
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "float-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-26B-A4B-it-NVFP4",
+      "kind": "third-party",
+      "draft": false,
+      "gguf": false,
+      "mlx": false,
+      "revision": "5557756b8dce33ac72f2bd702b11729fdba3b839",
+      "createdAt": "2026-04-05T20:47:47.000Z",
+      "gated": false,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "precision": "nvfp4",
+      "safetensorsTotal": 25805936206,
+      "safetensorsDtypes": {
+        "BF16": 1322505806,
+        "U8": 24483430400
+      },
+      "quantizationConfig": {
+        "quant_method": "compressed-tensors",
+        "format": "nvfp4-pack-quantized",
+        "weight_block_size": null,
+        "quant_algo": null
+      },
+      "hfQuantAlgo": null
+    },
+    {
+      "repo": "RedHatAI/gemma-4-26B-A4B-it-speculator.eagle3",
+      "kind": "third-party",
+      "draft": true,
+      "gguf": false,
+      "mlx": false,
+      "revision": "226b2692d48029aae52adc1d0021a9d58709d33c",
+      "createdAt": "2026-04-13T21:52:20.000Z",
+      "gated": false,
+      "architectures": [
+        "Eagle3DraftModel"
+      ],
+      "precision": null,
+      "safetensorsTotal": 927918336,
+      "safetensorsDtypes": {
+        "I64": 32000,
+        "BF16": 927624192,
+        "BOOL": 262144
+      },
+      "quantizationConfig": null,
+      "hfQuantAlgo": null
+    }
+  ]
+}

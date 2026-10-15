@@ -1,0 +1,27 @@
+{
+  "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "revision": "dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f",
+  "fetchedAt": "2026-10-14T18:17:12.729Z",
+  "createdAt": "2026-03-07T01:23:35.000Z",
+  "lastModified": "2026-03-20T20:50:41.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": "nvidia-nemotron-open-model-license",
+  "licenseLink": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+  "pipelineTag": "text-generation",
+  "hfSafetensorsTotal": 3973556832,
+  "readable": true,
+  "unreadable": [],
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "safetensors-headers.json.gz",
+    "tensor-summary.json"
+  ],
+  "weightFormat": "hf",
+  "otherSafetensors": [],
+  "headerChecks": {
+    "ok": true,
+    "problems": []
+  }
+}

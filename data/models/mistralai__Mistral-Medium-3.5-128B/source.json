@@ -1,0 +1,18 @@
+{
+  "repo": "mistralai/Mistral-Medium-3.5-128B",
+  "revision": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+  "fetchedAt": "2026-10-14T18:13:35.955Z",
+  "createdAt": "2026-03-31T09:50:20.000Z",
+  "lastModified": "2026-07-15T12:23:17.000Z",
+  "gated": false,
+  "license": "other",
+  "licenseName": null,
+  "licenseLink": null,
+  "pipelineTag": null,
+  "hfSafetensorsTotal": 127704210176,
+  "readable": false,
+  "unreadable": [],
+  "files": [],
+  "weightFormat": "hf",
+  "withheld": "Modified MIT licence: no rights at all for companies above US$20M monthly revenue"
+}
