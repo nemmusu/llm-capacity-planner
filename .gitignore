@@ -1,8 +1,8 @@
 node_modules/
-out/
+/out/
 # The built program (npm run dist): attached to the GitHub Releases, not committed.
-dist/
-coverage/
+/dist/
+/coverage/
 .qa/
 *.log
 .DS_Store
