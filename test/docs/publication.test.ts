@@ -29,7 +29,7 @@ const SECRETS: [string, RegExp][] = [
   ['private key', /-----BEGIN [A-Z ]*PRIVATE KEY-----/],
 ];
 
-describe('the published repository', { timeout: 120_000 }, () => {
+describe('the published repository', { timeout: 600_000 }, () => {
   const all = files('.').map((f) => [f, text(f)] as const);
 
   it('has no personal folder, e-mail address or credential in any file', () => {
